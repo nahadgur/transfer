@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { blogPosts } from '@/lib/blog-data'
+import { allBlogPosts as blogPosts } from '@/lib/all-blog-posts'
 import CalculatorBanner from '@/components/CalculatorBanner'
 import RelatedArticles from '@/components/RelatedArticles'
 import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react'

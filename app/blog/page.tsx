@@ -1,13 +1,13 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { blogPosts } from '@/lib/blog-data'
+import { allBlogPosts as blogPosts } from '@/lib/all-blog-posts'
 import { ArrowRight, BookOpen } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Blog - Kenya Tax, PAYE, NSSF & Financial Guides',
+  title: 'Blog — M-Pesa, Transfers, Kenya Tax & Finance Guides',
   description: 'Expert guides on Kenyan tax, PAYE calculations, NSSF contributions, housing levy, salary breakdowns, and financial planning. Stay informed with our comprehensive resources.',
   openGraph: {
-    title: 'Blog - Kenya Tax, PAYE, NSSF & Financial Guides',
+    title: 'Blog — M-Pesa, Transfers, Kenya Tax & Finance Guides',
     description: 'Expert guides on Kenyan tax, PAYE calculations, NSSF contributions, and financial planning.',
   }
 }

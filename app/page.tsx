@@ -13,9 +13,13 @@ import {
   Calculator,
   TrendingUp,
   Shield,
-  BookOpen
+  BookOpen,
+  Hash,
+  Wifi,
+  ArrowLeftRight,
 } from 'lucide-react'
 import { blogPosts } from '@/lib/blog-data'
+import PaybillSearch from '@/components/PaybillSearch'
 
 const tools = [
   {
@@ -40,6 +44,46 @@ const tools = [
     href: '/remittance',
     icon: Globe,
     color: 'from-purple-500 to-purple-600',
+    category: 'Money Transfer'
+  },
+  {
+    title: 'Send Money to Kenya',
+    description: 'Best rates from UK, USA, UAE, Germany and Canada — compare Wise, Sendwave, Remitly',
+    href: '/send-money-to-kenya',
+    icon: Globe,
+    color: 'from-purple-500 to-violet-600',
+    category: 'Money Transfer'
+  },
+  {
+    title: 'M-Pesa ↔ Bank Transfer',
+    description: 'Step-by-step guides for Equity, KCB, Co-op, NCBA, Absa and more — both directions',
+    href: '/mpesa-to-bank',
+    icon: ArrowLeftRight,
+    color: 'from-emerald-500 to-teal-600',
+    category: 'Money Transfer'
+  },
+  {
+    title: 'Paybill Directory',
+    description: 'Search 70+ paybill numbers — banks, utilities, government, schools',
+    href: '/paybill-directory',
+    icon: Hash,
+    color: 'from-teal-500 to-emerald-600',
+    category: 'Money Transfer'
+  },
+  {
+    title: 'Is M-Pesa Down?',
+    description: 'Real-time M-Pesa status tracker and maintenance schedule',
+    href: '/mpesa-status',
+    icon: Wifi,
+    color: 'from-rose-500 to-red-600',
+    category: 'Money Transfer'
+  },
+  {
+    title: 'USSD Codes Kenya',
+    description: 'Every bank, M-Pesa and government USSD shortcode in one place',
+    href: '/ussd-codes',
+    icon: Phone,
+    color: 'from-indigo-500 to-violet-600',
     category: 'Money Transfer'
   },
   {
@@ -160,6 +204,21 @@ export default function HomePage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── Paybill Search ── */}
+      <section className="py-10 px-4 border-y border-white/5 bg-white/2">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-5">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-emerald-500/10 rounded-full border border-emerald-500/20 mb-3">
+              <Hash className="w-3.5 h-3.5 text-emerald-400" />
+              <span className="text-emerald-400 text-xs font-medium">Quick Paybill Lookup</span>
+            </div>
+            <h2 className="text-xl font-bold text-white mb-1">Find Any M-Pesa Paybill Number</h2>
+            <p className="text-stone-500 text-sm">Search banks, utilities, government, schools and more</p>
+          </div>
+          <PaybillSearch compact={true} />
         </div>
       </section>
 

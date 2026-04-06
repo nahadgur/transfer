@@ -69,6 +69,21 @@ export default function RootLayout({
                 <Link href="/" className="text-stone-300 hover:text-white transition-colors text-sm font-medium">
                   Calculators
                 </Link>
+                <Link href="/send-money-to-kenya" className="text-stone-300 hover:text-white transition-colors text-sm font-medium hidden sm:block">
+                  Send to Kenya
+                </Link>
+                <Link href="/mpesa-to-bank" className="text-stone-300 hover:text-white transition-colors text-sm font-medium hidden sm:block">
+                  M-Pesa ↔ Bank
+                </Link>
+                <Link href="/paybill-directory" className="text-stone-300 hover:text-white transition-colors text-sm font-medium">
+                  Paybills
+                </Link>
+                <Link href="/ussd-codes" className="text-stone-300 hover:text-white transition-colors text-sm font-medium hidden sm:block">
+                  USSD Codes
+                </Link>
+                <Link href="/mpesa-status" className="text-stone-300 hover:text-white transition-colors text-sm font-medium hidden sm:block">
+                  M-Pesa Status
+                </Link>
                 <Link href="/blog" className="text-stone-300 hover:text-white transition-colors text-sm font-medium">
                   Blog
                 </Link>
@@ -104,6 +119,9 @@ export default function RootLayout({
                   <li><Link href="/mpesa-calculator" className="text-stone-400 hover:text-white transition-colors">M-Pesa Calculator</Link></li>
                   <li><Link href="/bank-transfer" className="text-stone-400 hover:text-white transition-colors">Bank Transfers</Link></li>
                   <li><Link href="/remittance" className="text-stone-400 hover:text-white transition-colors">International Remittance</Link></li>
+                  <li><Link href="/send-money-to-kenya" className="text-stone-400 hover:text-white transition-colors">Send Money to Kenya</Link></li>
+                  <li><Link href="/mpesa-to-bank" className="text-stone-400 hover:text-white transition-colors">M-Pesa ↔ Bank Guide</Link></li>
+                  <li><Link href="/paybill-directory" className="text-stone-400 hover:text-white transition-colors">Paybill Directory</Link></li>
                 </ul>
               </div>
               <div>
@@ -117,6 +135,8 @@ export default function RootLayout({
               <div>
                 <h4 className="font-semibold text-white mb-4">Resources</h4>
                 <ul className="space-y-2 text-sm">
+                  <li><Link href="/ussd-codes" className="text-stone-400 hover:text-white transition-colors">USSD Codes Kenya</Link></li>
+                  <li><Link href="/mpesa-status" className="text-stone-400 hover:text-white transition-colors">Is M-Pesa Down?</Link></li>
                   <li><Link href="/blog" className="text-stone-400 hover:text-white transition-colors">Blog & Guides</Link></li>
                   <li><Link href="/pension-transfer" className="text-stone-400 hover:text-white transition-colors">Pension Transfer</Link></li>
                   <li><Link href="/kplc-transfer" className="text-stone-400 hover:text-white transition-colors">KPLC Transfer</Link></li>
