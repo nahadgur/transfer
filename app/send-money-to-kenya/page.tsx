@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 
 export default function RemittanceHub() {
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen bg-[#050505] py-8 px-4">
       <div className="max-w-4xl mx-auto">
 
         {/* Header */}
@@ -38,7 +38,7 @@ export default function RemittanceHub() {
           <h1 className="text-3xl md:text-4xl font-black text-white mb-3">
             Best Ways to Send Money to Kenya
           </h1>
-          <p className="text-stone-400 max-w-xl mx-auto text-sm leading-relaxed">
+          <p className="text-zinc-400 max-w-xl mx-auto text-sm leading-relaxed">
             Compare fees, exchange rates and delivery speeds for every major remittance corridor
             into Kenya. Updated weekly — covering M-Pesa, bank and cash delivery.
           </p>
@@ -51,10 +51,10 @@ export default function RemittanceHub() {
             { label: 'Providers Compared', value: '6+', icon: Star },
             { label: 'Updated', value: 'Weekly', icon: TrendingUp },
           ].map(({ label, value, icon: Icon }) => (
-            <div key={label} className="bg-white/5 border border-white/10 rounded-xl p-4 text-center">
+            <div key={label} className="bg-white/[0.02] border border-white/10 p-4 text-center">
               <Icon className="w-5 h-5 text-purple-400 mx-auto mb-2" />
               <div className="text-xl font-bold text-white">{value}</div>
-              <div className="text-stone-500 text-xs mt-0.5">{label}</div>
+              <div className="text-zinc-500 text-xs mt-0.5">{label}</div>
             </div>
           ))}
         </div>
@@ -68,7 +68,7 @@ export default function RemittanceHub() {
               <Link
                 key={corridor.slug}
                 href={`/send-money-to-kenya/${corridor.slug}`}
-                className="group bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl p-5 hover:border-purple-500/40 transition-all"
+                className="group bg-gradient-to-br from-white/10 to-white/5 border border-white/10  p-5 hover:border-purple-500/40 transition-all"
               >
                 <div className="flex items-start justify-between mb-4">
                   <div className="flex items-center gap-3">
@@ -77,29 +77,29 @@ export default function RemittanceHub() {
                       <h3 className="text-white font-bold group-hover:text-purple-400 transition-colors">
                         {corridor.country}
                       </h3>
-                      <p className="text-stone-500 text-xs">{corridor.currencySymbol} {corridor.currencyCode}</p>
+                      <p className="text-zinc-500 text-xs">{corridor.currencySymbol} {corridor.currencyCode}</p>
                     </div>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-stone-600 group-hover:text-purple-400 group-hover:translate-x-0.5 transition-all flex-shrink-0 mt-1" />
+                  <ArrowRight className="w-4 h-4 text-zinc-600 group-hover:text-purple-400 group-hover:translate-x-0.5 transition-all flex-shrink-0 mt-1" />
                 </div>
 
                 <div className="space-y-2">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-stone-500">Top pick</span>
+                    <span className="text-zinc-500">Top pick</span>
                     <span className="text-purple-400 font-semibold">{topProvider.name}</span>
                   </div>
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-stone-500">Lowest fee</span>
-                    <span className="text-emerald-400 font-semibold">{topProvider.fee}</span>
+                    <span className="text-zinc-500">Lowest fee</span>
+                    <span className="text-[#ccff00] font-semibold">{topProvider.fee}</span>
                   </div>
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-stone-500">Providers compared</span>
-                    <span className="text-stone-300">{corridor.providers.length}</span>
+                    <span className="text-zinc-500">Providers compared</span>
+                    <span className="text-zinc-300">{corridor.providers.length}</span>
                   </div>
                 </div>
 
                 <div className="mt-3 pt-3 border-t border-white/10">
-                  <p className="text-stone-600 text-xs">{corridor.diasporaSize}</p>
+                  <p className="text-zinc-600 text-xs">{corridor.diasporaSize}</p>
                 </div>
               </Link>
             )
@@ -107,9 +107,9 @@ export default function RemittanceHub() {
         </div>
 
         {/* Universal tips */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
+        <div className="bg-white/[0.02] border border-white/10 p-6">
           <h2 className="text-white font-bold mb-4">Universal Tips for Sending to Kenya</h2>
-          <ul className="space-y-3 text-sm text-stone-400">
+          <ul className="space-y-3 text-sm text-zinc-400">
             {[
               'Always compare the total KES received — not just the headline fee. A zero-fee provider with a bad rate can cost more.',
               'M-Pesa delivery is fastest and most reliable — your recipient doesn\'t need a bank account.',
@@ -128,34 +128,34 @@ export default function RemittanceHub() {
 
       {/* Related tools */}
       <section className="mt-14 mb-2 max-w-4xl mx-auto px-4">
-        <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-4">Related tools</h2>
+        <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">Related tools</h2>
         <div className="grid sm:grid-cols-2 gap-3">
-          <Link href="/remittance" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/remittance" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📊</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">Remittance Comparison</p>
-              <p className="text-stone-500 text-xs mt-0.5">Side-by-side provider comparison</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Side-by-side provider comparison</p>
             </div>
           </Link>
-          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🧮</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa Fee Calculator</p>
-              <p className="text-stone-500 text-xs mt-0.5">Calculate fees once money arrives</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Calculate fees once money arrives</p>
             </div>
           </Link>
-          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🏦</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa to Bank</p>
-              <p className="text-stone-500 text-xs mt-0.5">Move received funds to your account</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Move received funds to your account</p>
             </div>
           </Link>
-          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📋</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">Paybill Directory</p>
-              <p className="text-stone-500 text-xs mt-0.5">Pay bills directly on arrival</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Pay bills directly on arrival</p>
             </div>
           </Link>
         </div>

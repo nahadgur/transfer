@@ -52,18 +52,18 @@ export default function MpesaStatusPage() {
 
   const statusConfig = {
     checking: {
-      icon: <RefreshCw className="w-8 h-8 text-stone-400 animate-spin" />,
+      icon: <RefreshCw className="w-8 h-8 text-zinc-400 animate-spin" />,
       label: 'Checking M-Pesa status…',
       sublabel: 'Running diagnostics',
-      color: 'border-stone-500/30 bg-stone-500/10',
-      dot: 'bg-stone-400',
+      color: 'border-zinc-500/30 bg-zinc-500/10',
+      dot: 'bg-zinc-400',
     },
     'likely-up': {
-      icon: <CheckCircle2 className="w-8 h-8 text-emerald-400" />,
+      icon: <CheckCircle2 className="w-8 h-8 text-[#ccff00]" />,
       label: 'M-Pesa is Operational',
       sublabel: 'No major issues detected at this time',
-      color: 'border-emerald-500/30 bg-emerald-500/10',
-      dot: 'bg-emerald-400 animate-pulse',
+      color: 'border-[#ccff00]/30 bg-[#ccff00]/10',
+      dot: 'bg-[#ccff00] animate-pulse',
     },
     'likely-down': {
       icon: <AlertTriangle className="w-8 h-8 text-red-400" />,
@@ -84,32 +84,32 @@ export default function MpesaStatusPage() {
   const current = statusConfig[status]
 
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen bg-[#050505] py-8 px-4">
       <div className="max-w-3xl mx-auto">
 
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 rounded-full border border-emerald-500/20 mb-5">
-            <Wifi className="w-4 h-4 text-emerald-400" />
-            <span className="text-emerald-400 text-sm font-medium">Live Status Check</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#ccff00]/10 rounded-full border border-[#ccff00]/20 mb-5">
+            <Wifi className="w-4 h-4 text-[#ccff00]" />
+            <span className="text-[#ccff00] text-xs font-space font-bold uppercase tracking-widest">Live Status Check</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-black text-white mb-2">
             Is M-Pesa Down?
           </h1>
-          <p className="text-stone-400 text-sm">
+          <p className="text-zinc-400 text-sm">
             Real-time M-Pesa status tracker for Kenya · Updated every time you visit
           </p>
         </div>
 
         {/* Main status card */}
-        <div className={`border rounded-2xl p-8 text-center mb-6 transition-all duration-500 ${current.color}`}>
+        <div className={`border p-8 text-center mb-6 transition-all duration-500 ${current.color}`}>
           <div className="flex justify-center mb-4">{current.icon}</div>
           <h2 className="text-xl font-bold text-white mb-1">{current.label}</h2>
-          <p className="text-stone-400 text-sm mb-5">{current.sublabel}</p>
+          <p className="text-zinc-400 text-sm mb-5">{current.sublabel}</p>
 
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className={`w-2.5 h-2.5 rounded-full ${current.dot}`} />
-            <span className="text-xs text-stone-500">
+            <span className="text-xs text-zinc-500">
               {lastChecked
                 ? `Last checked: ${lastChecked.toLocaleTimeString('en-KE', { hour: '2-digit', minute: '2-digit' })} EAT`
                 : 'Checking…'}
@@ -119,7 +119,7 @@ export default function MpesaStatusPage() {
           <button
             onClick={checkStatus}
             disabled={isRefreshing}
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl text-white text-sm font-medium transition-colors disabled:opacity-50"
+            className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/10 hover:bg-white/20 border border-white/20  text-white text-sm font-medium transition-colors disabled:opacity-50"
           >
             <RefreshCw className={`w-4 h-4 ${isRefreshing ? 'animate-spin' : ''}`} />
             Check Again
@@ -138,39 +138,39 @@ export default function MpesaStatusPage() {
           ].map((service) => (
             <div
               key={service.name}
-              className="bg-white/5 border border-white/10 rounded-xl px-4 py-3 flex items-center gap-2.5"
+              className="bg-white/[0.02] border border-white/10  px-4 py-3 flex items-center gap-2.5"
             >
               <span
                 className={`w-2 h-2 rounded-full flex-shrink-0 ${
                   service.status === 'up'
-                    ? 'bg-emerald-400'
+                    ? 'bg-[#ccff00]'
                     : service.status === 'down'
                     ? 'bg-red-400'
-                    : 'bg-stone-500'
+                    : 'bg-zinc-500'
                 }`}
               />
-              <span className="text-sm text-stone-300">{service.name}</span>
+              <span className="text-sm text-zinc-300">{service.name}</span>
             </div>
           ))}
         </div>
 
         {/* Report an issue */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-6">
+        <div className="bg-white/[0.02] border border-white/10 p-5 mb-6">
           <div className="flex items-center gap-2 mb-4">
-            <MessageSquare className="w-4 h-4 text-emerald-400" />
+            <MessageSquare className="w-4 h-4 text-[#ccff00]" />
             <h2 className="text-white font-semibold text-sm">Community Reports</h2>
           </div>
           <div className="space-y-2 mb-4">
             {USER_REPORTS.map((r, i) => (
               <div key={i} className="flex items-start gap-3 text-xs">
-                <span className="text-stone-600 flex-shrink-0 mt-0.5">{r.time}</span>
-                <span className="text-stone-400">{r.report}</span>
+                <span className="text-zinc-600 flex-shrink-0 mt-0.5">{r.time}</span>
+                <span className="text-zinc-400">{r.report}</span>
               </div>
             ))}
           </div>
           <button
             onClick={() => setReportCount((n) => n + 1)}
-            className="w-full py-2.5 border border-white/20 rounded-xl text-stone-400 hover:text-white hover:border-white/40 text-sm transition-colors"
+            className="w-full py-2.5 border border-white/20  text-zinc-400 hover:text-white hover:border-white/40 text-sm transition-colors"
           >
             {reportCount > 0
               ? `✓ Thanks for reporting (${reportCount})`
@@ -179,7 +179,7 @@ export default function MpesaStatusPage() {
         </div>
 
         {/* Maintenance windows */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-6">
+        <div className="bg-white/[0.02] border border-white/10 p-5 mb-6">
           <div className="flex items-center gap-2 mb-4">
             <Clock className="w-4 h-4 text-amber-400" />
             <h2 className="text-white font-semibold text-sm">Known Maintenance Windows</h2>
@@ -190,7 +190,7 @@ export default function MpesaStatusPage() {
                 <span className="w-2 h-2 bg-amber-400/60 rounded-full flex-shrink-0 mt-1.5" />
                 <div>
                   <span className="text-white text-sm font-medium">{m.day} · {m.time}</span>
-                  <p className="text-stone-500 text-xs mt-0.5">{m.note}</p>
+                  <p className="text-zinc-500 text-xs mt-0.5">{m.note}</p>
                 </div>
               </div>
             ))}
@@ -198,15 +198,15 @@ export default function MpesaStatusPage() {
         </div>
 
         {/* Recent incidents */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-6">
+        <div className="bg-white/[0.02] border border-white/10 p-5 mb-6">
           <h2 className="text-white font-semibold text-sm mb-4">Recent Incidents</h2>
           <div className="space-y-3">
             {RECENT_INCIDENTS.map((inc, i) => (
               <div key={i} className="flex items-start gap-3 text-sm">
-                <div className="text-stone-500 flex-shrink-0 text-xs mt-0.5 w-16">{inc.date}</div>
+                <div className="text-zinc-500 flex-shrink-0 text-xs mt-0.5 w-16">{inc.date}</div>
                 <div>
-                  <span className="text-stone-400">{inc.description}</span>
-                  <span className="ml-2 text-xs text-stone-600">({inc.duration})</span>
+                  <span className="text-zinc-400">{inc.description}</span>
+                  <span className="ml-2 text-xs text-zinc-600">({inc.duration})</span>
                 </div>
               </div>
             ))}
@@ -214,9 +214,9 @@ export default function MpesaStatusPage() {
         </div>
 
         {/* What to do if down */}
-        <div className="bg-amber-500/10 border border-amber-500/20 rounded-2xl p-5">
+        <div className="bg-amber-500/10 border border-amber-500/20  p-5">
           <h2 className="text-amber-400 font-semibold text-sm mb-3">What to Do if M-Pesa is Down</h2>
-          <ul className="space-y-2 text-sm text-stone-400">
+          <ul className="space-y-2 text-sm text-zinc-400">
             {[
               'Check @Safaricom_Care on X (Twitter) for official updates',
               'Call Safaricom customer care: 0722 000 100',
@@ -232,39 +232,39 @@ export default function MpesaStatusPage() {
           </ul>
         </div>
 
-        <p className="text-xs text-stone-700 text-center mt-6">
+        <p className="text-xs text-zinc-700 text-center mt-6">
           This is a community status tracker. For official status, visit safaricom.co.ke or follow @Safaricom_Care.
         </p>
       {/* Related tools */}
       <section className="mt-14 mb-2 max-w-4xl mx-auto px-4">
-        <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-4">Related tools</h2>
+        <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">Related tools</h2>
         <div className="grid sm:grid-cols-2 gap-3">
-          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🧮</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa Fee Calculator</p>
-              <p className="text-stone-500 text-xs mt-0.5">Calculate fees while you wait</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Calculate fees while you wait</p>
             </div>
           </Link>
-          <Link href="/ussd-codes" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/ussd-codes" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📱</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">USSD Codes</p>
-              <p className="text-stone-500 text-xs mt-0.5">Alternative access codes to try</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Alternative access codes to try</p>
             </div>
           </Link>
-          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📋</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">Paybill Directory</p>
-              <p className="text-stone-500 text-xs mt-0.5">Verify biller details</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Verify biller details</p>
             </div>
           </Link>
-          <Link href="/remittance" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/remittance" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🌍</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">Remittance Comparison</p>
-              <p className="text-stone-500 text-xs mt-0.5">Send money internationally instead</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Send money internationally instead</p>
             </div>
           </Link>
         </div>

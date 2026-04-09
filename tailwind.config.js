@@ -6,7 +6,16 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans:  ['var(--font-sans)', 'system-ui', 'sans-serif'],
+        space: ['var(--font-space)', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        accent: '#ccff00',
+        'accent-hover': '#b3e600',
+      },
+    },
   },
   plugins: [],
 }

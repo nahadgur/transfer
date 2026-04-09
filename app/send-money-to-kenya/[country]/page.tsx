@@ -39,10 +39,10 @@ function StarRating({ rating }: { rating: number }) {
       {[1, 2, 3, 4, 5].map((s) => (
         <Star
           key={s}
-          className={`w-3 h-3 ${s <= Math.round(rating) ? 'text-yellow-400 fill-yellow-400' : 'text-stone-600'}`}
+          className={`w-3 h-3 ${s <= Math.round(rating) ? 'text-yellow-400 fill-yellow-400' : 'text-zinc-600'}`}
         />
       ))}
-      <span className="text-xs text-stone-500 ml-1">{rating}</span>
+      <span className="text-xs text-zinc-500 ml-1">{rating}</span>
     </div>
   )
 }
@@ -71,7 +71,7 @@ export default function CountryRemittancePage({ params }: Props) {
   }
 
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen bg-[#050505] py-8 px-4">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -82,7 +82,7 @@ export default function CountryRemittancePage({ params }: Props) {
         {/* Back */}
         <Link
           href="/send-money-to-kenya"
-          className="inline-flex items-center gap-2 text-stone-400 hover:text-white transition-colors mb-6 text-sm"
+          className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-6 text-sm"
         >
           <ArrowLeft className="w-4 h-4" /> All Corridors
         </Link>
@@ -92,7 +92,7 @@ export default function CountryRemittancePage({ params }: Props) {
           <div className="flex items-center gap-3 mb-3">
             <FlagIcon countryCode={corridor.countryCode} size={56} />
             <div>
-              <div className="text-stone-500 text-xs mb-1 flex items-center gap-1">
+              <div className="text-zinc-500 text-xs mb-1 flex items-center gap-1">
                 <Globe className="w-3 h-3" />
                 {corridor.currencySymbol} {corridor.currencyCode} → KES
               </div>
@@ -101,7 +101,7 @@ export default function CountryRemittancePage({ params }: Props) {
               </h1>
             </div>
           </div>
-          <p className="text-stone-400 text-sm leading-relaxed">
+          <p className="text-zinc-400 text-sm leading-relaxed">
             {corridor.diasporaSize} · {corridor.remittanceVolume}.
             Compare {corridor.providers.length} providers by total KES received.
           </p>
@@ -110,7 +110,7 @@ export default function CountryRemittancePage({ params }: Props) {
         {/* Popular cities */}
         <div className="flex flex-wrap gap-2 mb-8">
           {corridor.popularCities.map((city) => (
-            <span key={city} className="text-xs bg-white/5 border border-white/10 text-stone-400 px-3 py-1 rounded-full">
+            <span key={city} className="text-xs bg-white/5 border border-white/10 text-zinc-400 px-3 py-1 rounded-full">
               {city}
             </span>
           ))}
@@ -125,9 +125,9 @@ export default function CountryRemittancePage({ params }: Props) {
           {corridor.providers.map((provider, i) => (
             <div
               key={provider.name}
-              className={`border rounded-2xl overflow-hidden transition-all ${
+              className={`border  overflow-hidden transition-all ${
                 i === 0
-                  ? 'border-purple-500/40 bg-gradient-to-br from-purple-500/10 to-purple-900/10'
+                  ? 'border-[#ccff00]/40 bg-[#ccff00]/5'
                   : 'border-white/10 bg-white/5'
               }`}
             >
@@ -143,36 +143,36 @@ export default function CountryRemittancePage({ params }: Props) {
                     <StarRating rating={provider.rating} />
                   </div>
                   <div className="text-right">
-                    <div className="text-emerald-400 font-bold text-sm">{provider.estimatedKES}</div>
-                    <div className="text-stone-500 text-xs">received in Kenya</div>
+                    <div className="text-[#ccff00] font-bold text-sm">{provider.estimatedKES}</div>
+                    <div className="text-zinc-500 text-xs">received in Kenya</div>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 mb-3 text-xs">
                   <div className="bg-white/5 rounded-lg p-2">
-                    <div className="text-stone-500 mb-0.5">Fee</div>
-                    <div className="text-stone-300 font-medium">{provider.fee}</div>
+                    <div className="text-zinc-500 mb-0.5">Fee</div>
+                    <div className="text-zinc-300 font-medium">{provider.fee}</div>
                   </div>
                   <div className="bg-white/5 rounded-lg p-2">
-                    <div className="text-stone-500 mb-0.5">Rate</div>
-                    <div className="text-stone-300 font-medium">{provider.exchangeRateNote}</div>
+                    <div className="text-zinc-500 mb-0.5">Rate</div>
+                    <div className="text-zinc-300 font-medium">{provider.exchangeRateNote}</div>
                   </div>
                   <div className="bg-white/5 rounded-lg p-2 col-span-2 sm:col-span-1">
-                    <div className="text-stone-500 mb-0.5 flex items-center gap-1"><Clock className="w-3 h-3" />Speed</div>
-                    <div className="text-stone-300 font-medium">{provider.speed}</div>
+                    <div className="text-zinc-500 mb-0.5 flex items-center gap-1"><Clock className="w-3 h-3" />Speed</div>
+                    <div className="text-zinc-300 font-medium">{provider.speed}</div>
                   </div>
                 </div>
 
                 <div className="flex flex-wrap gap-1.5 mb-2">
                   {provider.deliveryMethods.map((method) => (
-                    <span key={method} className="text-xs bg-white/5 border border-white/10 text-stone-400 px-2 py-0.5 rounded-full">
+                    <span key={method} className="text-xs bg-white/5 border border-white/10 text-zinc-400 px-2 py-0.5 rounded-full">
                       {method}
                     </span>
                   ))}
                 </div>
 
-                <p className="text-xs text-stone-500">
-                  <span className="text-stone-400 font-medium">Best for: </span>
+                <p className="text-xs text-zinc-500">
+                  <span className="text-zinc-400 font-medium">Best for: </span>
                   {provider.bestFor}
                 </p>
 
@@ -188,12 +188,12 @@ export default function CountryRemittancePage({ params }: Props) {
         </div>
 
         {/* Disclaimer */}
-        <p className="text-xs text-stone-600 mb-8 text-center">
+        <p className="text-xs text-zinc-600 mb-8 text-center">
           Rates and fees are indicative and updated weekly. Always check the provider&apos;s app for the live rate before sending.
         </p>
 
         {/* How to send */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden mb-6">
+        <div className="bg-white/[0.02] border border-white/10  overflow-hidden mb-6">
           <div className="px-5 py-4 border-b border-white/10">
             <h2 className="text-white font-bold">How to Send Money from {corridor.country} to Kenya</h2>
           </div>
@@ -204,7 +204,7 @@ export default function CountryRemittancePage({ params }: Props) {
                   <span className="w-5 h-5 bg-purple-500/20 text-purple-400 rounded-full text-xs flex items-center justify-center flex-shrink-0 mt-0.5 font-bold">
                     {i + 1}
                   </span>
-                  <span className="text-stone-300 leading-relaxed">{step}</span>
+                  <span className="text-zinc-300 leading-relaxed">{step}</span>
                 </li>
               ))}
             </ol>
@@ -213,25 +213,25 @@ export default function CountryRemittancePage({ params }: Props) {
 
         {/* Tax & regulatory notes */}
         <div className="grid sm:grid-cols-2 gap-4 mb-6">
-          <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4">
+          <div className="bg-amber-500/10 border border-amber-500/20  p-4">
             <h3 className="text-amber-400 font-semibold text-xs uppercase tracking-wider mb-2">Tax Note</h3>
-            <p className="text-stone-400 text-xs leading-relaxed">{corridor.taxNote}</p>
+            <p className="text-zinc-400 text-xs leading-relaxed">{corridor.taxNote}</p>
           </div>
-          <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4">
+          <div className="bg-blue-500/10 border border-blue-500/20  p-4">
             <h3 className="text-blue-400 font-semibold text-xs uppercase tracking-wider mb-2">Regulatory</h3>
-            <p className="text-stone-400 text-xs leading-relaxed">{corridor.regulatoryNote}</p>
+            <p className="text-zinc-400 text-xs leading-relaxed">{corridor.regulatoryNote}</p>
           </div>
         </div>
 
         {/* Tips */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-5 mb-6">
+        <div className="bg-white/[0.02] border border-white/10 p-5 mb-6">
           <h2 className="text-white font-bold text-sm mb-3">
             Pro Tips for {corridor.country} → Kenya Transfers
           </h2>
           <ul className="space-y-2">
             {corridor.tips.map((tip, i) => (
-              <li key={i} className="flex items-start gap-2 text-sm text-stone-400">
-                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 flex-shrink-0 mt-0.5" />
+              <li key={i} className="flex items-start gap-2 text-sm text-zinc-400">
+                <CheckCircle2 className="w-3.5 h-3.5 text-[#ccff00] flex-shrink-0 mt-0.5" />
                 {tip}
               </li>
             ))}
@@ -239,7 +239,7 @@ export default function CountryRemittancePage({ params }: Props) {
         </div>
 
         {/* FAQs */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden mb-8">
+        <div className="bg-white/[0.02] border border-white/10  overflow-hidden mb-8">
           <div className="px-5 py-4 border-b border-white/10">
             <h2 className="text-white font-bold text-sm">
               Frequently Asked Questions — {corridor.country} to Kenya
@@ -249,7 +249,7 @@ export default function CountryRemittancePage({ params }: Props) {
             {corridor.faqs.map((faq, i) => (
               <div key={i} className="px-5 py-4">
                 <h3 className="text-white text-sm font-semibold mb-1.5">{faq.q}</h3>
-                <p className="text-stone-400 text-sm leading-relaxed">{faq.a}</p>
+                <p className="text-zinc-400 text-sm leading-relaxed">{faq.a}</p>
               </div>
             ))}
           </div>
@@ -263,13 +263,13 @@ export default function CountryRemittancePage({ params }: Props) {
               <Link
                 key={c.slug}
                 href={`/send-money-to-kenya/${c.slug}`}
-                className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-xl px-4 py-3 hover:border-purple-500/30 transition-colors group"
+                className="flex items-center gap-3 bg-white/5 border border-white/10  px-4 py-3 hover:border-purple-500/30 transition-colors group"
               >
                 <FlagIcon countryCode={c.countryCode} size={36} />
-                <span className="text-stone-300 text-sm group-hover:text-white transition-colors flex-1 truncate">
+                <span className="text-zinc-300 text-sm group-hover:text-white transition-colors flex-1 truncate">
                   {c.country}
                 </span>
-                <ArrowRight className="w-3.5 h-3.5 text-stone-600 group-hover:text-purple-400 transition-colors flex-shrink-0" />
+                <ArrowRight className="w-3.5 h-3.5 text-zinc-600 group-hover:text-purple-400 transition-colors flex-shrink-0" />
               </Link>
             ))}
           </div>

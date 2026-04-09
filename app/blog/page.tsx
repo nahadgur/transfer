@@ -16,7 +16,7 @@ const categories = Array.from(new Set(blogPosts.map(post => post.category)))
 
 const categoryColors: Record<string, string> = {
   'Tax': 'bg-blue-500/20 text-blue-400 border-blue-500/30',
-  'Salary': 'bg-green-500/20 text-green-400 border-green-500/30',
+  'Salary': 'bg-[#ccff00]/10 text-[#ccff00] border-green-500/30',
   'NSSF': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
   'Pension': 'bg-pink-500/20 text-pink-400 border-pink-500/30',
   'Housing Levy': 'bg-orange-500/20 text-orange-400 border-orange-500/30',
@@ -25,7 +25,7 @@ const categoryColors: Record<string, string> = {
   'Tax Relief': 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
   'HELB': 'bg-teal-500/20 text-teal-400 border-teal-500/30',
   'KRA': 'bg-indigo-500/20 text-indigo-400 border-indigo-500/30',
-  'Transfer': 'bg-emerald-500/20 text-emerald-400 border-emerald-500/30',
+  'Transfer': 'bg-[#ccff00]/20 text-[#ccff00] border-[#ccff00]/30',
 }
 
 export default function BlogPage() {
@@ -37,18 +37,18 @@ export default function BlogPage() {
       {/* Hero Section */}
       <section className="relative py-16 px-4 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-emerald-600/10 rounded-full blur-3xl" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#ccff00]/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#ccff00]/10 rounded-full blur-3xl" />
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="flex items-center gap-2 mb-4">
-            <BookOpen className="w-6 h-6 text-emerald-400" />
-            <span className="text-emerald-400 font-medium">Transfer.co.ke Blog</span>
+            <BookOpen className="w-6 h-6 text-[#ccff00]" />
+            <span className="text-[#ccff00] font-medium">Transfer.co.ke Blog</span>
           </div>
           <h1 className="text-4xl md:text-5xl font-black text-white mb-4">
             Kenya Tax & Finance Guides
           </h1>
-          <p className="text-xl text-stone-400 max-w-2xl">
+          <p className="text-xl text-zinc-400 max-w-2xl">
             Expert guides on PAYE, NSSF, housing levy, salary breakdowns, and everything Kenyan employees and employers need to know.
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function BlogPage() {
             {categories.map(category => (
               <span
                 key={category}
-                className={`px-4 py-2 rounded-full text-sm font-medium border ${categoryColors[category] || 'bg-stone-500/20 text-stone-400 border-stone-500/30'}`}
+                className={`px-4 py-2 rounded-full text-sm font-medium border ${categoryColors[category] || 'bg-zinc-500/20 text-zinc-400 border-zinc-500/30'}`}
               >
                 {category}
               </span>
@@ -73,17 +73,17 @@ export default function BlogPage() {
       {/* Featured Posts */}
       <section className="px-4 py-8">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold text-white mb-6">Featured Articles</h2>
+          <h2 className="text-2xl font-space font-bold text-white mb-6">Featured Articles</h2>
           <div className="grid md:grid-cols-3 gap-6">
             {featuredPosts.map((post, index) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className={`group relative bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-2xl border border-white/10 overflow-hidden hover:border-emerald-500/50 transition-all ${index === 0 ? 'md:col-span-2' : ''}`}
+                className={`group relative bg-white/[0.02] border border-white/10 overflow-hidden hover:border-[#ccff00]/50 transition-all ${index === 0 ? 'md:col-span-2' : ''}`}
               >
                 {/* Featured Image */}
                 {post.featuredImage ? (
-                  <div className={`w-full overflow-hidden ${index === 0 ? 'h-52' : 'h-40'} bg-stone-800`}>
+                  <div className={`w-full overflow-hidden ${index === 0 ? 'h-52' : 'h-40'} bg-zinc-800`}>
                     <img
                       src={post.featuredImage}
                       alt={post.title}
@@ -91,22 +91,22 @@ export default function BlogPage() {
                     />
                   </div>
                 ) : (
-                  <div className={`w-full flex items-center justify-center ${index === 0 ? 'h-52' : 'h-40'} bg-gradient-to-br from-emerald-900/40 to-stone-800/60`}>
+                  <div className={`w-full flex items-center justify-center ${index === 0 ? 'h-52' : 'h-40'} bg-white/[0.03]`}>
                     <span className="text-4xl">💰</span>
                   </div>
                 )}
 
                 <div className="p-6">
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border mb-4 ${categoryColors[post.category] || 'bg-stone-500/20 text-stone-400 border-stone-500/30'}`}>
+                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border mb-4 ${categoryColors[post.category] || 'bg-zinc-500/20 text-zinc-400 border-zinc-500/30'}`}>
                     {post.category}
                   </span>
-                  <h3 className={`font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors ${index === 0 ? 'text-2xl' : 'text-xl'}`}>
+                  <h3 className={`font-bold text-white mb-3 group-hover:text-[#ccff00] transition-colors ${index === 0 ? 'text-2xl' : 'text-xl'}`}>
                     {post.title}
                   </h3>
-                  <p className={`text-stone-400 mb-4 ${index === 0 ? 'text-base line-clamp-3' : 'text-sm line-clamp-2'}`}>
+                  <p className={`text-zinc-400 mb-4 ${index === 0 ? 'text-base line-clamp-3' : 'text-sm line-clamp-2'}`}>
                     {post.metaDescription}
                   </p>
-                  <div className="flex items-center gap-2 text-emerald-400 text-sm font-medium">
+                  <div className="flex items-center gap-2 text-[#ccff00] text-xs font-space font-bold uppercase tracking-widest">
                     Read Article
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>
@@ -120,17 +120,17 @@ export default function BlogPage() {
       {/* All Posts */}
       <section className="px-4 py-12">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl font-bold text-white mb-6">All Articles</h2>
+          <h2 className="text-2xl font-space font-bold text-white mb-6">All Articles</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherPosts.map((post) => (
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl rounded-2xl border border-white/10 overflow-hidden hover:border-emerald-500/50 transition-all"
+                className="group bg-white/[0.02] border border-white/10 overflow-hidden hover:border-[#ccff00]/50 transition-all"
               >
                 {/* Thumbnail */}
                 {post.featuredImage ? (
-                  <div className="w-full h-40 overflow-hidden bg-stone-800">
+                  <div className="w-full h-40 overflow-hidden bg-zinc-800">
                     <img
                       src={post.featuredImage}
                       alt={post.title}
@@ -138,22 +138,22 @@ export default function BlogPage() {
                     />
                   </div>
                 ) : (
-                  <div className="w-full h-40 flex items-center justify-center bg-gradient-to-br from-emerald-900/40 to-stone-800/60">
+                  <div className="w-full h-40 flex items-center justify-center bg-white/[0.03]">
                     <span className="text-3xl">💰</span>
                   </div>
                 )}
 
                 <div className="p-6">
-                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border mb-3 ${categoryColors[post.category] || 'bg-stone-500/20 text-stone-400 border-stone-500/30'}`}>
+                  <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border mb-3 ${categoryColors[post.category] || 'bg-zinc-500/20 text-zinc-400 border-zinc-500/30'}`}>
                     {post.category}
                   </span>
-                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-emerald-400 transition-colors line-clamp-2">
+                  <h3 className="text-lg font-bold text-white mb-2 group-hover:text-[#ccff00] transition-colors line-clamp-2">
                     {post.title}
                   </h3>
-                  <p className="text-stone-400 text-sm mb-4 line-clamp-2">
+                  <p className="text-zinc-400 text-sm mb-4 line-clamp-2">
                     {post.metaDescription}
                   </p>
-                  <div className="flex items-center gap-2 text-emerald-400 text-sm font-medium">
+                  <div className="flex items-center gap-2 text-[#ccff00] text-xs font-space font-bold uppercase tracking-widest">
                     Read Article
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </div>

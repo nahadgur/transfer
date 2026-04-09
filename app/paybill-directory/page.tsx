@@ -51,7 +51,7 @@ export default function PaybillDirectoryPage() {
   }
 
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen bg-[#050505] py-8 px-4">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -60,14 +60,14 @@ export default function PaybillDirectoryPage() {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 rounded-full border border-emerald-500/20 mb-5">
-            <Hash className="w-4 h-4 text-emerald-400" />
-            <span className="text-emerald-400 text-sm font-medium">Updated April 2026</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#ccff00]/10 rounded-full border border-[#ccff00]/20 mb-5">
+            <Hash className="w-4 h-4 text-[#ccff00]" />
+            <span className="text-[#ccff00] text-xs font-space font-bold uppercase tracking-widest">Updated April 2026</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-black text-white mb-3">
             M-Pesa Paybill Directory
           </h1>
-          <p className="text-stone-400 max-w-xl mx-auto text-sm leading-relaxed">
+          <p className="text-zinc-400 max-w-xl mx-auto text-sm leading-relaxed">
             The most complete paybill and till number directory in Kenya. Search by company name
             or number, then tap to copy. Covers {paybillData.length}+ entries across{' '}
             {categoryStats.length} categories.
@@ -79,23 +79,23 @@ export default function PaybillDirectoryPage() {
           {categoryStats.map(({ category, count }) => (
             <div
               key={category}
-              className="bg-white/5 border border-white/10 rounded-xl p-3 text-center"
+              className="bg-white/[0.02] border border-white/10 p-3 text-center"
             >
-              <div className="text-xl font-bold text-emerald-400">{count}</div>
-              <div className="text-xs text-stone-400 mt-0.5">{category}</div>
+              <div className="text-xl font-bold text-[#ccff00]">{count}</div>
+              <div className="text-xs text-zinc-400 mt-0.5">{category}</div>
             </div>
           ))}
         </div>
 
         {/* Search */}
-        <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/10 rounded-2xl p-6">
+        <div className="bg-white/[0.02] border border-white/10 p-6">
           <PaybillSearch compact={false} />
         </div>
 
         {/* How to pay via paybill */}
-        <div className="mt-10 bg-white/5 border border-white/10 rounded-2xl p-6">
+        <div className="mt-10 bg-white/[0.02] border border-white/10 p-6">
           <h2 className="text-lg font-bold text-white mb-4">How to Pay via M-Pesa Paybill</h2>
-          <ol className="space-y-2 text-sm text-stone-400">
+          <ol className="space-y-2 text-sm text-zinc-400">
             {[
               'Dial *334# on your Safaricom line',
               'Select "Lipa na M-Pesa"',
@@ -106,7 +106,7 @@ export default function PaybillDirectoryPage() {
               'Enter your M-Pesa PIN and confirm',
             ].map((step, i) => (
               <li key={i} className="flex items-start gap-3">
-                <span className="w-5 h-5 bg-emerald-500/20 text-emerald-400 rounded-full text-xs flex items-center justify-center flex-shrink-0 mt-0.5 font-bold">
+                <span className="w-5 h-5 bg-[#ccff00]/20 text-[#ccff00] rounded-full text-xs flex items-center justify-center flex-shrink-0 mt-0.5 font-bold">
                   {i + 1}
                 </span>
                 {step}
@@ -116,40 +116,40 @@ export default function PaybillDirectoryPage() {
         </div>
 
         {/* Disclaimer */}
-        <p className="text-xs text-stone-600 text-center mt-6">
+        <p className="text-xs text-zinc-600 text-center mt-6">
           Paybill numbers are verified at time of publication but may change. Always confirm with
           the organisation before large transactions.
         </p>
       {/* Related tools */}
       <section className="mt-14 mb-2 max-w-4xl mx-auto px-4">
-        <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-4">Related tools</h2>
+        <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">Related tools</h2>
         <div className="grid sm:grid-cols-2 gap-3">
-          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🧮</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa Fee Calculator</p>
-              <p className="text-stone-500 text-xs mt-0.5">Calculate fees before paying</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Calculate fees before paying</p>
             </div>
           </Link>
-          <Link href="/ussd-codes" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/ussd-codes" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📱</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">USSD Codes</p>
-              <p className="text-stone-500 text-xs mt-0.5">Shortcodes for every M-Pesa action</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Shortcodes for every M-Pesa action</p>
             </div>
           </Link>
-          <Link href="/mpesa-status" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-status" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📡</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa System Status</p>
-              <p className="text-stone-500 text-xs mt-0.5">Check if M-Pesa is currently down</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Check if M-Pesa is currently down</p>
             </div>
           </Link>
-          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🏦</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa to Bank</p>
-              <p className="text-stone-500 text-xs mt-0.5">Transfer to your bank account</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Transfer to your bank account</p>
             </div>
           </Link>
         </div>

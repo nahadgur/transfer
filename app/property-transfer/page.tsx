@@ -49,37 +49,37 @@ export default function PropertyTransferPage() {
   const totalCost = stampDuty + legalFees + valuationFees + landSearchFee + registrationFee + consentFee + surveyFee + dischargeOfCharge
 
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen bg-[#050505] py-8 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Back button */}
-        <Link href="/" className="inline-flex items-center gap-2 text-stone-400 hover:text-white transition-colors mb-8">
+        <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#ccff00] transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />
           Back to all tools
         </Link>
 
         {/* Header */}
         <div className="text-center mb-10">
-          <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center mx-auto mb-4">
             <Home className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Property Transfer Calculator</h1>
-          <p className="text-stone-400">Calculate stamp duty, legal fees, and total cost to transfer property</p>
+          <h1 className="text-3xl md:text-4xl font-space font-bold text-white mb-2">Property Transfer Calculator</h1>
+          <p className="text-zinc-400">Calculate stamp duty, legal fees, and total cost to transfer property</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           {/* Input Section */}
           <div className="space-y-6">
-            <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6">
+            <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-6">
               <h2 className="text-lg font-semibold text-white mb-6">Property Details</h2>
 
               {/* Property Value */}
               <div className="mb-6">
-                <label className="block text-sm text-stone-400 mb-3">Property Value (KES)</label>
+                <label className="block text-sm text-zinc-400 mb-3">Property Value (KES)</label>
                 <input
                   type="number"
                   value={propertyValue}
                   onChange={(e) => setPropertyValue(Math.max(0, Number(e.target.value)))}
-                  className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white text-xl font-semibold focus:outline-none focus:border-red-500"
+                  className="w-full bg-white/10 border border-white/20  px-4 py-3 text-white text-xl font-semibold focus:outline-none focus:border-red-500"
                 />
                 <input
                   type="range"
@@ -90,7 +90,7 @@ export default function PropertyTransferPage() {
                   onChange={(e) => setPropertyValue(Number(e.target.value))}
                   className="w-full mt-4"
                 />
-                <div className="flex justify-between text-xs text-stone-500 mt-1">
+                <div className="flex justify-between text-xs text-zinc-500 mt-1">
                   <span>KES 1M</span>
                   <span>KES 100M</span>
                 </div>
@@ -98,16 +98,16 @@ export default function PropertyTransferPage() {
 
               {/* Location */}
               <div className="mb-6">
-                <label className="block text-sm text-stone-400 mb-3">Location</label>
+                <label className="block text-sm text-zinc-400 mb-3">Location</label>
                 <div className="grid grid-cols-2 gap-2">
                   {LOCATIONS.map((loc) => (
                     <button
                       key={loc.id}
                       onClick={() => setLocation(loc.id)}
-                      className={`p-3 rounded-xl border transition-all text-sm font-medium flex items-center gap-2 ${
+                      className={`p-3 border transition-all text-sm font-medium flex items-center gap-2 ${
                         location === loc.id
                           ? 'bg-red-500/20 border-red-500 text-red-400'
-                          : 'bg-white/5 border-white/10 text-stone-400 hover:border-white/20'
+                          : 'bg-white/5 border-white/10 text-zinc-400 hover:border-white/20'
                       }`}
                     >
                       <MapPin className="w-4 h-4" />
@@ -115,23 +115,23 @@ export default function PropertyTransferPage() {
                     </button>
                   ))}
                 </div>
-                <p className="text-xs text-stone-500 mt-2">
+                <p className="text-xs text-zinc-500 mt-2">
                   Rural areas: 2% stamp duty | Urban: 4% stamp duty
                 </p>
               </div>
 
               {/* Property Type */}
               <div className="mb-6">
-                <label className="block text-sm text-stone-400 mb-3">Property Type</label>
+                <label className="block text-sm text-zinc-400 mb-3">Property Type</label>
                 <div className="grid grid-cols-2 gap-2">
                   {PROPERTY_TYPES.map((type) => (
                     <button
                       key={type.id}
                       onClick={() => setPropertyType(type.id)}
-                      className={`p-3 rounded-xl border transition-all text-sm font-medium ${
+                      className={`p-3 border transition-all text-sm font-medium ${
                         propertyType === type.id
                           ? 'bg-red-500/20 border-red-500 text-red-400'
-                          : 'bg-white/5 border-white/10 text-stone-400 hover:border-white/20'
+                          : 'bg-white/5 border-white/10 text-zinc-400 hover:border-white/20'
                       }`}
                     >
                       {type.name}
@@ -149,21 +149,21 @@ export default function PropertyTransferPage() {
                     onChange={(e) => setHasLoan(e.target.checked)}
                     className="w-5 h-5 rounded border-white/20 bg-white/10 text-red-500 focus:ring-red-500"
                   />
-                  <span className="text-stone-300">Property has existing mortgage/charge</span>
+                  <span className="text-zinc-300">Property has existing mortgage/charge</span>
                 </label>
               </div>
             </div>
           </div>
 
           {/* Results Section */}
-          <div className="bg-gradient-to-br from-red-600/20 to-red-900/20 backdrop-blur-xl rounded-2xl border border-red-500/20 p-6">
+          <div className="bg-gradient-to-br from-red-600/20 to-red-900/20 backdrop-blur-xl  border border-red-500/20 p-6">
             <h2 className="text-lg font-semibold text-white mb-6">Cost Breakdown</h2>
 
             <div className="space-y-3">
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <div>
-                  <span className="text-stone-400">Stamp Duty</span>
-                  <span className="text-xs text-stone-500 block">
+                  <span className="text-zinc-400">Stamp Duty</span>
+                  <span className="text-xs text-zinc-500 block">
                     ({selectedLocation.stampDutyRate * 100}% - {selectedLocation.name})
                   </span>
                 </div>
@@ -172,61 +172,61 @@ export default function PropertyTransferPage() {
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
                 <div>
-                  <span className="text-stone-400">Legal/Conveyancing Fees</span>
-                  <span className="text-xs text-stone-500 block">(1% of value, min KES 50,000)</span>
+                  <span className="text-zinc-400">Legal/Conveyancing Fees</span>
+                  <span className="text-xs text-zinc-500 block">(1% of value, min KES 50,000)</span>
                 </div>
                 <span className="text-white font-semibold">{formatCurrency(legalFees)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">Valuation Fees</span>
+                <span className="text-zinc-400">Valuation Fees</span>
                 <span className="text-white font-semibold">{formatCurrency(valuationFees)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">Land Search Fee</span>
+                <span className="text-zinc-400">Land Search Fee</span>
                 <span className="text-white font-semibold">{formatCurrency(landSearchFee)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">Registration Fee</span>
+                <span className="text-zinc-400">Registration Fee</span>
                 <span className="text-white font-semibold">{formatCurrency(registrationFee)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">Consent to Transfer</span>
+                <span className="text-zinc-400">Consent to Transfer</span>
                 <span className="text-white font-semibold">{formatCurrency(consentFee)}</span>
               </div>
 
               {surveyFee > 0 && (
                 <div className="flex justify-between items-center py-2 border-b border-white/10">
-                  <span className="text-stone-400">Survey Fee</span>
+                  <span className="text-zinc-400">Survey Fee</span>
                   <span className="text-white font-semibold">{formatCurrency(surveyFee)}</span>
                 </div>
               )}
 
               {hasLoan && (
                 <div className="flex justify-between items-center py-2 border-b border-white/10">
-                  <span className="text-stone-400">Discharge of Charge</span>
+                  <span className="text-zinc-400">Discharge of Charge</span>
                   <span className="text-white font-semibold">{formatCurrency(dischargeOfCharge)}</span>
                 </div>
               )}
 
-              <div className="flex justify-between items-center py-4 bg-white/5 rounded-xl px-4 mt-4">
+              <div className="flex justify-between items-center py-4 bg-white/5  px-4 mt-4">
                 <span className="text-white font-medium">Total Transfer Cost</span>
                 <span className="text-2xl font-bold text-red-400">{formatCurrency(totalCost)}</span>
               </div>
 
               <div className="flex justify-between items-center py-2 text-sm">
-                <span className="text-stone-500">As % of property value</span>
-                <span className="text-stone-400">{((totalCost / propertyValue) * 100).toFixed(2)}%</span>
+                <span className="text-zinc-500">As % of property value</span>
+                <span className="text-zinc-400">{((totalCost / propertyValue) * 100).toFixed(2)}%</span>
               </div>
             </div>
           </div>
         </div>
 
         {/* Required Documents */}
-        <div className="mt-12 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6">
+        <div className="mt-12 bg-white/5 backdrop-blur-xl border border-white/10 p-6">
           <h2 className="text-lg font-semibold text-white mb-4">📄 Required Documents</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div>
@@ -241,8 +241,8 @@ export default function PropertyTransferPage() {
                   'Land Search Certificate',
                   'Land Rates Clearance',
                 ].map((doc) => (
-                  <li key={doc} className="flex items-center gap-2 text-sm text-stone-300">
-                    <CheckCircle className="w-4 h-4 text-emerald-400" />
+                  <li key={doc} className="flex items-center gap-2 text-sm text-zinc-300">
+                    <CheckCircle className="w-4 h-4 text-[#ccff00]" />
                     {doc}
                   </li>
                 ))}
@@ -259,7 +259,7 @@ export default function PropertyTransferPage() {
                   'Survey map (for land)',
                   'Succession certificate (if inherited)',
                 ].map((doc) => (
-                  <li key={doc} className="flex items-center gap-2 text-sm text-stone-300">
+                  <li key={doc} className="flex items-center gap-2 text-sm text-zinc-300">
                     <CheckCircle className="w-4 h-4 text-amber-400" />
                     {doc}
                   </li>

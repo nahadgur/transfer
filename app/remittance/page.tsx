@@ -159,43 +159,43 @@ export default function RemittancePage() {
   }
 
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen bg-[#050505] py-8 px-4">
       <div className="max-w-4xl mx-auto">
 
-        <Link href="/" className="inline-flex items-center gap-2 text-stone-400 hover:text-white transition-colors mb-8 text-sm">
+        <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#ccff00] transition-colors mb-8 text-sm">
           <ArrowLeft className="w-4 h-4" /> Back to all tools
         </Link>
 
         {/* Header */}
         <div className="text-center mb-10">
-          <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
             <Globe className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Remittance Comparison Engine</h1>
-          <p className="text-stone-400 text-sm">
+          <h1 className="text-3xl md:text-4xl font-space font-bold text-white mb-2">Remittance Comparison Engine</h1>
+          <p className="text-zinc-400 text-sm">
             See exactly how much KES your recipient gets — ranked by who delivers the most
           </p>
-          <p className="text-xs text-stone-600 mt-1 flex items-center justify-center gap-1">
+          <p className="text-xs text-zinc-600 mt-1 flex items-center justify-center gap-1">
             <TrendingUp className="w-3 h-3" />
             Rates updated {RATE_UPDATED} · Mid-market: 1 {currency} = {midRate.toFixed(2)} KES
           </p>
         </div>
 
         {/* Controls */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-6">
+        <div className="bg-white/[0.02] border border-white/10 p-6 mb-6">
           <div className="grid sm:grid-cols-2 gap-6">
             {/* Currency selector */}
             <div>
-              <label className="block text-sm text-stone-400 mb-3 font-medium">Sending from</label>
+              <label className="block text-sm text-zinc-400 mb-3 font-medium">Sending from</label>
               <div className="flex flex-wrap gap-2">
                 {CORRIDORS.map(c => (
                   <button
                     key={c.code}
                     onClick={() => handleCurrencyChange(c.code)}
-                    className={`px-4 py-2 rounded-xl text-sm font-semibold border transition-all ${
+                    className={`px-4 py-2  text-sm font-semibold border transition-all ${
                       currency === c.code
                         ? 'bg-purple-500/20 border-purple-500 text-purple-300'
-                        : 'bg-white/5 border-white/10 text-stone-400 hover:border-white/20'
+                        : 'bg-white/5 border-white/10 text-zinc-400 hover:border-white/20'
                     }`}
                   >
                     {c.from}
@@ -206,11 +206,11 @@ export default function RemittancePage() {
 
             {/* Amount */}
             <div>
-              <label className="block text-sm text-stone-400 mb-3 font-medium">
+              <label className="block text-sm text-zinc-400 mb-3 font-medium">
                 Amount ({currency})
               </label>
               <div className="flex items-center gap-2">
-                <span className="text-stone-500 font-bold text-sm shrink-0">{currency}</span>
+                <span className="text-zinc-500 font-bold text-sm shrink-0">{currency}</span>
                 <input
                   type="number"
                   min={10}
@@ -220,7 +220,7 @@ export default function RemittancePage() {
                     const n = Number(e.target.value)
                     if (!isNaN(n) && n >= 1) setAmount(n)
                   }}
-                  className="flex-1 bg-white/10 border border-white/20 rounded-xl px-4 py-2.5 text-white text-xl font-bold focus:outline-none focus:border-purple-500 transition-colors"
+                  className="flex-1 bg-white/10 border border-white/20  px-4 py-2.5 text-white text-xl font-bold focus:outline-none focus:border-purple-500 transition-colors"
                 />
               </div>
               <div className="flex gap-2 mt-3">
@@ -229,7 +229,7 @@ export default function RemittancePage() {
                     key={q}
                     onClick={() => { setAmount(q); setRawInput(String(q)) }}
                     className={`flex-1 py-1.5 rounded-lg text-xs transition-colors ${
-                      amount === q ? 'bg-purple-500/30 text-purple-300 border border-purple-500/50' : 'bg-white/5 text-stone-400 hover:bg-white/10'
+                      amount === q ? 'bg-purple-500/30 text-purple-300 border border-purple-500/50' : 'bg-white/5 text-zinc-400 hover:bg-white/10'
                     }`}
                   >
                     {q}
@@ -241,22 +241,22 @@ export default function RemittancePage() {
         </div>
 
         {/* Winner banner */}
-        <div className="bg-gradient-to-r from-emerald-600/20 to-emerald-900/20 border border-emerald-500/30 rounded-2xl p-5 mb-6 flex items-start gap-4">
-          <div className="w-10 h-10 bg-emerald-500 rounded-xl flex items-center justify-center shrink-0">
+        <div className=" border border-[#ccff00]/30  p-5 mb-6 flex items-start gap-4">
+          <div className="w-10 h-10 bg-[#ccff00]  flex items-center justify-center shrink-0">
             <Trophy className="w-5 h-5 text-white" />
           </div>
           <div className="min-w-0">
-            <p className="text-xs text-emerald-400 font-semibold uppercase tracking-wider mb-0.5">Winner this week</p>
+            <p className="text-xs text-[#ccff00] font-semibold uppercase tracking-wider mb-0.5">Winner this week</p>
             <p className="text-white font-bold text-lg leading-tight">
               {winner.name} delivers the most KES — {fmtKES(winner.result.received)}
             </p>
             {second && savingVsWinner > 0 && (
-              <p className="text-stone-400 text-sm mt-1">
+              <p className="text-zinc-400 text-sm mt-1">
                 {savingVsWinner.toLocaleString('en-KE', { maximumFractionDigits: 0 })} KES more than {second.name} on {currency} {amount}
               </p>
             )}
             {winner.promoNote && (
-              <p className="text-emerald-400/70 text-xs mt-1.5">{winner.promoNote}</p>
+              <p className="text-[#ccff00]/70 text-xs mt-1.5">{winner.promoNote}</p>
             )}
           </div>
         </div>
@@ -268,19 +268,19 @@ export default function RemittancePage() {
             return (
               <div
                 key={p.name}
-                className={`rounded-2xl border p-5 transition-all ${
+                className={` border p-5 transition-all ${
                   isWinner
-                    ? 'border-emerald-500/40 bg-gradient-to-r from-white/10 to-white/5'
+                    ? 'border-[#ccff00]/40 bg-gradient-to-r from-white/10 to-white/5'
                     : 'border-white/10 bg-white/5'
                 }`}
               >
                 <div className="flex items-start gap-4">
                   {/* Rank + logo */}
                   <div className="shrink-0 flex flex-col items-center gap-1">
-                    <span className={`text-xs font-bold ${isWinner ? 'text-emerald-400' : 'text-stone-600'}`}>
+                    <span className={`text-xs font-bold ${isWinner ? 'text-[#ccff00]' : 'text-zinc-600'}`}>
                       #{i + 1}
                     </span>
-                    <div className={`w-10 h-10 ${p.bgColor} rounded-xl flex items-center justify-center text-white font-black text-base`}>
+                    <div className={`w-10 h-10 ${p.bgColor}  flex items-center justify-center text-white font-black text-base`}>
                       {p.initial}
                     </div>
                   </div>
@@ -291,21 +291,21 @@ export default function RemittancePage() {
                         <div className="flex items-center gap-2">
                           <h3 className="text-white font-bold">{p.name}</h3>
                           {isWinner && (
-                            <span className="text-xs bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded-full">Best value</span>
+                            <span className="text-xs bg-[#ccff00]/20 text-[#ccff00] border border-[#ccff00]/30 px-2 py-0.5 rounded-full">Best value</span>
                           )}
                         </div>
                         <div className="flex items-center gap-1 mt-0.5">
                           {[1,2,3,4,5].map(s => (
-                            <Star key={s} className={`w-3 h-3 ${s <= Math.round(p.rating) ? 'text-yellow-400 fill-yellow-400' : 'text-stone-600'}`} />
+                            <Star key={s} className={`w-3 h-3 ${s <= Math.round(p.rating) ? 'text-yellow-400 fill-yellow-400' : 'text-zinc-600'}`} />
                           ))}
-                          <span className="text-xs text-stone-500 ml-1">{p.rating}</span>
+                          <span className="text-xs text-zinc-500 ml-1">{p.rating}</span>
                         </div>
                       </div>
 
                       {/* KES received — the headline number */}
                       <div className="text-right shrink-0">
-                        <span className="text-xs text-stone-500">Recipient gets</span>
-                        <div className={`text-xl font-black ${isWinner ? 'text-emerald-400' : 'text-white'}`}>
+                        <span className="text-xs text-zinc-500">Recipient gets</span>
+                        <div className={`text-xl font-black ${isWinner ? 'text-[#ccff00]' : 'text-white'}`}>
                           {fmtKES(p.result.received)}
                         </div>
                       </div>
@@ -314,24 +314,24 @@ export default function RemittancePage() {
                     {/* Detail grid */}
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
                       <div className="bg-white/5 rounded-lg p-2">
-                        <div className="text-stone-500 mb-0.5">Transfer fee</div>
-                        <div className="text-stone-300 font-semibold">
+                        <div className="text-zinc-500 mb-0.5">Transfer fee</div>
+                        <div className="text-zinc-300 font-semibold">
                           {p.result.totalFee === 0 ? 'Free' : fmtCurr(p.result.totalFee)}
                         </div>
                       </div>
                       <div className="bg-white/5 rounded-lg p-2">
-                        <div className="text-stone-500 mb-0.5">FX margin</div>
-                        <div className={`font-semibold ${p.fxMargin === 0 ? 'text-emerald-400' : 'text-stone-300'}`}>
+                        <div className="text-zinc-500 mb-0.5">FX margin</div>
+                        <div className={`font-semibold ${p.fxMargin === 0 ? 'text-[#ccff00]' : 'text-zinc-300'}`}>
                           {p.fxMargin === 0 ? 'None' : fmtPct(p.fxMargin)}
                         </div>
                       </div>
                       <div className="bg-white/5 rounded-lg p-2">
-                        <div className="text-stone-500 mb-0.5 flex items-center gap-1"><Clock className="w-2.5 h-2.5" />Speed</div>
-                        <div className="text-stone-300 font-semibold">{p.speed}</div>
+                        <div className="text-zinc-500 mb-0.5 flex items-center gap-1"><Clock className="w-2.5 h-2.5" />Speed</div>
+                        <div className="text-zinc-300 font-semibold">{p.speed}</div>
                       </div>
                       <div className="bg-white/5 rounded-lg p-2">
-                        <div className="text-stone-500 mb-0.5">True cost</div>
-                        <div className="text-stone-300 font-semibold">
+                        <div className="text-zinc-500 mb-0.5">True cost</div>
+                        <div className="text-zinc-300 font-semibold">
                           {fmtPct(p.result.costPct)}
                         </div>
                       </div>
@@ -340,10 +340,10 @@ export default function RemittancePage() {
                     {/* Delivery + promo */}
                     <div className="flex flex-wrap items-center gap-2 mt-3">
                       {p.delivery.map(d => (
-                        <span key={d} className="text-xs bg-white/5 border border-white/10 text-stone-400 px-2 py-0.5 rounded-full">{d}</span>
+                        <span key={d} className="text-xs bg-white/5 border border-white/10 text-zinc-400 px-2 py-0.5 rounded-full">{d}</span>
                       ))}
                       {p.promoNote && (
-                        <span className="text-xs text-emerald-400/70 italic">{p.promoNote}</span>
+                        <span className="text-xs text-[#ccff00]/70 italic">{p.promoNote}</span>
                       )}
                     </div>
                   </div>
@@ -354,45 +354,45 @@ export default function RemittancePage() {
         </div>
 
         {/* Disclaimer */}
-        <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 flex gap-3">
+        <div className="bg-amber-500/10 border border-amber-500/20  p-4 flex gap-3">
           <AlertCircle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-          <p className="text-xs text-stone-400 leading-relaxed">
+          <p className="text-xs text-zinc-400 leading-relaxed">
             <span className="text-amber-400 font-semibold">Indicative rates only. </span>
             Actual amounts vary with live exchange rates and provider-specific conditions. Always check the provider&apos;s app for the exact amount before sending.
-            Rates and fees last updated <strong className="text-stone-300">{RATE_UPDATED}</strong>.
+            Rates and fees last updated <strong className="text-zinc-300">{RATE_UPDATED}</strong>.
           </p>
         </div>
 
       {/* Related tools */}
       <section className="mt-14 mb-2 max-w-4xl mx-auto px-4">
-        <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-4">Related tools</h2>
+        <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">Related tools</h2>
         <div className="grid sm:grid-cols-2 gap-3">
-          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🧮</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa Fee Calculator</p>
-              <p className="text-stone-500 text-xs mt-0.5">Calculate costs once money arrives</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Calculate costs once money arrives</p>
             </div>
           </Link>
-          <Link href="/send-money-to-kenya" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/send-money-to-kenya" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">✈️</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">Send Money to Kenya</p>
-              <p className="text-stone-500 text-xs mt-0.5">Country-by-country corridor guides</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Country-by-country corridor guides</p>
             </div>
           </Link>
-          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🏦</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa to Bank</p>
-              <p className="text-stone-500 text-xs mt-0.5">Move funds from M-Pesa to your account</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Move funds from M-Pesa to your account</p>
             </div>
           </Link>
-          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📋</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">Paybill Directory</p>
-              <p className="text-stone-500 text-xs mt-0.5">Pay bills directly on arrival</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Pay bills directly on arrival</p>
             </div>
           </Link>
         </div>

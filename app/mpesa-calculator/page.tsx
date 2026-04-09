@@ -65,7 +65,7 @@ export default function MpesaCalculator() {
   const overLimit    = amount > 150000
 
   const results = [
-    { id: 'send',     label: 'Send to M-Pesa',      sublabel: 'Registered recipient', icon: Send,      fee: sendFeeReg,  color: 'emerald', note: 'Recipient must have M-Pesa' },
+    { id: 'send',     label: 'Send to M-Pesa',      sublabel: 'Registered recipient', icon: Send,      fee: sendFeeReg,  color: 'lime', note: 'Recipient must have M-Pesa' },
     { id: 'withdraw', label: 'Withdraw at Agent',    sublabel: 'Cash out at agent',    icon: Wallet,    fee: withdrawFee, color: 'amber',   note: 'Collect cash from M-Pesa agent' },
     { id: 'paybill',  label: 'Paybill / Bank / Till',sublabel: 'Bill or bank deposit', icon: Building2, fee: paybillFee,  color: 'blue',    note: 'Banks, utilities, government — always free' },
   ]
@@ -80,45 +80,45 @@ export default function MpesaCalculator() {
   }
 
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen bg-[#050505] py-8 px-4">
       <div className="max-w-4xl mx-auto">
-        <Link href="/" className="inline-flex items-center gap-2 text-stone-400 hover:text-white transition-colors mb-8 text-sm">
+        <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#ccff00] transition-colors mb-8 text-sm">
           <ArrowLeft className="w-4 h-4" /> Back to all tools
         </Link>
 
         <div className="text-center mb-10">
-          <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-[#ccff00]/10 flex items-center justify-center mx-auto mb-4">
             <Smartphone className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">M-Pesa Fee Calculator</h1>
-          <p className="text-stone-400 text-sm">Enter an amount — compare all three methods side by side</p>
+          <h1 className="text-3xl md:text-4xl font-space font-bold text-white mb-2">M-Pesa Fee Calculator</h1>
+          <p className="text-zinc-400 text-sm">Enter an amount — compare all three methods side by side</p>
         </div>
 
         {/* Amount input */}
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-6 mb-6">
-          <label className="block text-sm text-stone-400 mb-3 font-medium">Amount (KES)</label>
+        <div className="bg-white/[0.02] border border-white/10 p-6 mb-6">
+          <label className="block text-sm text-zinc-400 mb-3 font-medium">Amount (KES)</label>
           <div className="flex items-center gap-3 mb-4">
-            <span className="text-stone-500 font-semibold text-lg shrink-0">KES</span>
+            <span className="text-zinc-500 font-semibold text-lg shrink-0">KES</span>
             <input
               type="number" min={1} max={150000}
               value={rawInput}
               onChange={e => handleInput(e.target.value)}
-              className="flex-1 bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white text-2xl font-bold focus:outline-none focus:border-emerald-500 transition-colors"
+              className="flex-1 bg-white/10 border border-white/20  px-4 py-3 text-white text-2xl font-bold focus:outline-none focus:border-[#ccff00] transition-colors"
             />
           </div>
           <input
             type="range" min={100} max={150000} step={100}
             value={Math.min(amount, 150000)}
             onChange={e => { const n = Number(e.target.value); setAmount(n); setRawInput(String(n)) }}
-            className="w-full accent-emerald-500 mb-1"
+            className="w-full accent-[#ccff00] mb-1"
           />
-          <div className="flex justify-between text-xs text-stone-600 mb-4">
+          <div className="flex justify-between text-xs text-zinc-600 mb-4">
             <span>KES 100</span><span>KES 150,000</span>
           </div>
           <div className="flex flex-wrap gap-2">
             {QUICK.map(q => (
               <button key={q} onClick={() => { setAmount(q); setRawInput(String(q)) }}
-                className={`px-3 py-1.5 rounded-lg text-xs transition-colors ${amount === q ? 'bg-emerald-500/30 text-emerald-300 border border-emerald-500/50' : 'bg-white/5 text-stone-400 hover:bg-white/10'}`}>
+                className={`px-3 py-1.5 rounded-lg text-xs transition-colors ${amount === q ? 'bg-[#ccff00]/30 text-[#b3e600] border border-[#ccff00]/50' : 'bg-white/5 text-zinc-400 hover:bg-white/10'}`}>
                 {fmt(q)}
               </button>
             ))}
@@ -126,7 +126,7 @@ export default function MpesaCalculator() {
         </div>
 
         {overLimit && (
-          <div className="mb-6 bg-red-500/10 border border-red-500/30 rounded-xl p-4 text-sm text-red-400 flex gap-2">
+          <div className="mb-6 bg-red-500/10 border border-red-500/30  p-4 text-sm text-red-400 flex gap-2">
             <Info className="w-4 h-4 shrink-0 mt-0.5" />
             M-Pesa maximum is KES 150,000 per transaction. Use RTGS or EFT via your bank for larger amounts.
           </div>
@@ -140,39 +140,39 @@ export default function MpesaCalculator() {
                 const isCheapest = r.fee !== null && r.fee === minFee
                 const isFree     = r.fee === 0
                 const isNull     = r.fee === null
-                const colorMap   = { emerald: { ring: 'border-emerald-500/50 bg-gradient-to-b from-emerald-500/10 to-emerald-900/10', icon: 'bg-emerald-500/20', text: 'text-emerald-400' }, amber: { ring: 'border-amber-500/50 bg-gradient-to-b from-amber-500/10 to-amber-900/10', icon: 'bg-amber-500/20', text: 'text-amber-400' }, blue: { ring: 'border-blue-500/50 bg-gradient-to-b from-blue-500/10 to-blue-900/10', icon: 'bg-blue-500/20', text: 'text-blue-400' } } as const
+                const colorMap   = { lime: { ring: 'border-[#ccff00]/50 bg-white/[0.04]', icon: 'bg-[#ccff00]/20', text: 'text-[#ccff00]' }, amber: { ring: 'border-amber-500/50 bg-gradient-to-b from-amber-500/10 to-amber-900/10', icon: 'bg-amber-500/20', text: 'text-amber-400' }, blue: { ring: 'border-blue-500/50 bg-gradient-to-b from-blue-500/10 to-blue-900/10', icon: 'bg-blue-500/20', text: 'text-blue-400' } } as const
                 const c = colorMap[r.color as keyof typeof colorMap]
                 return (
-                  <div key={r.id} className={`relative rounded-2xl border p-5 transition-all ${isCheapest ? c.ring : 'border-white/10 bg-white/5'}`}>
+                  <div key={r.id} className={`relative  border p-5 transition-all ${isCheapest ? c.ring : 'border-white/10 bg-white/5'}`}>
                     {isCheapest && (
                       <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
-                        <span className="inline-flex items-center gap-1 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full">
+                        <span className="inline-flex items-center gap-1 bg-[#ccff00] text-white text-xs font-bold px-3 py-1 rounded-full">
                           <Trophy className="w-3 h-3" /> Cheapest
                         </span>
                       </div>
                     )}
-                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center mb-3 ${c.icon}`}>
+                    <div className={`w-10 h-10  flex items-center justify-center mb-3 ${c.icon}`}>
                       <r.icon className={`w-5 h-5 ${c.text}`} />
                     </div>
                     <h3 className="text-white font-bold text-sm mb-0.5">{r.label}</h3>
-                    <p className="text-stone-500 text-xs mb-4">{r.sublabel}</p>
+                    <p className="text-zinc-500 text-xs mb-4">{r.sublabel}</p>
                     {isNull ? (
-                      <p className="text-stone-600 text-sm">Out of range</p>
+                      <p className="text-zinc-600 text-sm">Out of range</p>
                     ) : (
                       <>
                         <div className="mb-1">
-                          <span className="text-xs text-stone-500">Fee</span>
-                          <div className={`text-2xl font-black mt-0.5 ${isFree ? 'text-emerald-400' : c.text}`}>
+                          <span className="text-xs text-zinc-500">Fee</span>
+                          <div className={`text-2xl font-black mt-0.5 ${isFree ? 'text-[#ccff00]' : c.text}`}>
                             {isFree ? 'FREE' : fmt(r.fee!)}
                           </div>
                         </div>
                         <div className="border-t border-white/10 pt-3 mt-3">
-                          <span className="text-xs text-stone-500">Total needed</span>
-                          <div className="text-sm font-bold text-stone-300 mt-0.5">{fmt(amount + (r.fee ?? 0))}</div>
+                          <span className="text-xs text-zinc-500">Total needed</span>
+                          <div className="text-sm font-bold text-zinc-300 mt-0.5">{fmt(amount + (r.fee ?? 0))}</div>
                         </div>
                       </>
                     )}
-                    <p className="text-xs text-stone-600 mt-3 leading-relaxed">{r.note}</p>
+                    <p className="text-xs text-zinc-600 mt-3 leading-relaxed">{r.note}</p>
                   </div>
                 )
               })}
@@ -180,9 +180,9 @@ export default function MpesaCalculator() {
 
             {/* Unregistered note */}
             {sendFeeUnreg !== null && sendFeeReg !== null && sendFeeUnreg > sendFeeReg && (
-              <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 mb-4 flex gap-2 text-sm">
+              <div className="bg-amber-500/10 border border-amber-500/20  p-4 mb-4 flex gap-2 text-sm">
                 <Info className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" />
-                <span className="text-stone-400">
+                <span className="text-zinc-400">
                   <span className="text-amber-400 font-semibold">Sending to an unregistered number?</span>{' '}
                   Fee is {fmt(sendFeeUnreg)} — {fmt(sendFeeUnreg - sendFeeReg)} more. Ask them to register for M-Pesa first.
                 </span>
@@ -191,9 +191,9 @@ export default function MpesaCalculator() {
 
             {/* Paybill tip */}
             {sendFeeReg !== null && sendFeeReg > 0 && (
-              <div className="bg-blue-500/10 border border-blue-500/20 rounded-xl p-4 mb-6 flex gap-2 text-sm">
+              <div className="bg-blue-500/10 border border-blue-500/20  p-4 mb-6 flex gap-2 text-sm">
                 <Info className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
-                <span className="text-stone-400">
+                <span className="text-zinc-400">
                   <span className="text-blue-400 font-semibold">Bank deposit tip: </span>
                   If the recipient has a bank account, use Paybill instead of Send Money — it&apos;s free. Save {fmt(sendFeeReg)} on this transaction.
                 </span>
@@ -204,21 +204,21 @@ export default function MpesaCalculator() {
 
         {/* Fee tables */}
         <div className="grid sm:grid-cols-2 gap-6">
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-5 overflow-x-auto">
+          <div className="bg-white/[0.02] border border-white/10 p-5 overflow-x-auto">
             <h2 className="text-sm font-bold text-white mb-4">Send Money — Full Fee Table (KES)</h2>
             <table className="w-full text-xs">
               <thead><tr className="border-b border-white/10">
-                <th className="text-left py-2 text-stone-500">Amount Range</th>
-                <th className="text-right py-2 text-stone-500">Registered</th>
-                <th className="text-right py-2 text-stone-500">Unregistered</th>
+                <th className="text-left py-2 text-zinc-500">Amount Range</th>
+                <th className="text-right py-2 text-zinc-500">Registered</th>
+                <th className="text-right py-2 text-zinc-500">Unregistered</th>
               </tr></thead>
               <tbody>
                 {MPESA_SEND_FEES.map((t, i) => {
                   const active = amount >= t.min && amount <= t.max
                   return (
-                    <tr key={i} className={`border-b border-white/5 ${active ? 'bg-emerald-500/10' : 'hover:bg-white/5'}`}>
-                      <td className={`py-2 ${active ? 'text-emerald-300 font-semibold' : 'text-stone-400'}`}>{t.min.toLocaleString()}–{t.max.toLocaleString()}</td>
-                      <td className="py-2 text-right text-emerald-400">{t.registered === 0 ? 'Free' : t.registered}</td>
+                    <tr key={i} className={`border-b border-white/5 ${active ? 'bg-[#ccff00]/10' : 'hover:bg-white/5'}`}>
+                      <td className={`py-2 ${active ? 'text-[#b3e600] font-semibold' : 'text-zinc-400'}`}>{t.min.toLocaleString()}–{t.max.toLocaleString()}</td>
+                      <td className="py-2 text-right text-[#ccff00]">{t.registered === 0 ? 'Free' : t.registered}</td>
                       <td className="py-2 text-right text-amber-400">{t.unregistered === 0 ? 'Free' : t.unregistered}</td>
                     </tr>
                   )
@@ -227,19 +227,19 @@ export default function MpesaCalculator() {
             </table>
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-2xl p-5 overflow-x-auto">
+          <div className="bg-white/[0.02] border border-white/10 p-5 overflow-x-auto">
             <h2 className="text-sm font-bold text-white mb-4">Withdraw at Agent — Full Fee Table (KES)</h2>
             <table className="w-full text-xs">
               <thead><tr className="border-b border-white/10">
-                <th className="text-left py-2 text-stone-500">Amount Range</th>
-                <th className="text-right py-2 text-stone-500">Fee</th>
+                <th className="text-left py-2 text-zinc-500">Amount Range</th>
+                <th className="text-right py-2 text-zinc-500">Fee</th>
               </tr></thead>
               <tbody>
                 {MPESA_WITHDRAW_FEES.map((t, i) => {
                   const active = amount >= t.min && amount <= t.max
                   return (
                     <tr key={i} className={`border-b border-white/5 ${active ? 'bg-amber-500/10' : 'hover:bg-white/5'}`}>
-                      <td className={`py-2 ${active ? 'text-amber-300 font-semibold' : 'text-stone-400'}`}>{t.min.toLocaleString()}–{t.max.toLocaleString()}</td>
+                      <td className={`py-2 ${active ? 'text-amber-300 font-semibold' : 'text-zinc-400'}`}>{t.min.toLocaleString()}–{t.max.toLocaleString()}</td>
                       <td className="py-2 text-right text-amber-400">{t.fee === 0 ? 'Free' : t.fee}</td>
                     </tr>
                   )
@@ -251,34 +251,34 @@ export default function MpesaCalculator() {
 
       {/* Related tools */}
       <section className="mt-14 mb-2 max-w-4xl mx-auto px-4">
-        <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-4">Related tools</h2>
+        <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">Related tools</h2>
         <div className="grid sm:grid-cols-2 gap-3">
-          <Link href="/remittance" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/remittance" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🌍</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">Remittance Comparison</p>
-              <p className="text-stone-500 text-xs mt-0.5">Best providers for sending money abroad</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Best providers for sending money abroad</p>
             </div>
           </Link>
-          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📋</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">Paybill Directory</p>
-              <p className="text-stone-500 text-xs mt-0.5">Find any Paybill number in Kenya</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Find any Paybill number in Kenya</p>
             </div>
           </Link>
-          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🏦</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa to Bank Guide</p>
-              <p className="text-stone-500 text-xs mt-0.5">Transfer to Equity, KCB, Coop and more</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Transfer to Equity, KCB, Coop and more</p>
             </div>
           </Link>
-          <Link href="/ussd-codes" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/ussd-codes" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📱</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa USSD Codes</p>
-              <p className="text-stone-500 text-xs mt-0.5">Every shortcode you need</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Every shortcode you need</p>
             </div>
           </Link>
         </div>

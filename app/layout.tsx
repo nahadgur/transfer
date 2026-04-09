@@ -1,16 +1,30 @@
 import type { Metadata } from 'next'
+import { Inter, Space_Grotesk } from 'next/font/google'
 import Link from 'next/link'
 import Script from 'next/script'
 import './globals.css'
-import Image from 'next/image'
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-sans',
+})
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ['latin'],
+  variable: '--font-space',
+})
 
 export const metadata: Metadata = {
   title: {
     default: "Kenya's Transfer Hub | Calculate Transfer Fees & Costs",
-    template: '%s | Transfer Kenya'
+    template: '%s | Transfer Kenya',
   },
-  description: 'Calculate M-Pesa fees, bank transfers, remittance costs, vehicle logbook transfers, property stamp duty, and more. Kenya\'s #1 transfer calculator hub.',
-  keywords: ['M-Pesa fees', 'Kenya transfer', 'logbook transfer', 'stamp duty Kenya', 'remittance Kenya', 'bank transfer fees', 'PAYE Kenya', 'NSSF Kenya', 'Kenya tax calculator'],
+  description:
+    "Calculate M-Pesa fees, bank transfers, remittance costs, vehicle logbook transfers, property stamp duty, and more. Kenya's #1 transfer calculator hub.",
+  keywords: [
+    'M-Pesa fees', 'Kenya transfer', 'logbook transfer', 'stamp duty Kenya',
+    'remittance Kenya', 'bank transfer fees', 'PAYE Kenya', 'NSSF Kenya', 'Kenya tax calculator',
+  ],
   metadataBase: new URL('https://transfer.co.ke'),
   openGraph: {
     type: 'website',
@@ -18,20 +32,26 @@ export const metadata: Metadata = {
     url: 'https://transfer.co.ke',
     siteName: 'Transfer Kenya',
     title: "Kenya's Transfer Hub | Calculate All Transfer Fees",
-    description: 'Calculate M-Pesa fees, bank transfers, remittance costs, vehicle logbook transfers, property stamp duty, and more.',
+    description:
+      'Calculate M-Pesa fees, bank transfers, remittance costs, vehicle logbook transfers, property stamp duty, and more.',
   },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const navLinks = [
+  { href: '/',                    label: 'Calculators' },
+  { href: '/send-money-to-kenya', label: 'Send to Kenya',  hideMobile: true },
+  { href: '/mpesa-to-bank',       label: 'M-Pesa ↔ Bank',  hideMobile: true },
+  { href: '/paybill-directory',   label: 'Paybills' },
+  { href: '/ussd-codes',          label: 'USSD Codes',     hideMobile: true },
+  { href: '/mpesa-status',        label: 'M-Pesa Status',  hideMobile: true },
+  { href: '/blog',                label: 'Blog' },
+]
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} bg-[#050505]`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
-        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-T223C1ZSXV"
           strategy="afterInteractive"
@@ -45,110 +65,135 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body className="min-h-screen bg-gradient-to-br from-stone-950 via-stone-900 to-stone-950 text-white">
-        {/* Navigation */}
-        <nav className="sticky top-0 z-50 backdrop-blur-xl bg-stone-950/80 border-b border-white/10">
+      <body
+        className="min-h-screen bg-[#050505] text-white font-sans antialiased selection:bg-[#ccff00] selection:text-black"
+        suppressHydrationWarning
+      >
+        {/* ── Navigation ── */}
+        <nav className="sticky top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-white/10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex items-center justify-between h-16">
-              <Link href="/" className="flex items-center gap-2">
-                <Image
-  src="/logo-256.png"
-  alt="Transfer.co.ke logo"
-  width={40}
-  height={40}
-  priority
-  className="rounded-xl"
-/>
-
-                <div className="hidden sm:block">
-                  <span className="font-bold text-lg">Transfer</span>
-                  <span className="text-emerald-400 font-bold text-lg">.co.ke</span>
+              {/* Logo */}
+              <Link href="/" className="flex items-center gap-3 shrink-0">
+                <div className="w-9 h-9 bg-[#ccff00] flex items-center justify-center transform rotate-3">
+                  <span className="text-black font-space font-black text-base -rotate-3">T</span>
                 </div>
+                <span className="font-space font-bold text-lg text-white tracking-tight hidden sm:block">
+                  TRANSFER<span className="text-zinc-500">.CO.KE</span>
+                </span>
               </Link>
-              <div className="flex items-center gap-6">
-                <Link href="/" className="text-stone-300 hover:text-white transition-colors text-sm font-medium">
-                  Calculators
-                </Link>
-                <Link href="/send-money-to-kenya" className="text-stone-300 hover:text-white transition-colors text-sm font-medium hidden sm:block">
-                  Send to Kenya
-                </Link>
-                <Link href="/mpesa-to-bank" className="text-stone-300 hover:text-white transition-colors text-sm font-medium hidden sm:block">
-                  M-Pesa ↔ Bank
-                </Link>
-                <Link href="/paybill-directory" className="text-stone-300 hover:text-white transition-colors text-sm font-medium">
-                  Paybills
-                </Link>
-                <Link href="/ussd-codes" className="text-stone-300 hover:text-white transition-colors text-sm font-medium hidden sm:block">
-                  USSD Codes
-                </Link>
-                <Link href="/mpesa-status" className="text-stone-300 hover:text-white transition-colors text-sm font-medium hidden sm:block">
-                  M-Pesa Status
-                </Link>
-                <Link href="/blog" className="text-stone-300 hover:text-white transition-colors text-sm font-medium">
-                  Blog
-                </Link>
+
+              {/* Nav links */}
+              <div className="flex items-center gap-5">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={`text-sm font-medium text-zinc-400 hover:text-white transition-colors${link.hideMobile ? ' hidden sm:block' : ''}`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
         </nav>
 
-        {/* Main Content */}
+        {/* ── Main content ── */}
         <main>{children}</main>
 
-        {/* Footer */}
-        <footer className="border-t border-white/10 py-12 px-4 mt-20">
+        {/* ── Footer ── */}
+        <footer className="border-t border-white/10 bg-[#050505] pt-16 pb-10 px-4 mt-20">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div className="grid md:grid-cols-4 gap-10 mb-12">
+              {/* Brand */}
               <div className="md:col-span-1">
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-xl flex items-center justify-center">
-                    <span className="text-white font-bold text-lg">T</span>
+                <div className="flex items-center gap-3 mb-5">
+                  <div className="w-8 h-8 bg-[#ccff00] flex items-center justify-center">
+                    <span className="text-black font-space font-black text-sm">T</span>
                   </div>
-                  <div>
-                    <span className="font-bold text-lg">Transfer</span>
-                    <span className="text-emerald-400 font-bold text-lg">.co.ke</span>
-                  </div>
+                  <span className="font-space font-bold text-lg text-white tracking-tight">
+                    TRANSFER<span className="text-zinc-500">.CO.KE</span>
+                  </span>
                 </div>
-                <p className="text-stone-400 text-sm">
-                  Kenya's comprehensive transfer calculator hub.
+                <p className="text-zinc-500 text-sm leading-relaxed">
+                  Kenya&apos;s comprehensive transfer calculator hub.
                 </p>
               </div>
+
+              {/* Money Transfers */}
               <div>
-                <h4 className="font-semibold text-white mb-4">Money Transfers</h4>
-                <ul className="space-y-2 text-sm">
-                  <li><Link href="/mpesa-calculator" className="text-stone-400 hover:text-white transition-colors">M-Pesa Calculator</Link></li>
-                  <li><Link href="/bank-transfer" className="text-stone-400 hover:text-white transition-colors">Bank Transfers</Link></li>
-                  <li><Link href="/remittance" className="text-stone-400 hover:text-white transition-colors">International Remittance</Link></li>
-                  <li><Link href="/send-money-to-kenya" className="text-stone-400 hover:text-white transition-colors">Send Money to Kenya</Link></li>
-                  <li><Link href="/mpesa-to-bank" className="text-stone-400 hover:text-white transition-colors">M-Pesa ↔ Bank Guide</Link></li>
-                  <li><Link href="/paybill-directory" className="text-stone-400 hover:text-white transition-colors">Paybill Directory</Link></li>
+                <h4 className="font-space font-bold text-white mb-5 tracking-widest uppercase text-xs">
+                  Money Transfers
+                </h4>
+                <ul className="space-y-3 text-sm">
+                  {[
+                    ['/mpesa-calculator',    'M-Pesa Calculator'],
+                    ['/bank-transfer',       'Bank Transfers'],
+                    ['/remittance',          'International Remittance'],
+                    ['/send-money-to-kenya', 'Send Money to Kenya'],
+                    ['/mpesa-to-bank',       'M-Pesa ↔ Bank Guide'],
+                    ['/paybill-directory',   'Paybill Directory'],
+                  ].map(([href, label]) => (
+                    <li key={href}>
+                      <Link href={href} className="text-zinc-400 hover:text-[#ccff00] transition-colors">
+                        {label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
+
+              {/* Asset Transfers */}
               <div>
-                <h4 className="font-semibold text-white mb-4">Asset Transfers</h4>
-                <ul className="space-y-2 text-sm">
-                  <li><Link href="/vehicle-transfer" className="text-stone-400 hover:text-white transition-colors">Vehicle Logbook</Link></li>
-                  <li><Link href="/property-transfer" className="text-stone-400 hover:text-white transition-colors">Property Transfer</Link></li>
-                  <li><Link href="/import-duty" className="text-stone-400 hover:text-white transition-colors">Import Duty</Link></li>
+                <h4 className="font-space font-bold text-white mb-5 tracking-widest uppercase text-xs">
+                  Asset Transfers
+                </h4>
+                <ul className="space-y-3 text-sm">
+                  {[
+                    ['/vehicle-transfer',  'Vehicle Logbook'],
+                    ['/property-transfer', 'Property Transfer'],
+                    ['/import-duty',       'Import Duty'],
+                  ].map(([href, label]) => (
+                    <li key={href}>
+                      <Link href={href} className="text-zinc-400 hover:text-[#ccff00] transition-colors">
+                        {label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
+
+              {/* Resources */}
               <div>
-                <h4 className="font-semibold text-white mb-4">Resources</h4>
-                <ul className="space-y-2 text-sm">
-                  <li><Link href="/ussd-codes" className="text-stone-400 hover:text-white transition-colors">USSD Codes Kenya</Link></li>
-                  <li><Link href="/mpesa-status" className="text-stone-400 hover:text-white transition-colors">Is M-Pesa Down?</Link></li>
-                  <li><Link href="/blog" className="text-stone-400 hover:text-white transition-colors">Blog & Guides</Link></li>
-                  <li><Link href="/pension-transfer" className="text-stone-400 hover:text-white transition-colors">Pension Transfer</Link></li>
-                  <li><Link href="/kplc-transfer" className="text-stone-400 hover:text-white transition-colors">KPLC Transfer</Link></li>
+                <h4 className="font-space font-bold text-white mb-5 tracking-widest uppercase text-xs">
+                  Resources
+                </h4>
+                <ul className="space-y-3 text-sm">
+                  {[
+                    ['/ussd-codes',       'USSD Codes Kenya'],
+                    ['/mpesa-status',     'Is M-Pesa Down?'],
+                    ['/blog',             'Blog & Guides'],
+                    ['/pension-transfer', 'Pension Transfer'],
+                    ['/kplc-transfer',    'KPLC Transfer'],
+                  ].map(([href, label]) => (
+                    <li key={href}>
+                      <Link href={href} className="text-zinc-400 hover:text-[#ccff00] transition-colors">
+                        {label}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
-            <div className="border-t border-white/10 pt-8 text-center">
-              <p className="text-stone-500 text-sm">
-                © {new Date().getFullYear()} transfer.co.ke • Kenya's Transfer Calculator Hub
+
+            {/* Bottom bar */}
+            <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
+              <p className="text-zinc-600 text-sm font-space">
+                © {new Date().getFullYear()} TRANSFER.CO.KE · KENYA&apos;S TRANSFER CALCULATOR HUB
               </p>
-              <p className="text-stone-600 text-xs mt-2">
-                Calculations are estimates. Verify with official sources before transactions.
+              <p className="text-zinc-600 text-xs">
+                Calculations are estimates. Verify with official sources before transacting.
               </p>
             </div>
           </div>

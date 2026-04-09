@@ -105,7 +105,7 @@ function processContent(content: string, currentSlug: string): string {
       if (regex.test(processedContent)) {
         processedContent = processedContent.replace(
           regex,
-          `<a href="/blog/${mapping.slug}" class="text-emerald-400 hover:text-emerald-300 underline">$1</a>`
+          `<a href="/blog/${mapping.slug}" class="text-[#ccff00] hover:text-[#b3e600] underline">$1</a>`
         )
       }
     })
@@ -128,21 +128,21 @@ export default function BlogPostPage({ params }: Props) {
       {/* Header */}
       <section className="relative py-12 px-4 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-10 left-10 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl" />
+          <div className="absolute top-10 left-10 w-72 h-72 bg-[#ccff00]/10 rounded-full blur-3xl" />
         </div>
 
         <div className="max-w-4xl mx-auto relative z-10">
           {/* Back link */}
           <Link 
             href="/blog" 
-            className="inline-flex items-center gap-2 text-stone-400 hover:text-white transition-colors mb-6"
+            className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Blog
           </Link>
 
           {/* Category badge */}
-          <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border mb-4 ${categoryColors[post.category] || 'bg-stone-500/20 text-stone-400 border-stone-500/30'}`}>
+          <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border mb-4 ${categoryColors[post.category] || 'bg-zinc-500/20 text-zinc-400 border-zinc-500/30'}`}>
             <Tag className="w-3 h-3 inline mr-1" />
             {post.category}
           </span>
@@ -153,11 +153,11 @@ export default function BlogPostPage({ params }: Props) {
           </h1>
 
           {/* Meta info */}
-          <p className="text-lg text-stone-400 mb-6">
+          <p className="text-lg text-zinc-400 mb-6">
             {post.metaDescription}
           </p>
 
-          <div className="flex items-center gap-6 text-sm text-stone-500">
+          <div className="flex items-center gap-6 text-sm text-zinc-500">
             <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
               <span>Updated 2026</span>

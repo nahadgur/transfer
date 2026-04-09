@@ -149,18 +149,18 @@ const ussdCategories: UssdCategory[] = [
 
 export default function UssdCodesPage() {
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen bg-[#050505] py-8 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-500/10 rounded-full border border-emerald-500/20 mb-5">
-            <Phone className="w-4 h-4 text-emerald-400" />
-            <span className="text-emerald-400 text-sm font-medium">Works without internet</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-[#ccff00]/10 rounded-full border border-[#ccff00]/20 mb-5">
+            <Phone className="w-4 h-4 text-[#ccff00]" />
+            <span className="text-[#ccff00] text-xs font-space font-bold uppercase tracking-widest">Works without internet</span>
           </div>
           <h1 className="text-3xl md:text-4xl font-black text-white mb-3">
             Kenya USSD Codes 2026
           </h1>
-          <p className="text-stone-400 max-w-xl mx-auto text-sm leading-relaxed">
+          <p className="text-zinc-400 max-w-xl mx-auto text-sm leading-relaxed">
             Every shortcode you need for mobile money, banking, government services and loans.
             Dial directly from your phone — no internet or app required.
           </p>
@@ -171,12 +171,12 @@ export default function UssdCodesPage() {
           {ussdCategories.map((cat) => (
             <div
               key={cat.title}
-              className="bg-gradient-to-br from-white/10 to-white/5 border border-white/10 rounded-2xl overflow-hidden"
+              className="bg-gradient-to-br from-white/10 to-white/5 border border-white/10  overflow-hidden"
             >
               {/* Category header */}
               <div className="px-5 py-4 border-b border-white/10 bg-white/5">
                 <h2 className="text-white font-bold text-base">{cat.title}</h2>
-                <p className="text-stone-500 text-xs mt-0.5">{cat.description}</p>
+                <p className="text-zinc-500 text-xs mt-0.5">{cat.description}</p>
               </div>
 
               {/* Entries */}
@@ -186,7 +186,7 @@ export default function UssdCodesPage() {
                     key={entry.code}
                     className="flex items-start gap-4 px-5 py-3.5 hover:bg-white/5 transition-colors"
                   >
-                    <code className="text-emerald-400 font-mono font-bold text-sm bg-emerald-500/10 px-2.5 py-1 rounded-lg flex-shrink-0 mt-0.5">
+                    <code className="text-[#ccff00] font-mono font-bold text-sm bg-[#ccff00]/10 px-2.5 py-1 rounded-lg flex-shrink-0 mt-0.5">
                       {entry.code}
                     </code>
                     <div className="min-w-0">
@@ -198,7 +198,7 @@ export default function UssdCodesPage() {
                           </span>
                         )}
                       </div>
-                      <p className="text-stone-500 text-xs mt-0.5">{entry.description}</p>
+                      <p className="text-zinc-500 text-xs mt-0.5">{entry.description}</p>
                     </div>
                   </div>
                 ))}
@@ -208,7 +208,7 @@ export default function UssdCodesPage() {
         </div>
 
         {/* Footer note */}
-        <div className="mt-8 bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 text-center">
+        <div className="mt-8 bg-amber-500/10 border border-amber-500/20  p-4 text-center">
           <p className="text-amber-400 text-xs">
             <strong>Note:</strong> USSD codes may change. If a code fails, visit the provider&apos;s
             official website or call their customer care line to confirm the latest code.
@@ -216,34 +216,34 @@ export default function UssdCodesPage() {
         </div>
       {/* Related tools */}
       <section className="mt-14 mb-2 max-w-4xl mx-auto px-4">
-        <h2 className="text-sm font-semibold text-stone-500 uppercase tracking-wider mb-4">Related tools</h2>
+        <h2 className="text-sm font-semibold text-zinc-500 uppercase tracking-wider mb-4">Related tools</h2>
         <div className="grid sm:grid-cols-2 gap-3">
-          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-calculator" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🧮</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa Fee Calculator</p>
-              <p className="text-stone-500 text-xs mt-0.5">Calculate fees for any transaction</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Calculate fees for any transaction</p>
             </div>
           </Link>
-          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/paybill-directory" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📋</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">Paybill Directory</p>
-              <p className="text-stone-500 text-xs mt-0.5">Find Paybill numbers for any biller</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Find Paybill numbers for any biller</p>
             </div>
           </Link>
-          <Link href="/mpesa-status" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-status" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">📡</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa Status</p>
-              <p className="text-stone-500 text-xs mt-0.5">Is M-Pesa down right now?</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Is M-Pesa down right now?</p>
             </div>
           </Link>
-          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30 rounded-xl p-4 transition-all group">
+          <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
             <span className="text-xl shrink-0">🏦</span>
             <div>
               <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa to Bank</p>
-              <p className="text-stone-500 text-xs mt-0.5">Transfer funds to your bank</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Transfer funds to your bank</p>
             </div>
           </Link>
         </div>

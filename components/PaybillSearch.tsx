@@ -40,13 +40,13 @@ export default function PaybillSearch({ compact = false }: Props) {
     <div className="w-full">
       {/* Search input */}
       <div className="relative mb-4">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400 pointer-events-none" />
+        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-zinc-400 pointer-events-none" />
         <input
           type="text"
           placeholder="Search company, paybill number…"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full pl-12 pr-4 py-3.5 bg-white/10 border border-white/20 rounded-xl text-white placeholder-stone-400 focus:outline-none focus:border-emerald-500/60 focus:bg-white/15 transition text-sm"
+          className="w-full pl-12 pr-4 py-3.5 bg-white/10 border border-white/20  text-white placeholder-stone-400 focus:outline-none focus:border-[#ccff00]/60 focus:bg-white/15 transition text-sm"
         />
       </div>
 
@@ -59,8 +59,8 @@ export default function PaybillSearch({ compact = false }: Props) {
               onClick={() => setActiveCategory(cat)}
               className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
                 activeCategory === cat
-                  ? 'bg-emerald-500 text-white'
-                  : 'bg-white/10 text-stone-300 hover:bg-white/20'
+                  ? 'bg-[#ccff00] text-white'
+                  : 'bg-white/10 text-zinc-300 hover:bg-white/20'
               }`}
             >
               {cat}
@@ -71,7 +71,7 @@ export default function PaybillSearch({ compact = false }: Props) {
 
       {/* Results */}
       {displayResults.length === 0 ? (
-        <div className="text-center py-8 text-stone-400 text-sm">
+        <div className="text-center py-8 text-zinc-400 text-sm">
           No results found for &ldquo;{query}&rdquo;
         </div>
       ) : (
@@ -79,20 +79,20 @@ export default function PaybillSearch({ compact = false }: Props) {
           {displayResults.map((entry) => (
             <div
               key={`${entry.name}-${entry.paybill || entry.till}`}
-              className="flex items-center justify-between bg-white/5 border border-white/10 rounded-xl px-4 py-3 hover:border-emerald-500/30 transition-colors group"
+              className="flex items-center justify-between bg-white/5 border border-white/10  px-4 py-3 hover:border-[#ccff00]/30 transition-colors group"
             >
               <div className="min-w-0 flex-1">
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-white font-medium text-sm truncate">{entry.name}</span>
-                  <span className="text-xs text-stone-500 bg-white/5 px-2 py-0.5 rounded-full flex-shrink-0">
+                  <span className="text-xs text-zinc-500 bg-white/5 px-2 py-0.5 rounded-full flex-shrink-0">
                     {entry.category}
                   </span>
                 </div>
                 {entry.notes && (
-                  <p className="text-xs text-stone-500 mt-0.5">{entry.notes}</p>
+                  <p className="text-xs text-zinc-500 mt-0.5">{entry.notes}</p>
                 )}
                 {entry.accountFormat && (
-                  <p className="text-xs text-stone-600 mt-0.5">Account: {entry.accountFormat}</p>
+                  <p className="text-xs text-zinc-600 mt-0.5">Account: {entry.accountFormat}</p>
                 )}
               </div>
 
@@ -100,7 +100,7 @@ export default function PaybillSearch({ compact = false }: Props) {
                 {entry.paybill && (
                   <button
                     onClick={() => copyCode(entry.paybill!)}
-                    className="flex items-center gap-1.5 bg-emerald-500/20 hover:bg-emerald-500/30 border border-emerald-500/30 text-emerald-400 px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-colors"
+                    className="flex items-center gap-1.5 bg-[#ccff00]/20 hover:bg-[#ccff00]/30 border border-[#ccff00]/30 text-[#ccff00] px-3 py-1.5 rounded-lg text-xs font-mono font-bold transition-colors"
                   >
                     {copied === entry.paybill ? (
                       <><Check className="w-3 h-3" /> Copied</>
@@ -132,7 +132,7 @@ export default function PaybillSearch({ compact = false }: Props) {
         <div className="mt-4 text-center">
           <Link
             href="/paybill-directory"
-            className="text-emerald-400 hover:text-emerald-300 text-sm font-medium transition-colors"
+            className="text-[#ccff00] hover:text-[#b3e600] text-sm font-medium transition-colors"
           >
             See all {results.length} results in full directory →
           </Link>
@@ -140,7 +140,7 @@ export default function PaybillSearch({ compact = false }: Props) {
       )}
 
       {!compact && (
-        <p className="text-xs text-stone-600 mt-4 text-center">
+        <p className="text-xs text-zinc-600 mt-4 text-center">
           {results.length} of {paybillData.length} entries shown · Tap the number to copy
         </p>
       )}

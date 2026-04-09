@@ -63,25 +63,25 @@ export default function ImportDutyPage() {
   const totalCost = cifValue + totalDuties + totalOtherFees
 
   return (
-    <div className="min-h-screen py-8 px-4">
+    <div className="min-h-screen bg-[#050505] py-8 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Back button */}
-        <Link href="/" className="inline-flex items-center gap-2 text-stone-400 hover:text-white transition-colors mb-8">
+        <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#ccff00] transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />
           Back to all tools
         </Link>
 
         {/* Header */}
         <div className="text-center mb-10">
-          <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-gradient-to-br from-cyan-500 to-cyan-600 flex items-center justify-center mx-auto mb-4">
             <Ship className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Import Duty Calculator</h1>
-          <p className="text-stone-400">Calculate taxes and duties for importing vehicles to Kenya</p>
+          <h1 className="text-3xl md:text-4xl font-space font-bold text-white mb-2">Import Duty Calculator</h1>
+          <p className="text-zinc-400">Calculate taxes and duties for importing vehicles to Kenya</p>
         </div>
 
         {isOverAge && (
-          <div className="bg-red-500/20 border border-red-500/50 rounded-xl p-4 mb-8">
+          <div className="bg-red-500/20 border border-red-500/50  p-4 mb-8">
             <div className="flex items-start gap-3">
               <Info className="w-5 h-5 text-red-400 flex-shrink-0 mt-0.5" />
               <div>
@@ -95,18 +95,18 @@ export default function ImportDutyPage() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Input Section */}
           <div className="space-y-6">
-            <div className="bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6">
+            <div className="bg-white/5 backdrop-blur-xl border border-white/10 p-6">
               <h2 className="text-lg font-semibold text-white mb-6">Vehicle Details</h2>
 
               {/* CIF Value */}
               <div className="mb-6">
-                <label className="block text-sm text-stone-400 mb-1">CIF Value (KES)</label>
-                <p className="text-xs text-stone-500 mb-3">Cost + Insurance + Freight to Mombasa</p>
+                <label className="block text-sm text-zinc-400 mb-1">CIF Value (KES)</label>
+                <p className="text-xs text-zinc-500 mb-3">Cost + Insurance + Freight to Mombasa</p>
                 <input
                   type="number"
                   value={cifValue}
                   onChange={(e) => setCifValue(Math.max(0, Number(e.target.value)))}
-                  className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 text-white text-xl font-semibold focus:outline-none focus:border-cyan-500"
+                  className="w-full bg-white/10 border border-white/20  px-4 py-3 text-white text-xl font-semibold focus:outline-none focus:border-cyan-500"
                 />
                 <input
                   type="range"
@@ -121,16 +121,16 @@ export default function ImportDutyPage() {
 
               {/* Vehicle Category */}
               <div className="mb-6">
-                <label className="block text-sm text-stone-400 mb-3">Vehicle Category</label>
+                <label className="block text-sm text-zinc-400 mb-3">Vehicle Category</label>
                 <div className="grid grid-cols-2 gap-2">
                   {VEHICLE_CATEGORIES.map((cat) => (
                     <button
                       key={cat.id}
                       onClick={() => setVehicleCategory(cat.id)}
-                      className={`p-3 rounded-xl border transition-all text-sm font-medium ${
+                      className={`p-3 border transition-all text-sm font-medium ${
                         vehicleCategory === cat.id
                           ? 'bg-cyan-500/20 border-cyan-500 text-cyan-400'
-                          : 'bg-white/5 border-white/10 text-stone-400 hover:border-white/20'
+                          : 'bg-white/5 border-white/10 text-zinc-400 hover:border-white/20'
                       }`}
                     >
                       {cat.name}
@@ -141,16 +141,16 @@ export default function ImportDutyPage() {
 
               {/* Engine Size */}
               <div className="mb-6">
-                <label className="block text-sm text-stone-400 mb-3">Engine Size</label>
+                <label className="block text-sm text-zinc-400 mb-3">Engine Size</label>
                 <div className="grid grid-cols-2 gap-2">
                   {ENGINE_SIZES.map((size) => (
                     <button
                       key={size.id}
                       onClick={() => setEngineSize(size.id)}
-                      className={`p-3 rounded-xl border transition-all text-sm font-medium ${
+                      className={`p-3 border transition-all text-sm font-medium ${
                         engineSize === size.id
                           ? 'bg-cyan-500/20 border-cyan-500 text-cyan-400'
-                          : 'bg-white/5 border-white/10 text-stone-400 hover:border-white/20'
+                          : 'bg-white/5 border-white/10 text-zinc-400 hover:border-white/20'
                       }`}
                     >
                       {size.name}
@@ -161,7 +161,7 @@ export default function ImportDutyPage() {
 
               {/* Vehicle Age */}
               <div className="mb-6">
-                <label className="block text-sm text-stone-400 mb-3">Vehicle Age (Years): {vehicleAge}</label>
+                <label className="block text-sm text-zinc-400 mb-3">Vehicle Age (Years): {vehicleAge}</label>
                 <input
                   type="range"
                   min="0"
@@ -170,7 +170,7 @@ export default function ImportDutyPage() {
                   onChange={(e) => setVehicleAge(Number(e.target.value))}
                   className="w-full"
                 />
-                <div className="flex justify-between text-xs text-stone-500 mt-1">
+                <div className="flex justify-between text-xs text-zinc-500 mt-1">
                   <span>New</span>
                   <span className="text-amber-400">Max allowed: 8 years</span>
                 </div>
@@ -185,9 +185,9 @@ export default function ImportDutyPage() {
                     onChange={(e) => setIsElectric(e.target.checked)}
                     className="w-5 h-5 rounded border-white/20 bg-white/10 text-cyan-500 focus:ring-cyan-500"
                   />
-                  <span className="text-stone-300">Electric Vehicle (EV)</span>
+                  <span className="text-zinc-300">Electric Vehicle (EV)</span>
                 </label>
-                <p className="text-xs text-emerald-400 mt-2 ml-8">
+                <p className="text-xs text-[#ccff00] mt-2 ml-8">
                   EVs enjoy 0% import duty and excise duty!
                 </p>
               </div>
@@ -195,39 +195,39 @@ export default function ImportDutyPage() {
           </div>
 
           {/* Results Section */}
-          <div className="bg-gradient-to-br from-cyan-600/20 to-cyan-900/20 backdrop-blur-xl rounded-2xl border border-cyan-500/20 p-6">
+          <div className="bg-gradient-to-br from-cyan-600/20 to-cyan-900/20 backdrop-blur-xl  border border-cyan-500/20 p-6">
             <h2 className="text-lg font-semibold text-white mb-6">Duty Breakdown</h2>
 
             <div className="space-y-3">
-              <div className="p-3 bg-white/5 rounded-xl mb-4">
-                <span className="text-stone-400 text-sm">CIF Value</span>
+              <div className="p-3 bg-white/5  mb-4">
+                <span className="text-zinc-400 text-sm">CIF Value</span>
                 <p className="text-xl font-semibold text-white">{formatCurrency(cifValue)}</p>
               </div>
 
-              <p className="text-xs text-stone-500 uppercase tracking-wider">Government Duties & Taxes</p>
+              <p className="text-xs text-zinc-500 uppercase tracking-wider">Government Duties & Taxes</p>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">Import Duty ({(importDutyRate * 100).toFixed(0)}%)</span>
+                <span className="text-zinc-400">Import Duty ({(importDutyRate * 100).toFixed(0)}%)</span>
                 <span className="text-white font-semibold">{formatCurrency(importDuty)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">Excise Duty ({(exciseDutyRate * 100).toFixed(1)}%)</span>
+                <span className="text-zinc-400">Excise Duty ({(exciseDutyRate * 100).toFixed(1)}%)</span>
                 <span className="text-white font-semibold">{formatCurrency(exciseDuty)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">VAT (16%)</span>
+                <span className="text-zinc-400">VAT (16%)</span>
                 <span className="text-white font-semibold">{formatCurrency(vat)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">IDF Fee (3.5%)</span>
+                <span className="text-zinc-400">IDF Fee (3.5%)</span>
                 <span className="text-white font-semibold">{formatCurrency(idf)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">Railway Levy (2%)</span>
+                <span className="text-zinc-400">Railway Levy (2%)</span>
                 <span className="text-white font-semibold">{formatCurrency(rdl)}</span>
               </div>
 
@@ -236,29 +236,29 @@ export default function ImportDutyPage() {
                 <span className="text-cyan-400 font-bold">{formatCurrency(totalDuties)}</span>
               </div>
 
-              <p className="text-xs text-stone-500 uppercase tracking-wider mt-4">Other Fees (Estimated)</p>
+              <p className="text-xs text-zinc-500 uppercase tracking-wider mt-4">Other Fees (Estimated)</p>
 
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">KEBS Inspection</span>
+                <span className="text-zinc-400">KEBS Inspection</span>
                 <span className="text-white font-semibold">{formatCurrency(kebs)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">Clearing Agent</span>
+                <span className="text-zinc-400">Clearing Agent</span>
                 <span className="text-white font-semibold">{formatCurrency(clearingAgent)}</span>
               </div>
               
               <div className="flex justify-between items-center py-2 border-b border-white/10">
-                <span className="text-stone-400">Port Charges</span>
+                <span className="text-zinc-400">Port Charges</span>
                 <span className="text-white font-semibold">{formatCurrency(portCharges)}</span>
               </div>
 
-              <div className="flex justify-between items-center py-4 bg-white/5 rounded-xl px-4 mt-4">
+              <div className="flex justify-between items-center py-4 bg-white/5  px-4 mt-4">
                 <span className="text-white font-medium">Total Landing Cost</span>
                 <span className="text-2xl font-bold text-cyan-400">{formatCurrency(totalCost)}</span>
               </div>
 
-              <p className="text-xs text-stone-500 mt-2">
+              <p className="text-xs text-zinc-500 mt-2">
                 * This is an estimate. Actual costs may vary based on specific vehicle and current exchange rates.
               </p>
             </div>
@@ -266,12 +266,12 @@ export default function ImportDutyPage() {
         </div>
 
         {/* Tips */}
-        <div className="mt-12 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 p-6">
+        <div className="mt-12 bg-white/5 backdrop-blur-xl border border-white/10 p-6">
           <h2 className="text-lg font-semibold text-white mb-4">💡 Import Tips</h2>
-          <div className="grid md:grid-cols-2 gap-6 text-sm text-stone-300">
+          <div className="grid md:grid-cols-2 gap-6 text-sm text-zinc-300">
             <ul className="space-y-2">
               <li>• Maximum vehicle age for import: <strong className="text-white">8 years</strong></li>
-              <li>• Electric vehicles get <strong className="text-emerald-400">0% duty</strong></li>
+              <li>• Electric vehicles get <strong className="text-[#ccff00]">0% duty</strong></li>
               <li>• Trucks and buses have lower duty rates</li>
               <li>• Get a KEBS inspection certificate before shipping</li>
             </ul>
