@@ -5,13 +5,13 @@ export const blogTransfer4B: BlogPost[] = [
   {
     id: 104,
     title: 'How to Reverse an M-Pesa Transaction in 2026 (Step-by-Step)',
-    slug: 'how-to-reverse-mpesa-transaction-2026',
+    slug: 'how-to-reverse-mpesa-transaction',
     metaTitle: 'How to Reverse an M-Pesa Transaction 2026 | Complete Guide',
     metaDescription: 'Sent money to the wrong M-Pesa number? Learn exactly how to reverse an M-Pesa transaction in 2026 — via *334#, Safaricom care, or the M-Pesa app. With timeframes, limits and what to do if reversal fails.',
     category: 'Transfer',
     calculator: 'mpesa-calculator',
     relatedSlugs: [
-      'mpesa-charges-2026-complete-fee-guide',
+      'mpesa-charges-complete-fee-guide',
       'how-to-pay-kplc-nhif-nssf-via-mpesa',
       'mpesa-vs-airtel-money-which-is-cheaper',
     ],
@@ -202,8 +202,8 @@ export const blogTransfer4B: BlogPost[] = [
     category: 'Transfer',
     calculator: 'remittance',
     relatedSlugs: [
-      'mpesa-charges-2026-complete-fee-guide',
-      'how-to-reverse-mpesa-transaction-2026',
+      'mpesa-charges-complete-fee-guide',
+      'how-to-reverse-mpesa-transaction',
       'binance-crypto-to-mpesa-kenya',
     ],
     featuredImage: null,
@@ -374,7 +374,7 @@ export const blogTransfer4B: BlogPost[] = [
     calculator: 'mpesa-calculator',
     relatedSlugs: [
       'how-to-send-money-from-paypal-to-mpesa',
-      'mpesa-charges-2026-complete-fee-guide',
+      'mpesa-charges-complete-fee-guide',
       'rtgs-vs-mpesa-large-amounts',
     ],
     featuredImage: null,
@@ -554,8 +554,8 @@ export const blogTransfer4B: BlogPost[] = [
     category: 'Transfer',
     calculator: 'mpesa-calculator',
     relatedSlugs: [
-      'mpesa-charges-2026-complete-fee-guide',
-      'how-to-reverse-mpesa-transaction-2026',
+      'mpesa-charges-complete-fee-guide',
+      'how-to-reverse-mpesa-transaction',
       'mpesa-vs-airtel-money-which-is-cheaper',
     ],
     featuredImage: null,

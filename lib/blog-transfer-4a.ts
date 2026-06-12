@@ -4,7 +4,7 @@ export const blogTransfer4A: BlogPost[] = [
   {
     id: 101,
     title: 'M-Pesa Charges 2026: Complete Fee Guide for Sending, Withdrawing and Paying Bills',
-    slug: 'mpesa-charges-2026-complete-fee-guide',
+    slug: 'mpesa-charges-complete-fee-guide',
     metaTitle: 'M-Pesa Charges 2026: All Fees for Sending, Withdrawing & Paybill',
     metaDescription: 'The complete M-Pesa fee guide for 2026. Every charge for sending money, withdrawing cash, Paybill, Buy Goods, Fuliza and M-Shwari — with full fee tables and money-saving tips.',
     category: 'Transfer',
@@ -196,7 +196,7 @@ export const blogTransfer4A: BlogPost[] = [
     category: 'Transfer',
     calculator: 'mpesa-calculator',
     relatedSlugs: [
-      'mpesa-charges-2026-complete-fee-guide',
+      'mpesa-charges-complete-fee-guide',
       'rtgs-vs-mpesa-large-amounts',
       'how-to-pay-kplc-nhif-nssf-via-mpesa',
     ],
@@ -338,7 +338,7 @@ export const blogTransfer4A: BlogPost[] = [
     category: 'Transfer',
     calculator: 'bank-transfer',
     relatedSlugs: [
-      'mpesa-charges-2026-complete-fee-guide',
+      'mpesa-charges-complete-fee-guide',
       'mpesa-vs-airtel-money-which-is-cheaper',
       'how-to-pay-kplc-nhif-nssf-via-mpesa',
     ],
@@ -534,7 +534,7 @@ export const blogTransfer4A: BlogPost[] = [
     category: 'Transfer',
     calculator: 'remittance',
     relatedSlugs: [
-      'mpesa-charges-2026-complete-fee-guide',
+      'mpesa-charges-complete-fee-guide',
       'mpesa-vs-airtel-money-which-is-cheaper',
       'rtgs-vs-mpesa-large-amounts',
     ],

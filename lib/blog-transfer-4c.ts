@@ -13,7 +13,7 @@ export const blogTransfer4C: BlogPost[] = [
     relatedSlugs: [
       'best-payment-gateways-kenyan-ecommerce',
       'accept-international-payments-kenya',
-      'mpesa-charges-2026-complete-fee-guide',
+      'mpesa-charges-complete-fee-guide',
     ],
     featuredImage: null,
     content: `<p>An M-Pesa Till Number transforms how your business collects payments. Instead of asking customers to send money to a personal M-Pesa number — with all the privacy and accounting complications that creates — a Till Number lets customers tap "Buy Goods," scan a QR code, or use a payment link to pay your business directly. Funds settle to your business bank account, transactions are automatically categorised, and you have a clean audit trail for every sale. This guide covers the complete application process for 2026, with all requirements, timelines, and practical tips.</p>
@@ -206,7 +206,7 @@ export const blogTransfer4C: BlogPost[] = [
     relatedSlugs: [
       'how-to-apply-for-mpesa-till-number-kenya',
       'accept-international-payments-kenya',
-      'mpesa-charges-2026-complete-fee-guide',
+      'mpesa-charges-complete-fee-guide',
     ],
     featuredImage: null,
     content: `<p>Choosing the wrong payment gateway is one of the most expensive mistakes a Kenyan e-commerce business can make — you end up paying excessive transaction fees, dealing with failed payments, or losing international customers who cannot pay in their preferred method. In 2026, Kenyan online businesses have more gateway options than ever, ranging from local M-Pesa specialists to pan-African platforms and global processors. This guide compares every major option with actual fee data so you can make an informed decision.</p>

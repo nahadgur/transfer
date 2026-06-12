@@ -78,12 +78,12 @@ function processContent(content: string, currentSlug: string): string {
   // Define keyword to article mappings for natural interlinking
   const linkMappings = [
     { keywords: ['PAYE tax', 'PAYE calculation', 'calculate PAYE'], slug: 'how-to-calculate-your-paye-tax-in-kenya', title: 'How to Calculate PAYE Tax in Kenya' },
-    { keywords: ['NSSF contribution', 'NSSF rate', 'NSSF 2026'], slug: 'the-complete-guide-to-nssf-contributions-in-kenya-for-2026', title: 'Complete Guide to NSSF Contributions' },
+    { keywords: ['NSSF contribution', 'NSSF rate', 'NSSF 2026'], slug: 'the-complete-guide-to-nssf-contributions-in-kenya', title: 'Complete Guide to NSSF Contributions' },
     { keywords: ['SHIF', 'NHIF replacement', 'health insurance deduction'], slug: 'understanding-shif-deductions-in-kenya-and-what-replaced-nhif', title: 'Understanding SHIF Deductions' },
     { keywords: ['housing levy', 'affordable housing'], slug: 'everything-you-need-to-know-about-kenyas-housing-levy', title: "Kenya's Housing Levy Guide" },
     { keywords: ['net salary', 'calculate net pay', 'take-home pay'], slug: 'how-kenyan-employees-can-calculate-their-net-salary', title: 'How to Calculate Net Salary' },
     { keywords: ['gross salary', 'gross to net'], slug: 'working-backwards-from-net-to-gross-salary-in-kenya', title: 'Net to Gross Salary Calculator' },
-    { keywords: ['reduce PAYE', 'tax savings', 'legal tax reduction'], slug: '7-legal-ways-kenyan-employees-can-reduce-their-paye', title: '7 Ways to Reduce PAYE' },
+    { keywords: ['reduce PAYE', 'tax savings', 'legal tax reduction'], slug: 'legal-ways-kenyan-employees-can-reduce-their-paye', title: '7 Ways to Reduce PAYE' },
     { keywords: ['insurance relief'], slug: 'how-insurance-relief-works-for-kenyan-taxpayers', title: 'Insurance Relief Guide' },
     { keywords: ['mortgage relief', 'mortgage interest'], slug: 'claiming-mortgage-interest-relief-on-your-kenyan-tax-return', title: 'Mortgage Interest Relief' },
     { keywords: ['pension contribution', 'maximize pension'], slug: 'why-kenyan-employees-should-max-out-their-pension-contributions', title: 'Pension Contributions Guide' },
@@ -104,7 +104,7 @@ function processContent(content: string, currentSlug: string): string {
     { keywords: ['iTax', 'PAYE returns', 'filing returns'], slug: 'filing-paye-returns-on-itax-in-kenya-without-getting-penalised', title: 'iTax Filing Guide' },
     { keywords: ['benefits in kind', 'taxable benefits'], slug: 'taxable-benefits-in-kind-that-kenyan-employers-must-declare', title: 'Taxable Benefits Guide' },
     { keywords: ['Finance Bill 2025', '2025 tax changes'], slug: 'what-the-kenya-finance-bill-2025-means-for-your-salary', title: 'Finance Bill 2025 Impact' },
-    { keywords: ['KRA deadline', 'tax deadline'], slug: 'key-kra-tax-deadlines-every-kenyan-should-know-in-2026', title: 'KRA Tax Deadlines 2026' },
+    { keywords: ['KRA deadline', 'tax deadline'], slug: 'key-kra-tax-deadlines-every-kenyan-should-know', title: 'KRA Tax Deadlines 2026' },
     { keywords: ['new NSSF', 'NSSF changes'], slug: 'how-the-new-nssf-rates-affect-kenyan-workers', title: 'New NSSF Rates Impact' },
     { keywords: ['Nairobi salary', 'living in Nairobi'], slug: 'what-salary-do-you-need-to-live-comfortably-in-nairobi', title: 'Nairobi Cost of Living' },
   ]

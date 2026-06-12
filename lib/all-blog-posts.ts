@@ -12,9 +12,9 @@ export type { BlogPost }
 // so they stay unmapped (hub ''): present in /blog, absent from every hub grid.
 // The writer can also set `hub`/`draft` inline on a post; an inline value wins.
 const HUB_MAP: Record<string, string> = {
-  'mpesa-charges-2026-complete-fee-guide': 'mpesa-charges',
+  'mpesa-charges-complete-fee-guide': 'mpesa-charges',
   'mpesa-vs-airtel-money-which-is-cheaper': 'mpesa-charges',
-  'how-to-reverse-mpesa-transaction-2026': 'mpesa-charges',
+  'how-to-reverse-mpesa-transaction': 'mpesa-charges',
   'rtgs-vs-mpesa-large-amounts': 'bank-transfers',
   'worldremit-vs-remitly-vs-wise-hidden-costs-kenya': 'remittance',
   'how-to-send-money-from-paypal-to-mpesa': 'remittance',
