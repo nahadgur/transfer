@@ -44,6 +44,7 @@ const navLinks = [
   { href: '/paybill-directory',   label: 'Paybills' },
   { href: '/ussd-codes',          label: 'USSD Codes',     hideMobile: true },
   { href: '/mpesa-status',        label: 'M-Pesa Status',  hideMobile: true },
+  { href: '/guides',              label: 'Guides' },
   { href: '/blog',                label: 'Blog' },
 ]
 
@@ -171,9 +172,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </h4>
                 <ul className="space-y-3 text-sm">
                   {[
+                    ['/guides',           'Transfer Guides'],
                     ['/ussd-codes',       'USSD Codes Kenya'],
                     ['/mpesa-status',     'Is M-Pesa Down?'],
-                    ['/blog',             'Blog & Guides'],
+                    ['/blog',             'Blog'],
                     ['/pension-transfer', 'Pension Transfer'],
                     ['/kplc-transfer',    'KPLC Transfer'],
                   ].map(([href, label]) => (

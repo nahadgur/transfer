@@ -10,6 +10,18 @@ export interface BlogPost {
   calculator: string;
   relatedSlugs: string[];
   featuredImage?: string | null;
+  /** Parent hub slug (see lib/guides.ts). Empty string = unmapped legacy post,
+   *  which stays in /blog but appears in no hub spoke-grid. Resolved centrally in
+   *  all-blog-posts.ts via HUB_MAP, or set inline by the writer. */
+  hub?: string;
+  /** Draft spokes 404, and are excluded from /blog, hub spoke-grids and the
+   *  sitemap until the publisher flips them live. Defaults to false. */
+  draft?: boolean;
+  /** Optional structured FAQs for FAQPage schema on the spoke. */
+  faqs?: { question: string; answer: string }[];
+  /** Optional explicit publish/review dates for Article schema. */
+  publishedAt?: string;
+  lastReviewedAt?: string;
 }
 
 export const blogPosts: BlogPost[] = [

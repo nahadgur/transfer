@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { Metadata } from 'next'
-import { allBlogPosts as blogPosts } from '@/lib/all-blog-posts'
+import { livePosts as blogPosts } from '@/lib/all-blog-posts'
 import { ArrowRight, BookOpen } from 'lucide-react'
 
 export const metadata: Metadata = {

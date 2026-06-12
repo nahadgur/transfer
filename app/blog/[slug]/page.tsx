@@ -1,17 +1,31 @@
 import { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
-import { allBlogPosts as blogPosts } from '@/lib/all-blog-posts'
+import { allBlogPosts as blogPosts, livePosts } from '@/lib/all-blog-posts'
+import { GUIDES_BY_SLUG } from '@/lib/guides'
+import { SpokeHero } from '@/components/SpokeHero'
 import CalculatorBanner from '@/components/CalculatorBanner'
 import RelatedArticles from '@/components/RelatedArticles'
+import {
+  SITE_URL,
+  EDITORIAL,
+  organizationSchema,
+  websiteSchema,
+  editorialEntitySchema,
+  breadcrumbSchema,
+  faqPageSchema,
+  articleSchemaFor,
+  jsonLd,
+} from '@/lib/schema'
 import { ArrowLeft, Calendar, Clock, Tag } from 'lucide-react'
 
 interface Props {
   params: { slug: string }
 }
 
+// Draft spokes are not pre-rendered; live posts only.
 export async function generateStaticParams() {
-  return blogPosts.map((post) => ({
+  return livePosts.map((post) => ({
     slug: post.slug,
   }))
 }
@@ -117,14 +131,40 @@ function processContent(content: string, currentSlug: string): string {
 export default function BlogPostPage({ params }: Props) {
   const post = blogPosts.find((p) => p.slug === params.slug)
 
-  if (!post) {
+  // Draft gate: drafts 404 until the publisher flips them live.
+  if (!post || post.draft) {
     notFound()
   }
 
   const processedContent = processContent(post.content, post.slug)
+  const hub = post.hub ? GUIDES_BY_SLUG[post.hub] : undefined
+  const reviewed = post.lastReviewedAt || post.publishedAt || '2026'
+  const url = `${SITE_URL}/blog/${post.slug}`
+  const plain = post.content.replace(/<[^>]+>/g, ' ')
+  const readMins = Math.max(3, Math.round(plain.split(/\s+/).filter(Boolean).length / 200))
 
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={jsonLd(
+        organizationSchema(),
+        websiteSchema(),
+        editorialEntitySchema(),
+        breadcrumbSchema([
+          { name: 'Home', url: `${SITE_URL}/` },
+          { name: 'Blog', url: `${SITE_URL}/blog` },
+          ...(hub ? [{ name: hub.shortTitle, url: `${SITE_URL}/guides/${hub.slug}` }] : []),
+          { name: post.title, url },
+        ]),
+        articleSchemaFor({
+          url,
+          headline: post.title,
+          description: post.metaDescription,
+          datePublished: post.publishedAt || reviewed,
+          dateModified: reviewed,
+        }),
+        ...(post.faqs && post.faqs.length ? [faqPageSchema(post.faqs)] : []),
+      )} />
+
       {/* Header */}
       <section className="relative py-12 px-4 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -133,38 +173,53 @@ export default function BlogPostPage({ params }: Props) {
 
         <div className="max-w-4xl mx-auto relative z-10">
           {/* Back link */}
-          <Link 
-            href="/blog" 
+          <Link
+            href="/blog"
             className="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors mb-6"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Blog
           </Link>
 
-          {/* Category badge */}
-          <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border mb-4 ${categoryColors[post.category] || 'bg-zinc-500/20 text-zinc-400 border-zinc-500/30'}`}>
-            <Tag className="w-3 h-3 inline mr-1" />
-            {post.category}
-          </span>
+          {/* Category badge + hub up-link */}
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            <span className={`inline-block px-3 py-1 rounded-full text-xs font-medium border ${categoryColors[post.category] || 'bg-zinc-500/20 text-zinc-400 border-zinc-500/30'}`}>
+              <Tag className="w-3 h-3 inline mr-1" />
+              {post.category}
+            </span>
+            {hub && (
+              <Link href={`/guides/${hub.slug}`} className="text-xs font-medium text-[#ccff00] hover:underline">
+                {hub.shortTitle} hub
+              </Link>
+            )}
+          </div>
 
-          {/* Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 leading-tight">
-            {post.title}
-          </h1>
+          {/* Visually-hidden h1 for a11y/SEO; the SVG carries the visible title */}
+          <h1 className="sr-only">{post.title}</h1>
+          <SpokeHero
+            title={post.title}
+            hubName={hub ? hub.shortTitle : null}
+            hubSlug={post.hub || post.slug}
+            readMins={readMins}
+          />
 
           {/* Meta info */}
-          <p className="text-lg text-zinc-400 mb-6">
+          <p className="text-lg text-zinc-400 mt-6 mb-6">
             {post.metaDescription}
           </p>
 
           <div className="flex items-center gap-6 text-sm text-zinc-500">
             <div className="flex items-center gap-2">
+              <Tag className="w-4 h-4" />
+              <span>By {EDITORIAL.byline}</span>
+            </div>
+            <div className="flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              <span>Updated 2026</span>
+              <span>Reviewed {reviewed}</span>
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4" />
-              <span>8 min read</span>
+              <span>{readMins} min read</span>
             </div>
           </div>
         </div>
