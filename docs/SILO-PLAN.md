@@ -86,3 +86,6 @@ Spokes take narrower how-to/question angles; never restate the tool-page head te
 
 10 hubs (build). Spokes: existing blog posts in lib/blog-* mapped to hubs during the
 build; target ~100 (~10/hub). Slug + SVG-hero + slug rules apply (see fleet handoffs).
+
+Writer log (drafts parked, publisher flips):
+- 2026-06-13: H5 mpesa-how-tos `how-to-get-full-mpesa-statement` (draft). Mapped spoke counts now: H1 3, H2 1, H3 4, H4 3, H5 1 (draft), H6 1, H7-H10 0. Next round-robin pick: H7 vehicle-logbook.

@@ -616,4 +616,105 @@ export const blogTransfer4C: BlogPost[] = [
 <h3>Is Payoneer or Wise better for Kenyan freelancers?</h3>
 <p>Wise has better exchange rates (mid-market with a 0.5–0.7% fee vs Payoneer's 2% FX margin). Payoneer is better if your freelancing platforms (Upwork, Fiverr) have a built-in Payoneer integration that avoids withdrawal fees. For general use, Wise is cheaper and more transparent.</p>`,
   },
+
+  // ── Post 4 (H5 mpesa-how-tos spoke, written 2026-06-13): Full M-Pesa statement ──
+  {
+    id: 112,
+    title: 'How to Get Your Full M-Pesa Statement in Kenya',
+    slug: 'how-to-get-full-mpesa-statement',
+    metaTitle: 'How to Get Your Full M-Pesa Statement Free in Kenya',
+    metaDescription:
+      'Get your full M-Pesa statement free via *334# or the M-PESA app. Steps for requesting up to two years of records, opening the PDF password and fixing delays.',
+    category: 'Transfer',
+    calculator: 'ussd-codes',
+    relatedSlugs: [],
+    featuredImage: null,
+    hub: 'mpesa-how-tos',
+    draft: true,
+    publishedAt: '2026-06-13',
+    lastReviewedAt: '2026-06-13',
+    faqs: [
+      {
+        question: 'Is requesting an M-Pesa statement free?',
+        answer:
+          'Yes. Safaricom does not charge for M-Pesa statements requested through *334# or the M-PESA app. You pay nothing for the request, the email delivery or the PDF download.',
+      },
+      {
+        question: 'How far back can an M-Pesa statement go?',
+        answer:
+          'You can request up to two years of transaction history on demand through *334# or the M-PESA app. For records older than two years, visit a Safaricom shop with your original ID and ask for an archived statement.',
+      },
+      {
+        question: 'What is the password for the M-Pesa statement PDF?',
+        answer:
+          'Newer statements are secured with a one-time code sent to your phone by SMS. Older-format statements use the national ID or passport number your Safaricom line is registered under. Try the SMS code first, then your ID number.',
+      },
+      {
+        question: 'Why has my M-Pesa statement not arrived by email?',
+        answer:
+          'Most statements arrive within a few minutes. If yours has not, check your spam folder, confirm the email address registered on your M-Pesa account is current, and resend the request. If it still fails, update your email in the M-PESA app or at a Safaricom shop.',
+      },
+      {
+        question: 'Can I get an M-Pesa statement for someone else, such as a deceased relative?',
+        answer:
+          'Not through self-service channels. Statements are tied to the registered line holder. For an estate or legal matter, the executor or next of kin must apply through a Safaricom shop with the supporting legal documents.',
+      },
+    ],
+    content: `<p>The fastest way to get a full M-Pesa statement is to dial *334#, choose My Account, then M-PESA Statement, and have a password-protected PDF sent to your registered email. The same request works in the M-PESA app. Safaricom provides statements covering up to two years, free of charge.</p>
+
+<h2>What an M-Pesa Statement Shows and When You Need One</h2>
+
+<p>A full M-Pesa statement is an itemised record of every transaction on your line for the period you choose: money sent and received, Paybill and Buy Goods payments, airtime purchases, withdrawals, Fuliza activity and the charges attached to each entry. It arrives as a PDF with your name, phone number and the statement period on the header, which is why institutions accept it as proof of transaction history.</p>
+
+<p>The common reasons Kenyans request one are visa applications, loan applications with banks, SACCOs and digital lenders, KRA income reviews, splitting shared expenses, and reconciling a small business that takes payments on a personal line. If you run into other account problems while you are at it, our <a href="/guides/mpesa-how-tos/">M-Pesa how-to guides</a> cover PIN resets, reversals and the other self-service fixes in one place.</p>
+
+<h2>Method 1: Request It by Dialling *334#</h2>
+
+<p>The USSD route works on any phone, with no app or data bundle needed:</p>
+
+<ol>
+<li>Dial <b>*334#</b> from your M-Pesa registered line</li>
+<li>Select <b>My Account</b></li>
+<li>Select <b>M-PESA Statement</b></li>
+<li>Choose the statement period you want</li>
+<li>Confirm the email address the PDF should go to</li>
+</ol>
+
+<p>The statement is emailed to you, usually within a few minutes. Exact menu positions shift when Safaricom updates the USSD tree, so read the options rather than memorising numbers. Our <a href="/ussd-codes/">M-Pesa USSD codes reference</a> lists the current shortcodes for statements, balance checks and the other self-service menus if you prefer dialling direct.</p>
+
+<h2>Method 2: Download It in the M-PESA App</h2>
+
+<p>If you use the M-PESA app, statements live under the Statements section:</p>
+
+<ol>
+<li>Open the app and sign in</li>
+<li>Open <b>Statements</b> from the home screen or menu</li>
+<li>Pick a preset period or set a custom date range</li>
+<li>Choose <b>Download</b> for an instant PDF, or <b>Email Statement</b> to send it to your inbox</li>
+</ol>
+
+<p>The app also shows a running transaction list you can scroll without exporting anything, which is enough when you only need to confirm a single payment rather than produce a document.</p>
+
+<h2>Opening the PDF: What the Password Is</h2>
+
+<p>Every emailed M-Pesa statement is password protected. Newer statements use a one-time code that Safaricom sends to your phone by SMS when the statement is generated. Older-format statements use the national ID or passport number your line is registered under. If the SMS code does not arrive or does not work, enter your ID number without spaces. A statement that rejects both usually means the line is registered under different details than you expect, which a Safaricom shop can confirm.</p>
+
+<h2>How Far Back a Statement Can Go</h2>
+
+<p>According to Safaricom, self-service statements cover up to two years of history, requested as preset periods such as one month, six months or twelve months, or as a custom range. For anything older than two years, visit a Safaricom shop with your original ID and request an archived statement over the counter. Safaricom adjusts these limits and menus from time to time, so verify the current options on the <a href="https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/manage-your-account/m-pesa-statement" rel="nofollow">official Safaricom M-PESA statement page</a> before relying on them for a deadline.</p>
+
+<h2>What It Costs</h2>
+
+<p>Nothing. Safaricom lists the M-Pesa statement service as free for all M-Pesa customers, whether you request it through *334# or the app. Be cautious of agents or third-party sites offering to pull your statement for a fee. They add no access you do not already have, and sharing your M-Pesa details with them is a real security risk.</p>
+
+<h2>Fixing the Common Problems</h2>
+
+<p><b>The statement never arrives.</b> Check spam first. If it is not there, the email address on your M-Pesa account is probably outdated. Update it in the M-PESA app or through a Safaricom shop, then resend the request.</p>
+
+<p><b>The wrong email is registered.</b> You cannot type a fresh email into the USSD request each time; the statement goes to the address on file. Update the registered address once and every future request follows it.</p>
+
+<p><b>You need it stamped or certified.</b> Some embassies and lenders ask for a certified copy rather than a self-printed PDF. Safaricom can issue an e-stamped statement for these cases; ask at a Safaricom shop or check the statement page for the current process.</p>
+
+<p><b>The line is registered under an old ID.</b> Lines registered years ago sometimes carry a passport number or old ID. The statement password follows whatever document is on file, so update your registration details if they have changed.</p>`,
+  },
 ]
