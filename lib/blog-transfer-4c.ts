@@ -717,4 +717,78 @@ export const blogTransfer4C: BlogPost[] = [
 
 <p><b>The line is registered under an old ID.</b> Lines registered years ago sometimes carry a passport number or old ID. The statement password follows whatever document is on file, so update your registration details if they have changed.</p>`,
   },
+
+  // ── Post 5 (H7 vehicle-logbook spoke, written 2026-06-13): Documents needed ──
+  {
+    id: 113,
+    title: 'Documents Needed to Transfer a Logbook in Kenya',
+    slug: 'documents-needed-logbook-transfer-kenya',
+    metaTitle: 'Documents Needed for a Logbook Transfer in Kenya',
+    metaDescription:
+      'The documents both buyer and seller need to transfer a vehicle logbook in Kenya on NTSA TIMS: national ID, KRA PIN, TIMS account, plus the extras for special cases.',
+    category: 'Transfer',
+    calculator: 'vehicle-transfer',
+    relatedSlugs: [],
+    featuredImage: null,
+    hub: 'vehicle-logbook',
+    draft: true,
+    publishedAt: '2026-06-13',
+    lastReviewedAt: '2026-06-13',
+    faqs: [
+      {
+        question: 'What documents do I need to transfer a logbook in Kenya?',
+        answer:
+          'At a minimum, both the buyer and the seller each need a national ID, a KRA PIN certificate and an active NTSA TIMS account linked to that PIN. The seller also needs the current logbook for the vehicle. Special cases such as inherited, company or imported vehicles add further documents.',
+      },
+      {
+        question: 'Do I need a KRA PIN to transfer a logbook?',
+        answer:
+          'Yes. A TIMS account is created against your KRA PIN, so both parties must have a valid PIN before a transfer can be initiated or accepted. If your details on iTax and NTSA do not match, the transfer stalls until they are corrected.',
+      },
+      {
+        question: 'What documents are needed to transfer an inherited vehicle?',
+        answer:
+          'In addition to the standard ID and KRA PIN, you generally need proof that the estate has been administered, such as a grant of representation or letters of administration naming the beneficiary, before NTSA will move the registration into the beneficiary name.',
+      },
+      {
+        question: 'Can I transfer a logbook if the original is lost?',
+        answer:
+          'Not directly. A lost logbook is replaced by applying for a duplicate on TIMS first, which usually involves a police abstract and a notice. Once the duplicate is issued the standard transfer can proceed.',
+      },
+      {
+        question: 'Do both the buyer and the seller need a TIMS account?',
+        answer:
+          'Yes. The transfer is a two-step handshake on TIMS: the seller initiates it against the buyer details and the buyer logs in to accept. Both parties therefore need their own registered TIMS account linked to their KRA PIN.',
+      },
+    ],
+    content: `<p>To transfer a logbook in Kenya, you and the other party each need a national ID, a KRA PIN certificate, and an active NTSA TIMS account linked to that PIN. The seller also needs the current logbook for the vehicle. Inherited, company and imported vehicles add a few documents on top.</p>
+
+<h2>The Core Documents Every Transfer Needs</h2>
+
+<p>Vehicle ownership in Kenya now changes hands online through the NTSA TIMS portal rather than at a counter, and the portal will not let a transfer start until both people are properly registered. The non-negotiable items are the same for every ordinary sale. Each party needs a valid Kenyan national ID, a KRA PIN certificate, and a TIMS account opened against that PIN with a verified phone number and email. The seller additionally needs the vehicle current logbook, since the registration details on it must match what TIMS holds. If you want the full picture of how these pieces fit together, our <a href="/guides/vehicle-logbook/">vehicle and logbook transfer guide</a> walks through the whole process from search to acceptance.</p>
+
+<h2>What the Seller Provides Against What the Buyer Provides</h2>
+
+<p>It helps to know which side carries which document, because a missing item on either side blocks the whole transfer. The seller brings the current logbook, their national ID, their KRA PIN and their TIMS login, and is the one who initiates the transfer in the portal. The buyer brings their own national ID, KRA PIN and TIMS account, and logs in separately to accept the transfer once it has been initiated against their details.</p>
+
+<p>Because both parties act in the portal, the single most common cause of delay is a mismatch in the buyer details the seller enters. Confirm the buyer full name as it appears on their ID, their ID number and the KRA PIN before the seller starts, so the transfer lands in the right account first time.</p>
+
+<h2>Getting Your TIMS Account and KRA PIN Ready</h2>
+
+<p>A TIMS account is built on a KRA PIN, so the PIN comes first. If you do not have one, you register on the <a href="https://itax.kra.go.ke" rel="nofollow">KRA iTax portal</a> to obtain a PIN certificate. With the PIN in hand, you create a TIMS account on the <a href="https://tims.ntsa.go.ke" rel="nofollow">NTSA TIMS portal</a>, where NTSA verifies your identity and links your registered vehicles to your profile. Have a clear scan or photo of your ID ready, plus an email address you actually check, because TIMS sends confirmations and notifications there.</p>
+
+<p>One detail that catches people out: the name on your TIMS profile must match the name on your KRA records and your ID. If you have changed your name, for example after marriage, sort that out with KRA and the registrar before attempting a transfer, or the accounts will not reconcile.</p>
+
+<h2>Extra Documents for Special Cases</h2>
+
+<p>Standard private sales are the simplest. Other situations layer documents on top of the core set. For an inherited vehicle, you need proof that the estate has been administered, typically a grant of representation or letters of administration that name the beneficiary, before NTSA will register the car to an heir. For a company-owned vehicle, you usually need the company KRA PIN, its certificate of incorporation and a board resolution or authority letter showing who may act for the company. For a recently imported vehicle, the import and customs paperwork from KRA underpins the first registration before any onward transfer. A motorbike follows the same TIMS flow and the same core documents as a car.</p>
+
+<p>If the logbook itself is lost, you cannot skip it. You apply for a duplicate logbook on TIMS first, which normally calls for a police abstract and a public notice period, and only then can the transfer proceed on the replaced document.</p>
+
+<h2>Common Document Mistakes That Stall a Transfer</h2>
+
+<p>Most stalled transfers come down to a handful of avoidable errors. The buyer KRA PIN is entered with a typo, so the transfer goes to the wrong or a non-existent account. The names on ID, KRA and TIMS do not match because one record was never updated. The seller tries to initiate before the buyer has actually opened a TIMS account, so there is nothing to receive the transfer. Or an inherited or company vehicle is attempted without the supporting legal documents, and NTSA rejects it. Checking each party documents against each other before anyone touches the portal removes nearly all of these.</p>
+
+<p>NTSA updates its TIMS requirements and the supporting documents it asks for from time to time, so treat this list as the usual case rather than a fixed legal checklist, and confirm the current requirements on the official TIMS portal before you start. Once your documents are in order, the <a href="/vehicle-transfer/">vehicle transfer calculator</a> gives you a realistic estimate of the transfer fee so you can budget the cost alongside the paperwork.</p>`,
+  },
 ]

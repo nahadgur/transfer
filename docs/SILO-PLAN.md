@@ -89,3 +89,4 @@ build; target ~100 (~10/hub). Slug + SVG-hero + slug rules apply (see fleet hand
 
 Writer log (drafts parked, publisher flips):
 - 2026-06-13: H5 mpesa-how-tos `how-to-get-full-mpesa-statement` (draft). Mapped spoke counts now: H1 3, H2 1, H3 4, H4 3, H5 1 (draft), H6 1, H7-H10 0. Next round-robin pick: H7 vehicle-logbook.
+- 2026-06-13: H7 vehicle-logbook `documents-needed-logbook-transfer-kenya` (draft). Counts now: H1 3, H2 1, H3 4, H4 3, H5 1 (draft), H6 1, H7 1 (draft), H8-H10 0. Next round-robin pick: H8 property-land. NOTE: tsc + link gate clean, but commit blocked by a stale .git/index.lock the sandbox cannot remove; change is staged in the working tree and needs Claude Code to commit + push.
