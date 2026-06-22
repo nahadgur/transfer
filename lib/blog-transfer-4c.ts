@@ -630,9 +630,9 @@ export const blogTransfer4C: BlogPost[] = [
     relatedSlugs: [],
     featuredImage: null,
     hub: 'mpesa-how-tos',
-    draft: true,
-    publishedAt: '2026-06-13',
-    lastReviewedAt: '2026-06-13',
+    draft: false,
+    publishedAt: '2026-06-15',
+    lastReviewedAt: '2026-06-15',
     faqs: [
       {
         question: 'Is requesting an M-Pesa statement free?',
@@ -790,5 +790,467 @@ export const blogTransfer4C: BlogPost[] = [
 <p>Most stalled transfers come down to a handful of avoidable errors. The buyer KRA PIN is entered with a typo, so the transfer goes to the wrong or a non-existent account. The names on ID, KRA and TIMS do not match because one record was never updated. The seller tries to initiate before the buyer has actually opened a TIMS account, so there is nothing to receive the transfer. Or an inherited or company vehicle is attempted without the supporting legal documents, and NTSA rejects it. Checking each party documents against each other before anyone touches the portal removes nearly all of these.</p>
 
 <p>NTSA updates its TIMS requirements and the supporting documents it asks for from time to time, so treat this list as the usual case rather than a fixed legal checklist, and confirm the current requirements on the official TIMS portal before you start. Once your documents are in order, the <a href="/vehicle-transfer/">vehicle transfer calculator</a> gives you a realistic estimate of the transfer fee so you can budget the cost alongside the paperwork.</p>`,
+  },
+  {
+    id: 114,
+    title: 'How to Do a Land Search in Kenya',
+    slug: 'how-to-do-a-land-search-in-kenya',
+    metaTitle: 'How to Do a Land Search in Kenya on Ardhisasa',
+    metaDescription:
+      'How to do an official land search in Kenya on Ardhisasa: what a search confirms, the documents and fee, owner approval, and how to read the certificate.',
+    category: 'Transfer',
+    calculator: 'property-transfer',
+    relatedSlugs: [],
+    featuredImage: null,
+    hub: 'property-land',
+    draft: true,
+    publishedAt: '2026-06-13',
+    lastReviewedAt: '2026-06-13',
+    faqs: [
+      {
+        question: 'What is a land search in Kenya?',
+        answer:
+          'It is the official check of the land register that confirms the registered owner of a parcel and any charge, caution or restriction on the title. It is the key due-diligence step before buying land, because a title document alone does not prove the current registered position.',
+      },
+      {
+        question: 'How do I do a land search on Ardhisasa?',
+        answer:
+          'Create a free Ardhisasa account with your national ID and KRA PIN, open the land registration services, start a new official search and enter the title or parcel number exactly as written. On Ardhisasa the registered owner approves the request before the certificate is released.',
+      },
+      {
+        question: 'What is the difference between an official and an unofficial search?',
+        answer:
+          'An official search produces a sealed certificate from the register that you can rely on for a transaction, while an unofficial or preliminary check is informal and not a substitute. For a purchase, always obtain the official search certificate.',
+      },
+      {
+        question: 'How long does a land search take and what does it cost?',
+        answer:
+          'An official search fee set by the Ministry of Lands applies, payable on Ardhisasa or at the registry, and the certificate is usually ready within one to three working days. The fee has changed more than once, so confirm the current amount on the portal rather than relying on an older figure.',
+      },
+      {
+        question: 'What does a land search certificate show?',
+        answer:
+          'It shows the registered proprietor, the parcel registration number, size and tenure, and any encumbrance such as a bank charge, caution or court restriction. Check the owner name against the seller ID and confirm there are no adverse entries before you proceed.',
+      },
+    ],
+    content: `<p>A land search in Kenya is the official check that confirms who legally owns a parcel and whether any charge, caution or restriction sits on the title. It is now done online through the Ardhisasa portal for digitised registries, attracts a small official fee, and the certificate is usually ready within a few working days.</p>
+
+<h2>What a Land Search Confirms</h2>
+
+<p>Before any money changes hands, a search is the single most important step in a Kenyan land deal. It establishes the registered proprietor of the parcel, its size and tenure, and any encumbrance recorded against the title, such as a charge held by a bank, a caution lodged by a third party, or a court restriction. If the person selling to you is not the registered owner, or the title carries a charge you were not told about, the search is where you find out.</p>
+
+<p>This matters because land fraud is a real risk, and a title deed in someone hand is not proof of current ownership on its own. Records change, and only the register held by the Ministry of Lands shows the live position. A search done close to the day you transact is your protection, which is why it belongs near the start of the process set out in the <a href="/guides/property-land/">property and land transfer guide</a>.</p>
+
+<h2>Doing the Search on Ardhisasa</h2>
+
+<p>For registries that have been digitised, the search runs through the <a href="https://ardhisasa.lands.go.ke" rel="nofollow">Ardhisasa portal</a>, the national land information system operated by the Ministry of Lands. You first create a free account using your national ID and KRA PIN and verify your details, then open the land registration services and start a new official search application.</p>
+
+<p>You enter the title or parcel number exactly as it appears on the title document. A single wrong digit returns no result or the wrong parcel, so copy it character for character. On Ardhisasa the registered owner is then asked to approve the search request from their own account before the result is released, a fraud-prevention step that also tells you quickly whether the seller really controls the title they are offering.</p>
+
+<h2>Documents, Fees and Timelines</h2>
+
+<p>To run a search you need the title or parcel number, your national ID and usually your KRA PIN for the account. An official search attracts a fee set by the Ministry of Lands, payable by M-Pesa, card or bank transfer on the portal. The exact amount has been revised more than once, and figures quoted on property blogs disagree, so treat any number you see online as indicative and confirm the current fee on Ardhisasa or at the land registry before you pay. Fees and processes change, so verify rather than rely on an older guide.</p>
+
+<p>Once the application is submitted and, on Ardhisasa, approved by the owner, the official search certificate is typically ready within one to three working days. Build that wait into your timeline. It is short, but it sits before valuation, duty and registration, and the <a href="/property-transfer/">property transfer calculator</a> helps you budget the full set of costs that follow.</p>
+
+<h2>Reading the Search Certificate</h2>
+
+<p>The certificate is a snapshot of the register on the day it is issued. Read the proprietor section first and check the name matches the seller national ID exactly. Then read the encumbrances section, because that is where a bank charge, a caution, a pending court matter or a restriction will appear. A clean search shows the owner and no adverse entries; anything else needs to be explained and cleared before you commit.</p>
+
+<p>Match every detail against the title document and the physical parcel: the registration number, the approximate size, and the tenure, whether freehold or a leasehold with a remaining term. A mismatch between the search, the title and what you are shown on the ground is a reason to pause rather than push on.</p>
+
+<h2>When Ardhisasa Does Not Cover Your Parcel</h2>
+
+<p>Ardhisasa is being rolled out registry by registry rather than nationwide at once, so not every parcel can be searched on it yet. Where a registry has not been migrated, the search is done through the eCitizen platform or in person at the relevant county land registry, using the same title number and a manual application form. Confirm which channel applies to your parcel before assuming the online route is open.</p>
+
+<p>Whichever channel you use, the principle is the same. The search is cheap, fast and decisive, and skipping it to save a day or a small fee is the most expensive shortcut in a land purchase. Run it, read it carefully, and only then move on to valuation and the rest of the transfer.</p>`,
+  },
+  {
+    id: 115,
+    title: 'What Happens to Your Pension When You Leave a Job in Kenya',
+    slug: 'what-happens-to-your-pension-when-you-leave-a-job-kenya',
+    metaTitle: 'What Happens to Your Pension When You Leave a Job',
+    metaDescription:
+      'What happens to your pension when you leave a job in Kenya: how much you can access, NSSF rules, the 2025 tax changes, and whether to transfer or preserve.',
+    category: 'Pension',
+    calculator: 'pension-transfer',
+    relatedSlugs: [],
+    featuredImage: null,
+    hub: 'pension-transfer',
+    draft: true,
+    publishedAt: '2026-06-15',
+    lastReviewedAt: '2026-06-15',
+    faqs: [
+      {
+        question: 'Do I lose my pension if I am fired or made redundant in Kenya?',
+        answer:
+          'No. Your accrued pension benefits remain yours regardless of how you leave. Your own contributions are always yours, and employer contributions that have vested under the scheme rules belong to you too. On leaving you can usually withdraw a portion, transfer the balance to a new scheme, or preserve it until retirement.',
+      },
+      {
+        question: 'How much of my pension can I withdraw when I leave a job?',
+        answer:
+          'Occupational schemes have generally allowed a member who leaves before retirement to access up to half of their accrued benefits, including matched employer contributions, when unemployed or changing jobs, with the rest preserved or transferred. The Retirement Benefits Authority has proposed lowering the early-access portion, so confirm the current limit with your scheme administrator before counting on a figure.',
+      },
+      {
+        question: 'Can I withdraw my NSSF savings after losing my job?',
+        answer:
+          'NSSF savings are preserved for retirement and are not designed as a short-term cushion after a job loss. A withdrawal benefit is available from age 50 once you have retired from regular paid employment, and the age benefit applies later. The main exception is the emigration benefit, which pays 100 percent if you are permanently leaving Kenya for a country outside the East African Community.',
+      },
+      {
+        question: 'Will I pay tax if I cash out my pension when I leave a job?',
+        answer:
+          'Possibly. Since the Finance Act 2025 took effect on 1 July 2025, the old fixed tax-free amounts on pension withdrawals were removed. A withdrawal is now tax-exempt only if you have reached the retirement age set in your fund rules, are withdrawing early due to ill health, or have been a member for more than 20 years. Otherwise it can be taxed, so confirm your position with KRA or a tax adviser.',
+      },
+      {
+        question: 'Is it better to transfer my pension or take the cash?',
+        answer:
+          'Transferring to your new employer scheme or preserving the benefit is usually the stronger choice. It keeps the savings invested and inside the tax-advantaged pension system, while cashing out early can now trigger tax and permanently reduces your retirement pot. This is general information, not personal financial advice.',
+      },
+    ],
+    content: `<p>When you leave a job in Kenya your accrued pension benefits remain yours. You can usually access part of them, transfer the balance to a new scheme, or preserve it until you retire. NSSF savings stay locked for retirement. Because the Finance Act 2025 changed how withdrawals are taxed, confirm your tax position before you cash anything out.</p>
+
+<h2>Your Pension Stays Yours When You Leave</h2>
+
+<p>Leaving a job, whether you resign, are made redundant or are dismissed, does not forfeit the pension you have built up. Your own contributions are always yours, and the employer contributions that have vested under the scheme rules belong to you as well. What changes is not ownership but your options for what to do with the money next.</p>
+
+<p>For occupational and individual schemes, those options are set by the scheme rules within the framework of the Retirement Benefits Authority (<a href="https://www.rba.go.ke/" rel="nofollow">RBA</a>), the regulator for retirement benefits in Kenya. On leaving service before retirement you can typically withdraw a portion of the benefit, transfer it to another registered scheme, or preserve it in the current scheme until retirement. The full set of routes is laid out in our <a href="/guides/pension-transfer/">Kenya pension and NSSF guide</a>.</p>
+
+<h2>How Much You Can Access Before Retirement</h2>
+
+<p>The headline question for most people leaving a job is how much they can take in cash now. Schemes have generally allowed a member who exits before the early retirement age of 50 to access up to half of their accrued benefits, including the matched employer contributions, where they are unemployed or moving jobs, with the remaining balance preserved or transferred. The idea is to give some access in a genuine gap while protecting the bulk of the savings for retirement.</p>
+
+<p>That position is under review. The RBA has been pushing to reduce the share members can take early and to move towards a structure that ring-fences more of the pot for retirement while allowing limited access in financial distress. Because the rules are changing, treat any percentage you read as indicative and confirm the current early-access limit with your scheme administrator before you plan around a number. Rules and figures in this area change, so verify rather than rely on an older guide.</p>
+
+<h2>What Happens to Your NSSF Savings</h2>
+
+<p>NSSF works differently from an occupational scheme. The <a href="https://www.nssf.or.ke/" rel="nofollow">National Social Security Fund</a> treats your savings as strictly preserved for retirement, not as a fund you can dip into after a job loss. Losing or leaving a job is not by itself a trigger to withdraw your NSSF balance.</p>
+
+<p>The access points are defined. A withdrawal benefit becomes available from age 50 once you have retired from regular paid employment, and the age benefit applies on reaching the fund retirement age. The clear exception is the emigration benefit: if you are permanently leaving Kenya for a country outside the East African Community, you can claim 100 percent of your NSSF savings, supported by documents such as your termination letter and proof of the move. For everyone else, the NSSF portion keeps growing until a retirement trigger is reached.</p>
+
+<h2>The Tax Rules Changed in July 2025</h2>
+
+<p>This is the part that has caught many leavers out. Before the Finance Act 2025, pension withdrawals carried generous fixed exemptions: the first KES 600,000 of a lump sum from a registered fund was tax free, with an alternative of KES 60,000 for every full year of service on termination, and the first KES 300,000 of annual pension income was exempt. Those fixed exemptions were deleted with effect from 1 July 2025.</p>
+
+<p>Under the new position, a withdrawal from a registered pension scheme is exempt from tax only if one of three conditions is met: you have reached the retirement age defined in your fund rules, you are withdrawing early because of ill health, or you have been a member of the fund for more than 20 years. If none of those applies, the withdrawal can be taxed. For someone cashing out part of their pension simply because they have changed jobs in their thirties or forties, that often means tax now applies where it would not have before. The figures and conditions here come from the Finance Act 2025, and tax law changes, so confirm your exact position with KRA or a qualified tax adviser before withdrawing.</p>
+
+<h2>Transfer or Preserve Is Usually the Smarter Move</h2>
+
+<p>Put the access limits and the new tax rules together and the conclusion is straightforward for most people: taking the cash on the way out of a job is rarely the best option. An early withdrawal can now be taxed, and every shilling taken out is a shilling no longer compounding towards your retirement. Transferring the benefit into your new employer scheme, or preserving it in the existing one, keeps the money invested and inside the tax-advantaged system.</p>
+
+<p>If you do need some liquidity during a gap, take only what you genuinely need and preserve the rest rather than emptying the pot. Before deciding, the <a href="/pension-transfer/">pension transfer calculator</a> helps you see the contribution and savings picture so the choice is grounded in numbers rather than the relief of a lump sum today. This article is general information for Kenya, not personal financial advice, and the rules are reviewed regularly, so verify the current position before you act.</p>`,
+  },
+  // ── Post: Import duty on phones and electronics (H10) ─────────────────────
+  {
+    id: 116,
+    title: 'Import Duty on Phones and Electronics in Kenya',
+    slug: 'import-duty-on-phones-and-electronics-kenya',
+    metaTitle: 'Import Duty on Phones and Electronics in Kenya',
+    metaDescription:
+      'Import duty and taxes on phones and electronics in Kenya: the 16% VAT, excise, import duty, IDF and RDL stack on a phone, how electronics are taxed, and the 2026 changes.',
+    category: 'Import Duty',
+    calculator: 'import-duty',
+    relatedSlugs: [],
+    featuredImage: null,
+    hub: 'import-duty',
+    draft: true,
+    publishedAt: '2026-06-15',
+    lastReviewedAt: '2026-06-15',
+    faqs: [
+      {
+        question: 'How much tax do you pay to import a phone into Kenya?',
+        answer:
+          'According to the National Treasury, a mobile phone imported into Kenya currently carries five taxes and levies along the supply chain: 16% VAT, 10% excise duty, 25% import duty, a 2.5% Import Declaration Fee and a 2% Railway Development Levy, an aggregate the Treasury puts at about 55.5%. The exact bill depends on the customs value of the handset, and rates can change, so confirm the current position with KRA before importing.',
+      },
+      {
+        question: 'Do laptops and computers attract import duty in Kenya?',
+        answer:
+          'Many computers and laptops fall under tariff lines that carry a zero import duty rate under the EAC Common External Tariff, but that does not make them tax free. The 16% VAT, the 2.5% Import Declaration Fee and the 2% Railway Development Levy still apply on the landed value, so a duty-free classification only removes one layer of the cost.',
+      },
+      {
+        question: 'How is VAT calculated on imported electronics?',
+        answer:
+          'VAT is charged at 16% on the taxable value, and for imports that value is the CIF figure plus the import duty, excise and the other levies already added. Because VAT sits on top of the duty and levies rather than on the price alone, the final tax is higher than 16% of what you paid.',
+      },
+      {
+        question: 'What is the 25% phone tax proposed in the Finance Bill 2026?',
+        answer:
+          'The Finance Bill 2026 proposes replacing the current stack of phone import taxes with a single 25% excise duty paid when a phone is activated rather than at import. The Treasury presents it as a simplification and a reduction from the current burden, but as of mid 2026 it is a proposal under debate, with unresolved questions over what activation means and how it would be enforced.',
+      },
+      {
+        question: 'Do I pay IDF and RDL on electronics imports?',
+        answer:
+          'Yes. The Import Declaration Fee of 2.5% and the Railway Development Levy of 2% are charged on the customs value of most goods imported into Kenya, including electronics, on top of any import duty and VAT. The RDL rose to 2% from 1.5% at the end of 2024, so older guides may quote a lower figure.',
+      },
+    ],
+    content: `<p>Phones and electronics are not taxed in Kenya on the price you paid abroad. They are taxed on the landed customs value, and several taxes stack on top of each other. A mobile phone carries VAT, excise, import duty and two import levies, while many laptops are duty free but still attract VAT and the levies. Rates change, so confirm the current figures with KRA before you import.</p>
+
+<h2>The Taxes Stacked on an Imported Phone</h2>
+
+<p>A mobile phone is one of the more heavily taxed everyday imports in Kenya. The National Treasury has set out the stack plainly: a phone imported into the country is subject to 16% VAT, 10% excise duty, 25% import duty, a 2.5% Import Declaration Fee and a 2% Railway Development Levy. Put together, the Treasury puts the aggregate burden at roughly 55.5% along the import and supply chain.</p>
+
+<p>Those figures come from the Kenya Revenue Authority (<a href="https://www.kra.go.ke/" rel="nofollow">KRA</a>) framework and the Treasury, and they are date sensitive. Tax rates and tariff classifications are revised in the annual Finance Act and through East African Community decisions, so treat any percentage here as the position at the time of writing and verify the current rate before you commit money. Our full <a href="/guides/import-duty/">Kenya import duty and KRA customs guide</a> sets out how the wider system fits together.</p>
+
+<h2>How the Taxes Are Layered on the Customs Value</h2>
+
+<p>The reason the headline rates add up to so much is that they are applied in layers, not side by side on the purchase price. The starting point is the CIF value, meaning the cost of the item plus insurance and freight to land it in Kenya. The Import Declaration Fee of 2.5% and the Railway Development Levy of 2% are charged on that customs value. Import duty is then applied, excise duty where it applies is calculated on the value plus duty, and VAT at 16% is charged last, on a taxable value that already includes the duty and the levies.</p>
+
+<p>Because VAT sits on top of everything else, the effective tax is always more than the simple sum of the percentages suggests at first glance. This layering is also why an estimate that only counts the import duty understates the bill by a wide margin. To see a realistic total for a specific value rather than guessing, the <a href="/import-duty/">import duty calculator</a> mirrors this layered method.</p>
+
+<h2>Laptops, Computers and Other Electronics</h2>
+
+<p>Not every electronic device is taxed like a phone. Many computers and laptops fall under tariff lines that carry a zero import duty rate under the EAC Common External Tariff, which removes the duty layer entirely. They are not tax free, though: the 16% VAT, the Import Declaration Fee and the Railway Development Levy still apply on the landed value, so the cost is lower than a phone but far from nothing.</p>
+
+<p>Finished consumer electronics such as televisions, audio equipment and similar goods generally attract import duty at the standard EAC bands, commonly 25% and in some cases 35%, plus VAT and the levies. The rate hinges on the exact tariff classification of the item, which is why two products that look similar can be taxed differently. Kenya has also moved to restrict the import of electrical and electronic equipment beyond a set age, so very old second hand devices may not be cleared at all. Check the classification and any restriction for your specific item before buying.</p>
+
+<h2>The Finance Bill 2026 Phone Tax Proposal</h2>
+
+<p>The taxation of phones is in flux. The Finance Bill 2026 proposes replacing the current stack of import taxes on phones with a single 25% excise duty, payable not at the border but when a phone is activated. The Treasury frames this as a simplification and a reduction from the current burden it puts at 55.5%, arguing that taxing the device only once it is sold eases the cash flow strain on importers and retailers.</p>
+
+<p>As of mid 2026 this is a proposal under debate, not the law. Analysts have flagged that the meaning of activation is unclear, whether it is switching the handset on or the point of sale, and that the matching change to the East African Community Common External Tariff has not yet been settled. There are also unresolved privacy concerns tied to using device IMEI numbers to track tax compliance, an approach a court has already pushed back on. Until the Finance Act is passed and KRA publishes the implementing rules, the current stack remains the figure to budget against.</p>
+
+<h2>Budgeting and Verifying Before You Import</h2>
+
+<p>The practical takeaway is to build the full layered cost into your decision before you buy a device abroad or order one in. For a phone, the all in tax can be more than half the value again on top of the price; for a duty free laptop it is lighter but still includes VAT and the two levies. Underestimating this is the most common way an import ends up costing far more than expected at the point of clearance.</p>
+
+<p>Some imports, importers and returning residents qualify for exemptions or reliefs, but these are specific and determined by KRA against set criteria, so confirm eligibility rather than assuming it. Because the rates, the tariff classifications and the phone tax rules are all under review, this article is general guidance for Kenya rather than a fixed quote. Verify the current figures with KRA or run the numbers through the import duty calculator before you rely on them.</p>`,
+  },
+  // ── Post 10: Fuliza cost (H1 mpesa-charges) ──────────────────────────────
+  {
+    id: 117,
+    title: 'How Much Fuliza Costs in Kenya',
+    slug: 'how-much-fuliza-costs-in-kenya',
+    metaTitle: 'How Much Fuliza Costs in Kenya',
+    metaDescription:
+      'What Fuliza really costs in Kenya: the one-off 1% access fee, Safaricom daily maintenance fee bands, the 20% excise duty and the free three-day window.',
+    category: 'M-Pesa Charges',
+    calculator: 'mpesa-calculator',
+    relatedSlugs: [
+      'mpesa-charges-complete-fee-guide',
+      'how-to-reverse-mpesa-transaction',
+    ],
+    featuredImage: null,
+    hub: 'mpesa-charges',
+    draft: true,
+    publishedAt: '2026-06-15',
+    lastReviewedAt: '2026-06-15',
+    faqs: [
+      {
+        question: 'Does Fuliza charge interest?',
+        answer:
+          'Fuliza does not charge interest in the way a normal loan does. Instead Safaricom charges a one-off access fee of 1% of the amount you Fuliza, plus a daily maintenance fee based on the size of the outstanding balance. The longer the balance stays unpaid, the more daily maintenance fees add up, so the practical cost behaves like interest even though it is not quoted as a rate.',
+      },
+      {
+        question: 'How much is the Fuliza access fee?',
+        answer:
+          'According to Safaricom, the access fee is a one-off 1% of the amount you draw. If you Fuliza KSh 2,000 you pay KSh 20 once, regardless of how long you take to repay. The daily maintenance fee is separate and is charged every day the balance remains outstanding.',
+      },
+      {
+        question: 'Is Fuliza free if you repay quickly?',
+        answer:
+          'For amounts of KSh 1,000 and below, Safaricom waives the daily maintenance fee for the first three days, so if you repay within that window you only pay the 1% access fee. Above KSh 1,000 there is no free window and the daily maintenance fee applies from the first day the balance is outstanding.',
+      },
+      {
+        question: 'What is the daily fee on a KSh 2,000 Fuliza balance?',
+        answer:
+          'A KSh 2,000 balance sits in the 1,501 to 2,500 band, where Safaricom charges KSh 20 plus KSh 4 excise duty, a total of KSh 24 a day. That fee is charged at midnight for every day the KSh 2,000 stays outstanding, on top of the one-off KSh 20 access fee. Rates can change, so confirm the current band with Safaricom.',
+      },
+      {
+        question: 'Why is there excise duty on Fuliza?',
+        answer:
+          'The Kenyan government levies a 20% excise duty on fees charged for mobile money credit, and Safaricom adds this to the Fuliza daily maintenance fee. That is why each band on the official tariff shows a base fee, the 20% excise, and a higher total. The figure you actually pay is the total column, not the base fee.',
+      },
+    ],
+    content: `<p>Fuliza has two costs, not one. Safaricom charges a one-off access fee of 1% of the amount you draw, then a daily maintenance fee for every day the balance stays unpaid. There is no quoted interest rate, but the daily fee makes a balance left outstanding for weeks surprisingly expensive. Rates can change, so verify the current figures before you rely on them.</p>
+
+<h2>The Two Charges on Every Fuliza</h2>
+
+<p>When you complete a payment using Fuliza, two separate charges apply. The first is a one-off access fee of 1% of the amount you Fuliza. Draw KSh 2,000 and you pay KSh 20 once, no matter how quickly or slowly you repay. The second is a daily maintenance fee, charged on the outstanding balance at midnight for each day the balance remains unpaid. According to <a href="https://www.safaricom.co.ke/main-m-pesa/m-pesa-services/credit-and-savings/fuliza-mobile" rel="nofollow">Safaricom</a>, a 20% excise duty is added on top of that daily maintenance fee, which is why the published tariff lists a base fee, the excise, and a higher total.</p>
+
+<p>This two-part structure is the thing most people miss. The 1% access fee looks cheap, and it is, but it is the daily maintenance fee that drives the real cost when a balance is carried for more than a few days. Fuliza was designed as a short-term overdraft to complete a transaction, not as a standing loan, and the pricing reflects that. For how Fuliza sits alongside the other M-Pesa fees, see our <a href="/guides/mpesa-charges/">Kenya M-Pesa charges and transfers hub</a>.</p>
+
+<h2>Fuliza Daily Maintenance Fee Bands</h2>
+
+<p>The daily maintenance fee is not a flat rate. It steps up in bands based on the size of the outstanding balance. The table below shows the current Safaricom tariff, including the base fee, the 20% excise duty, and the total you actually pay per day.</p>
+
+<table>
+<thead><tr><th>Outstanding balance (KSh)</th><th>Base fee</th><th>20% excise</th><th>Total per day</th></tr></thead>
+<tbody>
+<tr><td>0 to 100</td><td>KSh 0</td><td>KSh 0</td><td>KSh 0</td></tr>
+<tr><td>101 to 500</td><td>KSh 2.50</td><td>KSh 0.50</td><td>KSh 3</td></tr>
+<tr><td>501 to 1,000</td><td>KSh 5</td><td>KSh 1</td><td>KSh 6</td></tr>
+<tr><td>1,001 to 1,500</td><td>KSh 18</td><td>KSh 3.60</td><td>KSh 21.60</td></tr>
+<tr><td>1,501 to 2,500</td><td>KSh 20</td><td>KSh 4</td><td>KSh 24</td></tr>
+<tr><td>2,501 to 70,000</td><td>KSh 25</td><td>KSh 5</td><td>KSh 30</td></tr>
+</tbody>
+</table>
+
+<p>Notice the jump between the bands. Carrying KSh 1,000 costs KSh 6 a day, but going just one shilling over into the 1,001 to 1,500 band lifts the daily fee to KSh 21.60. That cliff edge means a Fuliza of KSh 1,001 can cost more to maintain than one of KSh 1,000, so it is worth knowing which band your balance falls into. These figures are the published Safaricom tariff at the time of writing and can be revised, so check the official page before you rely on a number.</p>
+
+<h2>The Free Three-Day Window</h2>
+
+<p>There is one way to use Fuliza and pay only the access fee. For amounts of KSh 1,000 and below, Safaricom waives the daily maintenance fee for the first three days. Draw KSh 800, repay within three days, and the only cost is the 1% access fee of KSh 8. This free window is why Fuliza can be cheap for small, quickly cleared amounts and expensive for larger balances left to run.</p>
+
+<p>The free window does not apply above KSh 1,000. A balance of KSh 1,500 or KSh 5,000 starts accruing the daily maintenance fee from the first day it is outstanding. So the cheapest way to use Fuliza is to keep the amount small and clear it within three days, and the most expensive way is to carry a large balance for a long time.</p>
+
+<h2>A Worked Example</h2>
+
+<p>Say you Fuliza KSh 2,000 to complete a till payment and you repay it four days later. The access fee is 1% of KSh 2,000, which is KSh 20, charged once. The KSh 2,000 sits in the 1,501 to 2,500 band, so the daily maintenance fee is KSh 24 a day. Four days outstanding means four daily fees, KSh 96 in total. Your full cost is KSh 20 plus KSh 96, which is KSh 116 to borrow KSh 2,000 for four days.</p>
+
+<p>Compare that with a small, quickly cleared draw. Fuliza KSh 800 and repay within three days and you pay only the KSh 8 access fee. The same facility can therefore be very cheap or quite costly depending entirely on the amount and how long you take to clear it. To see how Fuliza interacts with the cost of the underlying transaction, the <a href="/mpesa-calculator/">M-Pesa charges calculator</a> works out the send, withdraw or pay bill fee for the payment you are completing.</p>
+
+<h2>Keeping Fuliza Costs Down</h2>
+
+<p>The practical rules follow straight from the tariff. Keep the amount as low as the transaction allows, because the daily fee steps up sharply between bands. Clear small balances inside the three-day free window. Avoid carrying any balance, especially a large one, for weeks, since the daily fee repeats every single day until the balance is zero. Top up your M-Pesa whenever money comes in, because Fuliza is repaid automatically from your next deposit before you can spend it.</p>
+
+<p>Fuliza is a regulated overdraft offered by Safaricom in partnership with NCBA and KCB, and the tariff is set by them, not by us. The bands, the access fee and the excise treatment can all change through pricing reviews and Finance Act measures, so treat the figures here as the position at the time of writing. Verify the current Fuliza tariff on the official Safaricom page before making a decision that depends on the exact cost. If you find yourself relying on Fuliza every month, that is usually a sign to look at a cheaper credit option rather than the daily fee.</p>`,
+  },
+  {
+    id: 118,
+    title: 'How PesaLink Works and Its Limits in Kenya',
+    slug: 'how-pesalink-works-and-its-limits-kenya',
+    metaTitle: 'How PesaLink Works and Its Limits in Kenya',
+    metaDescription:
+      'How PesaLink works in Kenya: the per-transaction minimum and maximum, daily limits set by your bank, what banks charge, and how to send to a phone or account.',
+    category: 'Bank Transfers',
+    calculator: 'bank-transfer',
+    relatedSlugs: [
+      'rtgs-vs-mpesa-large-amounts',
+    ],
+    featuredImage: null,
+    hub: 'bank-transfers',
+    draft: true,
+    publishedAt: '2026-06-16',
+    lastReviewedAt: '2026-06-16',
+    faqs: [
+      {
+        question: 'What is the maximum I can send on PesaLink?',
+        answer:
+          'PesaLink allows a maximum of KSh 999,999 per transaction and a minimum of KSh 10, according to the operator IPSL. Your own bank can set a lower per-transaction or daily limit for security, so the figure you actually get may be smaller. Check your bank app for your specific limit before sending a large amount.',
+      },
+      {
+        question: 'How long does a PesaLink transfer take?',
+        answer:
+          'PesaLink is an instant, real-time service. The money moves from your account to the recipient account in seconds, and the platform runs around the clock including weekends and public holidays. Unlike RTGS and EFT, you do not wait for banking hours or a settlement cut-off.',
+      },
+      {
+        question: 'Is PesaLink free?',
+        answer:
+          'No, most banks charge a fee, but the fee fell sharply in 2025 when several banks agreed discounted tariffs. KCB, for example, made transfers below KSh 1,000 free and charges a flat KSh 20 above that. Charges still vary by bank and change, so confirm your bank current PesaLink tariff before sending.',
+      },
+      {
+        question: 'Do I need to register for PesaLink?',
+        answer:
+          'There is no separate sign-up. You log in to your bank mobile or internet banking, link your account and phone number once, and the PesaLink option appears in the menu. Linking your account is free. After that you can send to a phone number or directly to a bank account.',
+      },
+      {
+        question: 'Can I send PesaLink to any phone number?',
+        answer:
+          'Only if the recipient has linked that number to a bank account on PesaLink. If you choose send to phone and the number is not registered, the transfer fails. To avoid that, use the send to account option with the recipient bank and account number, which always works on a participating bank.',
+      },
+    ],
+    content: `<p>PesaLink moves money instantly between Kenyan bank accounts, with a minimum of KSh 10 and a maximum of KSh 999,999 per transaction. It is run by the banks themselves, works around the clock, and is usually cheaper than RTGS for everyday amounts. Your own bank sets daily limits and the fee, so confirm both before a large transfer.</p>
+
+<h2>What PesaLink Is and Who Runs It</h2>
+
+<p>PesaLink is Kenya bank-to-bank instant payment service. It lets you send money straight from your account to someone account at another bank, in real time, without routing through a mobile money wallet first. It is operated by Integrated Payment Services Limited (IPSL), which is owned by the Kenya Bankers Association, so it is the banking industry own rail rather than a single bank product. According to <a href="https://pesalink.co.ke/" rel="nofollow">PesaLink</a>, the service now connects well over a hundred institutions, including banks, saccos and fintech wallets, which is why a transfer between two very different account types can still land instantly.</p>
+
+<p>The practical appeal is speed without leaving the banking system. Where M-Pesa to bank adds a wallet step and RTGS waits for banking hours, PesaLink is account to account and available every day including weekends and public holidays. For where it fits among the other rails, see our <a href="/guides/bank-transfers/">guide to moving money between M-Pesa and Kenyan banks</a>.</p>
+
+<h2>PesaLink Transfer Limits</h2>
+
+<p>There are two layers of limit, and people often confuse them. The first is the network limit set by IPSL: a minimum of KSh 10 and a maximum of KSh 999,999 in a single PesaLink transaction. That is the ceiling the platform itself allows.</p>
+
+<p>The second layer is your own bank. Each bank can set a lower per-transaction cap and a daily total for its customers, usually for security reasons, and these differ from one bank to the next. So even though the network allows almost a million shillings in one go, your bank app may stop you at a lower figure or cap how much you can send in a day. The only reliable way to know your number is to check your bank app or ask the bank, because there is no single national daily limit that applies to everyone.</p>
+
+<p>If your transfer is above the PesaLink ceiling, for example a property deposit running into several million shillings, PesaLink is the wrong rail and you want RTGS instead. Our guide on <a href="/blog/rtgs-vs-mpesa-large-amounts/">when to use RTGS for large amounts</a> covers that threshold in detail.</p>
+
+<h2>What PesaLink Costs</h2>
+
+<p>PesaLink is not free at most banks, but the cost changed significantly in 2025. For years the charge was tiered by amount and could climb to around KSh 250 on larger transfers. During 2025 a group of banks agreed discounted PesaLink tariffs to compete for retail transfers, and the headline figures dropped. As <a href="https://www.businessdailyafrica.com/bd/corporate/companies/banks-slash-pesalink-charges-to-win-retail-transfers-5465958" rel="nofollow">Business Daily</a> reported, KCB moved to a flat KSh 20 on transfers above KSh 1,000 and made transfers below KSh 1,000 free, with several other banks following with their own reduced tariffs.</p>
+
+<p>What this means for you is that the fee now depends heavily on which bank you send from, and the old assumption that PesaLink is expensive is out of date. Because each bank sets its own charge and these are still being revised, treat any figure you see as the position at the time of writing and confirm the current tariff in your bank app before you send. Linking your account to PesaLink, separately, is free.</p>
+
+<h2>How to Send Money on PesaLink</h2>
+
+<p>You do not register for PesaLink as a standalone account. Instead you log in to your bank mobile app or internet banking, link your account and phone number once, and the PesaLink option appears in the menu. From there you have two ways to send.</p>
+
+<p>Send to account is the dependable option: you pick the recipient bank, enter their account number and the amount, confirm the name that comes back, and authorise with your PIN. Send to phone is quicker but only works if the recipient has linked that phone number to a bank account on PesaLink. If they have not, a send to phone transfer fails, which is the single most common reason a PesaLink payment does not go through. When in doubt, use send to account. To compare the cost of PesaLink against the other rails for a specific amount, the <a href="/bank-transfer/">bank transfer calculator</a> lines them up side by side.</p>
+
+<h2>PesaLink, RTGS, EFT and M-Pesa</h2>
+
+<p>Each rail has its own sweet spot. PesaLink is for instant account-to-account transfers up to its KSh 999,999 ceiling, any day of the week. RTGS is for high-value payments above that ceiling, settled the same business day but only during banking hours. EFT is the slow, cheap batch option for amounts that do not need to arrive today. M-Pesa to bank is the route when the money starts in your wallet rather than a bank account.</p>
+
+<p>Choosing by amount and urgency is what saves money and avoids a bounced transfer. Pushing a payment above the cap through PesaLink simply fails, and using RTGS for a small everyday transfer pays for speed and settlement guarantees you do not need. For most personal transfers between two bank accounts in Kenya, PesaLink is now both the fastest and, since the 2025 tariff cuts, often the cheapest choice. Because limits and fees are set by your bank and can change, verify your own figures before relying on them.</p>`,
+  },
+  // ── Post: M-Pesa daily and transaction limits ──────────────────────────────
+  {
+    id: 119,
+    title: 'What Are the M-Pesa Daily and Transaction Limits in Kenya?',
+    slug: 'mpesa-daily-and-transaction-limits',
+    metaTitle: 'M-Pesa Daily and Transaction Limits in Kenya (KES Figures)',
+    metaDescription: 'How much can you send, hold and move on M-Pesa in a day? The current daily limit, per-transaction cap and maximum wallet balance in Kenya, with the KES figures explained.',
+    category: 'Transfer',
+    calculator: 'mpesa-calculator',
+    hub: 'mpesa-charges',
+    draft: false,
+    publishedAt: '2026-06-22',
+    lastReviewedAt: '2026-06-22',
+    relatedSlugs: [
+      'mpesa-charges-complete-fee-guide',
+      'how-to-apply-for-mpesa-till-number-kenya',
+    ],
+    featuredImage: null,
+    content: `<p>If you have ever tried to send a large amount and seen your transaction bounce, you have run into one of M-Pesa's limits. They are not arbitrary. Safaricom sets them in line with rules approved by the regulator, and the same three numbers govern almost every wallet in Kenya. Knowing them ahead of time saves you the frustration of a payment that will not go through and a trip to the agent that ends in nothing.</p>
+
+<p>There are three figures that matter, and they are easy to mix up. This guide separates them clearly, explains what counts against each one, and shows you what to do when a single payment is bigger than the cap allows.</p>
+
+<h2>The three M-Pesa limits that matter</h2>
+
+<p>M-Pesa runs on three caps, and a transaction has to clear all of the ones that apply to it.</p>
+
+<p>The first is the per-transaction limit. The most you can move in one M-Pesa transaction is KES 250,000. That covers a single send, a single Buy Goods payment or a single Paybill payment. Anything above that figure has to be split.</p>
+
+<p>The second is the daily limit. Across a calendar day, the total value of your M-Pesa transactions cannot exceed KES 500,000. So you could in theory do two transactions of KES 250,000 each and reach the ceiling, after which the day is closed for further movement.</p>
+
+<p>The third is the maximum wallet balance. At any moment your M-Pesa account cannot hold more than KES 500,000. If a payment coming in would push your balance past that figure, it is rejected even if your daily limit has room. This one catches people who try to receive a large remittance or a bulk payout into a wallet that is already part-full.</p>
+
+<p>These figures were raised in stages and then approved by the Central Bank of Kenya, which <a href="https://www.centralbank.go.ke/national-payments-system/" rel="nofollow">oversees mobile money operators as licensed Payment Service Providers under the National Payment System Act</a> rather than letting Safaricom set them unilaterally. That oversight is why the same caps apply across the network and why they only change when the regulator signs off. The live, definitive figures always sit on <a href="https://www.safaricom.co.ke/personal/m-pesa/mpesa-charges" rel="nofollow">Safaricom's own M-Pesa charges and tariffs page</a>, which is the source to check if you suspect a recent revision.</p>
+
+<h2>What actually counts against your daily limit</h2>
+
+<p>The daily limit is a running total of value moved, not a count of transactions. Sending money to another person, paying a till or a Paybill, and withdrawing cash all draw against the same KES 500,000 pool for the day. The clock resets at midnight, so a payment blocked late in the evening will usually go through in the morning.</p>
+
+<p>A common point of confusion is whether money you receive counts. Receiving funds does not reduce your daily sending limit, but it does affect your wallet balance, which is governed by the separate maximum balance cap. So you can keep receiving small amounts even after you have stopped being able to send, right up until your balance approaches KES 500,000.</p>
+
+<p>Charges sit on top of the amount you move, and they are worth understanding alongside the limits because they shape how you should split a large payment. Our <a href="/blog/mpesa-charges-complete-fee-guide">complete breakdown of M-Pesa charges by band</a> sets out exactly what each transfer costs, and if you want the fee on one specific amount before you send, the <a href="/mpesa-calculator">M-Pesa calculator</a> gives you the figure instantly.</p>
+
+<h2>When your payment is bigger than the limit</h2>
+
+<p>Plenty of legitimate payments are larger than KES 250,000. A car deposit, a rent lump sum, school fees for the year or a contractor's invoice can all exceed the per-transaction cap. You have a few options.</p>
+
+<p>The first is to split the payment across the day, staying inside both the per-transaction and daily caps. Two payments of KES 250,000 on the same day is the most M-Pesa will allow, so anything above KES 500,000 cannot clear on the wallet alone in a single day.</p>
+
+<p>The second, and usually the better route for large sums, is to move the money through a bank instead. Bank rails carry much higher limits than the M-Pesa wallet, and for a big single payment they are often cheaper per shilling once you factor in the M-Pesa withdrawal or send charge. Our guidance on moving money <a href="/mpesa-to-bank">between M-Pesa and your bank account</a> walks through how to push funds across and what each method costs.</p>
+
+<p>If the money is coming from outside the country, the same wallet caps still apply on the receiving side, which is why a large inbound transfer can stall at the KES 500,000 balance ceiling. The page on <a href="/send-money-to-kenya">sending money to Kenya from abroad</a> covers how to structure a big remittance so it does not hit the wall, including paying direct to a bank account where the limits are higher.</p>
+
+<h2>Do the limits ever change?</h2>
+
+<p>Yes, but rarely, and never quietly. The caps you see today are the result of a deliberate increase that the Central Bank of Kenya approved, lifting both the daily limit and the maximum balance to KES 500,000 and the single-transaction cap to KES 250,000. Because the regulator has to sign off, any future change is announced rather than slipped in. If you have heard a rumour of a new figure, treat it as unconfirmed until it appears on Safaricom's official tariffs page.</p>
+
+<p>It is also worth knowing that your individual limits can be lower than the network maximum if your account is not fully registered or has been flagged. A wallet that has not completed full identity registration may carry reduced caps. If your transactions are bouncing well below KES 250,000, the issue is usually your account status rather than the network rule, and a visit to a Safaricom shop with your ID is the fix.</p>
+
+<h2>Quick reference</h2>
+
+<ul>
+<li>Maximum per single M-Pesa transaction: KES 250,000</li>
+<li>Maximum total M-Pesa transactions in one day: KES 500,000</li>
+<li>Maximum M-Pesa wallet balance at any time: KES 500,000</li>
+<li>Limits reset daily at midnight; receiving money does not reduce your sending limit but does count toward your balance cap</li>
+</ul>
+
+<p>For anything above these figures, plan to split across days or route the payment through a bank, where the ceilings are far higher.</p>
+
+<p>Need the exact fee on a specific amount before you send? Run it through the <a href="/mpesa-calculator">M-Pesa calculator</a> and you will have the cost in seconds.</p>`,
   },
 ]
