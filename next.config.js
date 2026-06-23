@@ -26,6 +26,7 @@ const nextConfig = {
       ['ntsa-tims-how-to-transfer-car-ownership-on-ecitizen', '/vehicle-transfer'],
       ['ntsa-tims-in-2026-and-how-to-transfer-car-ownership-on-ecitizen', '/vehicle-transfer'],
       ['stamp-duty-in-kenya-and-what-it-really-costs-to-transfer-land', '/property-transfer'],
+      ['the-cheapest-way-to-send-money-from-kenya-to-a-uk-or-us-bank-account', '/guides/remittance'],
     ]
     return [
       ...slugCleanup.map(([from, to]) => ({

@@ -16,6 +16,7 @@ const GONE_BLOG_SLUGS = new Set([
   'decoding-your-2026-payslip-and-why-your-net-salary-changed-again',
   'how-to-dispute-a-wrong-water-bill-reading-and-push-for-a-refund',
   'how-to-verify-a-vehicle-transfer-before-paying-for-a-used-car',
+  'the-paybill-trap-and-why-some-businesses-make-mobile-payments-feel-more-expensive',
 ])
 
 export function middleware(req: NextRequest) {
