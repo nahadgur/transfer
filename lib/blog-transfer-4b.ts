@@ -446,7 +446,7 @@ export const blogTransfer4B: BlogPost[] = [
 
 <h2>Method 2: Paxful P2P</h2>
 
-<p>Paxful is a peer-to-peer platform similar to Binance P2P that has a strong Kenyan user base. It was acquired by Binance in 2023 but continues to operate as a separate platform. Paxful accepts over 300 payment methods including M-Pesa.</p>
+<p>Paxful is a peer-to-peer platform similar to Binance P2P that has a Kenyan user base. The platform suspended operations in 2023 and later relaunched as an independent marketplace, so check that it is active in your region before relying on it. Paxful supports a wide range of payment methods including M-Pesa.</p>
 
 <h3>Step-by-Step</h3>
 <ol>
@@ -508,21 +508,21 @@ export const blogTransfer4B: BlogPost[] = [
 
 <h2>M-Pesa Limits for Crypto P2P Trades</h2>
 
-<p>The M-Pesa single transaction limit of <b>KES 150,000</b> and daily limit of <b>KES 300,000</b> affects large crypto trades. Buyers on P2P platforms are typically aware of these limits and will either:</p>
+<p>The M-Pesa single transaction limit of <b>KES 250,000</b> and daily limit of <b>KES 500,000</b> affects large crypto trades. These limits are set by the Central Bank of Kenya and Safaricom and are revised from time to time, so confirm the current limit before agreeing a large trade. Buyers on P2P platforms are typically aware of these limits and will either:</p>
 <ul>
 <li>Split payment into multiple M-Pesa transactions (confirm each before releasing crypto)</li>
 <li>Pay via bank transfer for amounts above M-Pesa limits</li>
 </ul>
 
-<p>For trades above KES 300,000, expect the buyer to pay via Equity Paybill or direct bank transfer rather than M-Pesa. Confirm this arrangement before starting the trade.</p>
+<p>For trades above the daily limit of KES 500,000, expect the buyer to pay via Equity Paybill or direct bank transfer rather than M-Pesa. Confirm this arrangement before starting the trade.</p>
 
 <h2>Tax Implications of Crypto in Kenya</h2>
 
-<p>The Kenya Revenue Authority (KRA) has classified cryptocurrency gains as taxable income. Key points:</p>
+<p>The Kenya Revenue Authority (KRA) treats cryptocurrency transactions as taxable. Key points:</p>
 
 <ul>
-<li>Profits from crypto trading are subject to <b>Capital Gains Tax (CGT)</b> at 15%</li>
-<li>Regular crypto income (e.g., freelance payments in crypto) may be treated as <b>ordinary income</b> subject to PAYE or self-employment tax</li>
+<li>Crypto transactions in Kenya are subject to the <b>Digital Asset Tax</b>, a dedicated levy administered by KRA on the transfer or exchange of digital assets, rather than to Capital Gains Tax. Confirm the current rate and the basis on which it is charged on the KRA website before you file, as the regime is still being refined</li>
+<li>Regular crypto income (for example freelance payments received in crypto) may also be treated as <b>ordinary income</b> subject to PAYE or self-employment tax</li>
 <li>KRA has been increasing its scrutiny of P2P crypto transactions identifiable via M-Pesa records</li>
 <li>Keep records of all crypto purchases, sales, and the KES value at time of transaction</li>
 </ul>

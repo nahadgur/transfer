@@ -50,11 +50,11 @@ export const blogTransfer4A: BlogPost[] = [
 <tr><td>15,001 – 20,000</td><td>KES 105</td><td>KES 163</td></tr>
 <tr><td>20,001 – 35,000</td><td>KES 108</td><td>KES 180</td></tr>
 <tr><td>35,001 – 50,000</td><td>KES 108</td><td>KES 197</td></tr>
-<tr><td>50,001 – 150,000</td><td>KES 108</td><td>KES 222</td></tr>
+<tr><td>50,001 – 250,000</td><td>KES 108</td><td>KES 222</td></tr>
 </tbody>
 </table>
 
-<p><b>Key insight:</b> For amounts above KES 20,000, the registered user fee is flat at KES 108 regardless of amount. Sending KES 149,999 costs the same fee as sending KES 20,001 — so if you are going to pay KES 108 either way, consider sending in one larger transaction rather than multiple smaller ones.</p>
+<p><b>Key insight:</b> For amounts above KES 20,000, the registered user fee is flat at KES 108 regardless of amount. Sending KES 200,000 costs the same fee as sending KES 20,001, so if you are going to pay KES 108 either way, consider sending in one larger transaction rather than multiple smaller ones. The top fee band tracks the maximum single transaction set by the Central Bank of Kenya and Safaricom, so confirm the current limit before relying on it.</p>
 
 <h2>Withdrawal (Cash Out) Charges 2026</h2>
 
@@ -76,7 +76,7 @@ export const blogTransfer4A: BlogPost[] = [
 <tr><td>15,001 – 20,000</td><td>KES 105</td></tr>
 <tr><td>20,001 – 35,000</td><td>KES 108</td></tr>
 <tr><td>35,001 – 50,000</td><td>KES 111</td></tr>
-<tr><td>50,001 – 150,000</td><td>KES 111</td></tr>
+<tr><td>50,001 – 250,000</td><td>KES 111</td></tr>
 </tbody>
 </table>
 
@@ -100,21 +100,11 @@ export const blogTransfer4A: BlogPost[] = [
 
 <h2>Fuliza M-Pesa Charges (Overdraft)</h2>
 
-<p>Fuliza is M-Pesa's overdraft facility — it lets you complete transactions when your M-Pesa balance is insufficient. However, it comes at a cost that many users underestimate.</p>
+<p>Fuliza is M-Pesa's overdraft facility. It lets you complete a transaction when your M-Pesa balance is short. However, it comes at a cost that many users underestimate.</p>
 
-<table>
-<thead><tr><th>Fuliza Amount (KES)</th><th>Daily Maintenance Fee</th></tr></thead>
-<tbody>
-<tr><td>1 – 100</td><td>KES 2 per day</td></tr>
-<tr><td>101 – 500</td><td>KES 5 per day</td></tr>
-<tr><td>501 – 1,000</td><td>KES 10 per day</td></tr>
-<tr><td>1,001 – 1,500</td><td>KES 15 per day</td></tr>
-<tr><td>1,501 – 2,500</td><td>KES 20 per day</td></tr>
-<tr><td>2,501 – 70,000</td><td>KES 30 per day</td></tr>
-</tbody>
-</table>
+<p>Fuliza has two charges rather than one. Safaricom levies a one-off access fee when you draw on the overdraft, then a daily maintenance fee for every day the borrowed amount stays outstanding, with the daily fee rising in bands as the balance grows. A government excise duty applies on top of these fees. Because the maintenance fee accrues daily, a balance carried for several days can cost far more than the convenience was worth, so Fuliza is a short-term bridge rather than a loan product. Repay it the same day or the next day whenever possible.</p>
 
-<p>Fuliza fees accrue <b>every single day</b> until the borrowed amount is repaid. A KES 1,500 Fuliza balance that you carry for 7 days costs KES 140 (7 × KES 20) — an effective annual interest rate exceeding 2,000%. Fuliza is a short-term bridge, not a loan product. Repay it the same day or the next day whenever possible.</p>
+<p>The exact access fee, the daily maintenance fee bands and the excise component change from time to time, so we do not restate a fixed schedule here. For the current figures and a worked example see our <a href="/blog/how-much-fuliza-costs-in-kenya/" style="color:#f59e0b">guide to how much Fuliza costs in Kenya</a>, and confirm the live tariff with Safaricom before you rely on it.</p>
 
 <h2>M-Shwari Charges</h2>
 
@@ -138,13 +128,15 @@ export const blogTransfer4A: BlogPost[] = [
 <table>
 <thead><tr><th>Limit Type</th><th>Amount (KES)</th></tr></thead>
 <tbody>
-<tr><td>Maximum single transaction</td><td>KES 150,000</td></tr>
-<tr><td>Maximum daily send limit</td><td>KES 300,000</td></tr>
-<tr><td>Maximum M-Pesa wallet balance</td><td>KES 300,000</td></tr>
+<tr><td>Maximum single transaction</td><td>KES 250,000</td></tr>
+<tr><td>Maximum daily send limit</td><td>KES 500,000</td></tr>
+<tr><td>Maximum M-Pesa wallet balance</td><td>KES 500,000</td></tr>
 <tr><td>Minimum Send Money amount</td><td>KES 1</td></tr>
 <tr><td>Minimum Withdraw amount</td><td>KES 50</td></tr>
 </tbody>
 </table>
+
+<p>These limits are set by the Central Bank of Kenya and Safaricom and are revised from time to time, so confirm the current limit on the Safaricom M-Pesa terms page or by dialling *334# before relying on it for a large transfer.</p>
 
 <p>Note: Limits for <b>M-Pesa Business</b> and <b>M-Pesa Global</b> accounts differ. Business accounts can have higher daily limits approved by Safaricom.</p>
 
@@ -343,7 +335,7 @@ export const blogTransfer4A: BlogPost[] = [
       'how-to-pay-kplc-nhif-nssf-via-mpesa',
     ],
     featuredImage: null,
-    content: `<p>M-Pesa is brilliant for everyday transactions — buying groceries, paying utilities, sending small amounts to family. But for large transfers in Kenya — property deposits, business payments, vehicle purchases, salary disbursements — <b>RTGS (Real Time Gross Settlement)</b> is often faster, safer, and dramatically cheaper. If you have ever felt the frustration of hitting M-Pesa's KES 300,000 daily limit, or wondered how to move KES 1 million to pay for land, this guide is for you.</p>
+    content: `<p>M-Pesa is brilliant for everyday transactions — buying groceries, paying utilities, sending small amounts to family. But for large transfers in Kenya — property deposits, business payments, vehicle purchases, salary disbursements — <b>RTGS (Real Time Gross Settlement)</b> is often faster, safer, and dramatically cheaper. If you have ever felt the frustration of hitting M-Pesa's KES 500,000 daily limit, or wondered how to move KES 1 million to pay for land, this guide is for you.</p>
 
 <h2>What Is RTGS?</h2>
 
@@ -357,14 +349,14 @@ export const blogTransfer4A: BlogPost[] = [
 <thead><tr><th>Feature</th><th>M-Pesa</th><th>RTGS</th></tr></thead>
 <tbody>
 <tr><td>Minimum amount</td><td>KES 1</td><td>KES 1,000,000 (typically)</td></tr>
-<tr><td>Maximum amount</td><td>KES 150,000 per transaction / KES 300,000 per day</td><td>No upper limit</td></tr>
+<tr><td>Maximum amount</td><td>KES 250,000 per transaction / KES 500,000 per day</td><td>No upper limit</td></tr>
 <tr><td>Fee (typical)</td><td>KES 108 max for registered transfers</td><td>KES 100–500 (fixed, regardless of amount)</td></tr>
 <tr><td>Processing time</td><td>Instant</td><td>Same day (if sent before cut-off)</td></tr>
 <tr><td>Cut-off time</td><td>24/7</td><td>Typically 3:00PM–4:00PM EAT</td></tr>
 <tr><td>Weekends/holidays</td><td>Available</td><td>Business days only</td></tr>
 <tr><td>Requires bank account</td><td>No (wallet-based)</td><td>Yes (both sender and recipient)</td></tr>
 <tr><td>Can reverse transaction</td><td>No (after completion)</td><td>Very difficult (settlement is final)</td></tr>
-<tr><td>Best for</td><td>Up to KES 300K, any time, any day</td><td>Above KES 1M, business days</td></tr>
+<tr><td>Best for</td><td>Up to KES 500K, any time, any day</td><td>Above KES 1M, business days</td></tr>
 </tbody>
 </table>
 
@@ -372,21 +364,21 @@ export const blogTransfer4A: BlogPost[] = [
 
 <p>The fee economics of RTGS become overwhelming at high amounts. Consider this real-world scenario:</p>
 
-<p>You need to pay KES 2,000,000 for a plot of land in Kiambu. Via M-Pesa, you cannot do this in a single transaction — the maximum is KES 150,000 per transaction and KES 300,000 per day. You would need to send over 7 days minimum, paying KES 108 per transaction, potentially many transactions, plus the agent or business would need to receive and consolidate funds.</p>
+<p>You need to pay KES 2,000,000 for a plot of land in Kiambu. Via M-Pesa, you cannot do this in a single transaction. The maximum is KES 250,000 per transaction and KES 500,000 per day, so even at the daily ceiling you would need to spread the payment across at least four days and several transactions, paying a fee on each one, while the recipient receives and consolidates the funds in instalments.</p>
 
 <p>Via RTGS from your bank account to the seller's bank account: <b>one transaction, same day, flat fee of approximately KES 300–500</b> regardless of the KES 2,000,000 amount.</p>
 
 <table>
 <thead><tr><th>Amount</th><th>M-Pesa Cost</th><th>RTGS Cost</th><th>Savings with RTGS</th></tr></thead>
 <tbody>
-<tr><td>KES 500,000</td><td>KES 540+ (multiple days)</td><td>KES 300</td><td>KES 240+</td></tr>
-<tr><td>KES 1,000,000</td><td>KES 1,080+ (7+ days)</td><td>KES 400</td><td>KES 680+</td></tr>
-<tr><td>KES 5,000,000</td><td>Not practical (50+ days)</td><td>KES 500</td><td>Immense</td></tr>
-<tr><td>KES 10,000,000</td><td>Impossible via M-Pesa</td><td>KES 500</td><td>N/A</td></tr>
+<tr><td>KES 500,000</td><td>KES 216+ (1 day, 2 transactions)</td><td>KES 300</td><td>Similar fee, but split over transactions</td></tr>
+<tr><td>KES 1,000,000</td><td>KES 432+ (2+ days)</td><td>KES 400</td><td>KES 32+ and far simpler</td></tr>
+<tr><td>KES 5,000,000</td><td>Not practical (10+ days)</td><td>KES 500</td><td>Immense</td></tr>
+<tr><td>KES 10,000,000</td><td>Not practical (20+ days)</td><td>KES 500</td><td>Immense</td></tr>
 </tbody>
 </table>
 
-<p>For any amount above KES 500,000, RTGS is not just cheaper — it is the only practical option for a same-day transfer.</p>
+<p>For any amount above the M-Pesa daily limit of KES 500,000, RTGS is not just cheaper. It is the only practical option for a same-day transfer.</p>
 
 <h2>EFT vs RTGS: What Is the Difference?</h2>
 
@@ -401,8 +393,8 @@ export const blogTransfer4A: BlogPost[] = [
 <table>
 <thead><tr><th>Transfer Type</th><th>Typical Amount</th><th>Settlement</th><th>Fee Range</th><th>Hours</th></tr></thead>
 <tbody>
-<tr><td>M-Pesa Send</td><td>Up to KES 150K</td><td>Instant</td><td>KES 0–108</td><td>24/7</td></tr>
-<tr><td>M-Pesa Paybill to Bank</td><td>Up to KES 150K</td><td>Instant</td><td>Free</td><td>24/7</td></tr>
+<tr><td>M-Pesa Send</td><td>Up to KES 250K</td><td>Instant</td><td>KES 0–108</td><td>24/7</td></tr>
+<tr><td>M-Pesa Paybill to Bank</td><td>Up to KES 250K</td><td>Instant</td><td>Free</td><td>24/7</td></tr>
 <tr><td>Pesalink</td><td>Up to KES 999K</td><td>Instant</td><td>KES 50–150</td><td>24/7</td></tr>
 <tr><td>EFT</td><td>Any amount</td><td>1–3 days</td><td>KES 25–100</td><td>Business hours</td></tr>
 <tr><td>RTGS</td><td>KES 1M+</td><td>Same day</td><td>KES 200–500</td><td>Business hours</td></tr>
@@ -415,7 +407,7 @@ export const blogTransfer4A: BlogPost[] = [
 <h3>1. Property and Land Transactions</h3>
 <p>Buying or selling property in Kenya invariably involves large sums — often KES 1M to KES 50M. RTGS is the standard payment method used by conveyancing lawyers and land registries. Most sellers and their advocates will specifically request payment via RTGS or banker's cheque.</p>
 
-<h3>2. Vehicle Purchases Above KES 300,000</h3>
+<h3>2. Vehicle Purchases Above KES 500,000</h3>
 <p>If you are buying a car for KES 800,000 from a dealer, M-Pesa cannot handle this in a single day. RTGS gives you same-day settlement with a full bank-generated paper trail — critical for ownership transfer documentation.</p>
 
 <h3>3. Business-to-Business Supplier Payments</h3>
@@ -500,9 +492,9 @@ export const blogTransfer4A: BlogPost[] = [
 <h2>The Decision Framework: Which to Use?</h2>
 
 <ul>
-<li><b>Under KES 300,000, any time:</b> M-Pesa (Paybill if to a bank — free; Send Money if to a wallet)</li>
-<li><b>KES 300,000–1,000,000, 24/7 required:</b> Pesalink (via your bank's internet banking or app)</li>
-<li><b>KES 300,000–1,000,000, business hours:</b> EFT (cheapest option, 1–3 day settlement) or Pesalink (instant)</li>
+<li><b>Under KES 500,000, any time:</b> M-Pesa (Paybill if to a bank is free; Send Money if to a wallet)</li>
+<li><b>KES 500,000–1,000,000, 24/7 required:</b> Pesalink (via your bank's internet banking or app)</li>
+<li><b>KES 500,000–1,000,000, business hours:</b> EFT (cheapest option, 1–3 day settlement) or Pesalink (instant)</li>
 <li><b>KES 1,000,000+, same day required:</b> RTGS (only practical option)</li>
 <li><b>KES 1,000,000+, next day acceptable:</b> EFT (lower fee, next day settlement)</li>
 </ul>
