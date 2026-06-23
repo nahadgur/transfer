@@ -8,6 +8,29 @@ Method: rewrite content to verified figures, purge fabrications, set
 Status key: ⬜ pending · 🔧 in progress · ✅ done (facts verified) · 🔗 linked/hubbed · ⛔ decision needed
 GSC = clicks/impressions from the 2026-06-23 Search Console export (blank = negligible).
 
+## ✅ COMPLETE — all 55 resolved (2026-06-23)
+
+Final disposition of every legacy post:
+- **40 rewritten live** to verified figures (Priority 1: 15, Priority 2: 20,
+  Group B on-niche: 5 = ids 38,39,40,42,49, mapped to kplc-tokens / mpesa-how-tos).
+- **7 redirected (308)** into the silo spoke/tool that owns the head term
+  (de-cannibalisation): 32→101, 33→102, 31→103, 45+44→/vehicle-transfer,
+  47→/property-transfer, 35→/guides/remittance. See `next.config.js`.
+- **8 gone (410)** — off-niche or wrong-country, no target: 36, 41, 43, 46, 48,
+  50, 54, 34. See `middleware.ts` (new this session).
+- All redirected/gone posts are also `draft: true` (out of /blog + sitemap).
+
+Also fixed the LIVE silo spokes (not legacy): M-Pesa limits reconciled to
+250k/500k in spokes 101/103/106 (matching spoke 119); 101 Fuliza table
+deferred to spoke 117; 106 crypto corrected to Digital Asset Tax + Paxful claim
+removed. `_verified-facts-kenya-tax.md` is the figure source of truth.
+
+Verification each step: `npx tsc --noEmit` clean, fleet link gate 0 broken.
+Commits: 56eafa4, aaf3250, ec5a77c, ac833a1, c17a3c8, 3ae9efc, 86e0a2a,
+23f09a5, 246e6ed, b1bb143, 276bb9f (all pushed to main).
+
+Row statuses below were the planning triage; the disposition above is final.
+
 ## Priority 1 — getting impressions AND broken (live YMYL risk)
 
 | id | slug | GSC c/i | worst issues | decision | status |
