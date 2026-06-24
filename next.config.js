@@ -27,6 +27,9 @@ const nextConfig = {
       ['ntsa-tims-in-2026-and-how-to-transfer-car-ownership-on-ecitizen', '/vehicle-transfer'],
       ['stamp-duty-in-kenya-and-what-it-really-costs-to-transfer-land', '/property-transfer'],
       ['the-cheapest-way-to-send-money-from-kenya-to-a-uk-or-us-bank-account', '/guides/remittance'],
+      // De-cannibalised 2026-06-24: weaker near-duplicate folded into the
+      // canonical PAYE post (a strict superset and the heavily-linked authority).
+      ['three-legal-ways-to-lower-your-paye-bill-in-kenya', '/blog/legal-ways-kenyan-employees-can-reduce-their-paye'],
     ]
     return [
       ...slugCleanup.map(([from, to]) => ({
