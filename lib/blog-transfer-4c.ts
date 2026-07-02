@@ -1253,4 +1253,95 @@ export const blogTransfer4C: BlogPost[] = [
 
 <p>Need the exact fee on a specific amount before you send? Run it through the <a href="/mpesa-calculator">M-Pesa calculator</a> and you will have the cost in seconds.</p>`,
   },
+  // ── Post: How to check your KPLC token balance (H6 kplc-tokens spoke) ───────
+  {
+    id: 120,
+    title: 'How to Check Your KPLC Token Balance in Kenya',
+    slug: 'how-to-check-kplc-token-balance',
+    metaTitle: 'How to Check Your KPLC Token Balance in Kenya (*977# and App)',
+    metaDescription:
+      'Check your KPLC prepaid token balance and units left: read the meter display, use *977#, the Stima app or an SMS to 95551, and see your last tokens bought.',
+    category: 'Transfer',
+    calculator: 'ussd-codes',
+    hub: 'kplc-tokens',
+    draft: true,
+    publishedAt: '2026-07-02',
+    lastReviewedAt: '2026-07-02',
+    relatedSlugs: [],
+    featuredImage: null,
+    faqs: [
+      {
+        question: 'How do I check my KPLC token balance?',
+        answer:
+          'The fastest check is on the meter itself: press the display button on your prepaid meter to show the units remaining. To see how many tokens you have bought recently, dial *977# on a Safaricom line and choose Prepaid Services then Latest Token, or check the Stima app.',
+      },
+      {
+        question: 'Can I check my KPLC balance without the meter?',
+        answer:
+          'You can check your recent token purchases without touching the meter by dialling *977#, using the KPLC Stima app, or sending your meter number by SMS to 95551. These show the tokens bought, but only the meter display shows the exact units left inside it right now.',
+      },
+      {
+        question: 'What is the code to see units on my prepaid meter?',
+        answer:
+          'The keypad code that displays remaining units differs by meter brand, so there is no single code that works on every meter. Check the code printed on your meter or in its manual. Most meters also have a dedicated button that shows the balance without any code.',
+      },
+      {
+        question: 'I bought a token but the SMS never arrived. How do I get it?',
+        answer:
+          'Do not buy again. The payment succeeded even if the SMS did not reach you, so the token still exists. Dial *977# and select Latest Token to see the last tokens for your meter, or SMS your meter number to 95551 to have the details resent.',
+      },
+      {
+        question: 'Why do I get fewer units for the same amount of money?',
+        answer:
+          'Units per shilling depend on the electricity tariff and the levies in force when you buy, which are reviewed by the energy regulator. When those move, the same payment buys fewer or more units. Rely on the SMS confirmation for the actual units, not an online estimate.',
+      },
+    ],
+    content: `<p>To check how much power you have left on a KPLC prepaid meter, press the display button on the meter to read the units remaining, and check your recent token purchases by dialling *977# on a Safaricom line or opening the Stima app. The meter shows the live units inside it; the phone channels show the tokens you have bought. Both matter, and they answer slightly different questions.</p>
+
+<p>Running out of electricity in the middle of the evening is avoidable if you know where to look before the meter starts beeping. There are two things people mix up: the units currently loaded on the meter, and the tokens you have bought recently. This guide covers how to read both, so you always know whether you need to top up now or whether a token you bought is simply waiting to be keyed in.</p>
+
+<h2>Reading the units left on your meter</h2>
+
+<p>The single most accurate number is the one on the meter itself. Every KPLC prepaid meter has a small keypad and a display, and there is a button or a short code that brings up the remaining units in kilowatt hours. On many meters a dedicated button shows the balance straight away. On others you key in a short code and press enter.</p>
+
+<p>The catch is that the code is not the same on every meter. Kenya Power has installed several brands over the years, including Actaris, Conlog, Hexing, Shenzhen and Inhemeter, and each family uses its own keypad codes for balance, last token and total energy used. Because those codes differ and are easy to get wrong, the reliable move is to read the code printed on your own meter or in the manual that came with it rather than trusting a generic list. If your meter has a plain balance button, use that and skip the codes entirely.</p>
+
+<p>The meter also warns you before you run dry. As the units fall low, most prepaid meters give an audible alert, a beep or alarm that is your prompt to buy more before a disconnection. If your meter is beeping, that is the balance telling you it is nearly empty, and it is time to buy a token rather than wait.</p>
+
+<h2>Checking your tokens by phone with *977#</h2>
+
+<p>The meter tells you what is loaded now. To see what you have actually bought, Kenya Power runs a USSD service on <a href="https://www.kplc.co.ke/faq/prepaid-meters" rel="nofollow">*977#, which the utility documents for prepaid queries</a> and which currently works from a Safaricom line. Dial it, choose Prepaid Services, and select the Latest Token option. You then pick your meter from the list or type the meter number, and the system returns the last three tokens bought under that meter.</p>
+
+<p>This is the same channel you use when a token you paid for never arrives by SMS. It is worth stressing, because the instinct when no message comes through is to buy again, and that is the mistake to avoid. The purchase succeeds at the point of payment, so the token already exists even if the SMS failed. Pulling your last tokens with *977# gets you the code you already paid for without spending twice. Our guide to <a href="/blog/how-to-pay-kplc-nhif-nssf-via-mpesa">paying KPLC, SHA and NSSF by M-Pesa</a> covers the buying side, including the official Paybill and the meter number you enter as the account.</p>
+
+<h2>The Stima app and the SMS shortcut</h2>
+
+<p>If you would rather not memorise a USSD tree, the KPLC Stima app keeps a history of your recent token purchases and lets you review and, where needed, recover a token you have lost. It also lets you buy directly, which makes it a single place to manage a meter.</p>
+
+<p>There is also a plain SMS route for anyone without the app or airtime to spare on a call. Send your meter number by text to 95551 and Kenya Power sends back your token details, which is useful for both checking a balance and resending a delayed token. The SMS carries a small standard charge. If none of these resolve the problem, the national contact centre on 97771 handles prepaid queries by phone. For the full set of self-service shortcodes, including the ones for M-Pesa itself, our <a href="/ussd-codes">USSD codes reference</a> lists what each menu does.</p>
+
+<h2>Why your units never seem to add up the same way twice</h2>
+
+<p>A question that comes up constantly is why the same payment buys a different number of units from one month to the next. The answer is that a KPLC token is priced in shillings, not in units. What you get in kilowatt hours depends on the tariff band and the levies applied at the moment of purchase, and those include fuel, foreign exchange and inflation adjustments that the <a href="https://www.epra.go.ke/electricity-tariff-overview" rel="nofollow">Energy and Petroleum Regulatory Authority reviews and publishes</a>. When any of those move, the units per shilling move with them.</p>
+
+<p>That is why the number on your SMS confirmation is the figure to trust, not an estimate you worked out earlier in the year. It also explains why buying in one lump sum rather than small frequent top-ups does not really change the total units you receive for a given spend, since the rate is applied to the amount either way. What frequent small buys do add is the risk of running out between purchases, which is the practical case for keeping a little buffer on the meter.</p>
+
+<h2>Prepaid balance versus a postpaid bill</h2>
+
+<p>Everything above assumes a prepaid, token meter. If your connection is postpaid, there is no token balance to read, because you are billed in arrears for what you have already used. In that case checking your position means checking your latest bill rather than a meter display, which Kenya Power provides through the same app and self-service channels. If you are not sure which type you have, a meter that needs a token code keyed in is prepaid; one that simply records usage for a monthly bill is postpaid.</p>
+
+<p>For the wider picture on buying tokens, finding your meter number and paying other utilities the same way, the <a href="/guides/kplc-tokens">KPLC tokens and utility payments hub</a> pulls the related how-tos together, and the <a href="/kplc-transfer">KPLC meter transfer tool</a> covers moving a meter into your name when you change premises.</p>
+
+<h2>Quick reference</h2>
+
+<ul>
+<li>Units left on the meter: press the meter display button, or the balance code for your meter brand</li>
+<li>Last tokens bought: dial *977#, Prepaid Services, Latest Token (Safaricom line)</li>
+<li>Resend or check by SMS: text your meter number to 95551</li>
+<li>App and history: the KPLC Stima app; contact centre 97771</li>
+<li>Token bought but no SMS: retrieve it with *977# or 95551, do not buy again</li>
+</ul>
+
+<p>Because tariffs and levies are reviewed from time to time, treat any units-per-shilling figure as indicative and rely on your meter and the SMS confirmation for the real number. If a balance or a token looks wrong, Kenya Power's own prepaid guidance and the contact centre are the place to confirm it.</p>`,
+  },
 ]

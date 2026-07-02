@@ -117,3 +117,22 @@ When a figure is rate-sensitive, attribute and steer, e.g.:
 "As of 2026 the PAYE bands run from 10% to 35% (Kenya Revenue Authority, Finance
 Act 2023). Rates can change, so confirm the current bands on the KRA iTax portal."
 Author byline: KTH (Kenya Transfer Hub) editorial entity. No invented person.
+
+## 12. KPLC prepaid tokens (verified 2026-07-02, KPLC + secondary)
+- Check last/recent tokens by USSD: dial *977# (Safaricom only), Prepaid Services ->
+  Latest Token, pick or type the meter number; returns the last three tokens for that
+  meter. Same channel is used to retrieve a delayed/lost token (the purchase already
+  succeeded, only the SMS failed) so DO NOT buy again first.
+- SMS the meter number to 95551 to resend token details / check balance (approx KES 5/SMS).
+- KPLC Stima app and the KPLC self-service portal show recent token-purchase history.
+- KPLC national contact centre: 97771 (call or SMS).
+- Prepaid meters have a keypad/button that displays remaining units on the meter itself;
+  the exact code differs by meter brand/model (Actaris/Itron, Conlog, Hexing, Shenzhen,
+  Inhemeter, Clou) and sources DISAGREE on the per-brand codes, so steer readers to the
+  code printed on their own meter or manual rather than publishing a per-brand table.
+- Meter shows a low-balance alert (beep/alarm) as units run low; a commonly cited
+  threshold is around 20 kWh but it varies by meter, so frame as "a low-units warning"
+  not a fixed number.
+- Units per token depend on the KPLC tariff + levies (fuel, forex, inflation, EPRA
+  adjustments) in force at purchase, set/revised by EPRA, so units per shilling vary
+  between buys. Rely on the SMS confirmation, not an online estimate.
