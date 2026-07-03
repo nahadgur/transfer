@@ -1344,4 +1344,290 @@ export const blogTransfer4C: BlogPost[] = [
 
 <p>Because tariffs and levies are reviewed from time to time, treat any units-per-shilling figure as indicative and rely on your meter and the SMS confirmation for the real number. If a balance or a token looks wrong, Kenya Power's own prepaid guidance and the contact centre are the place to confirm it.</p>`,
   },
+  // ── Post: How to reset your M-Pesa PIN (H5 mpesa-how-tos spoke) ─────────────
+  {
+    id: 121,
+    title: 'How to Reset a Forgotten M-Pesa PIN in Kenya',
+    slug: 'how-to-reset-your-mpesa-pin',
+    metaTitle: 'How to Reset a Forgotten or Blocked M-Pesa PIN in Kenya',
+    metaDescription:
+      'Reset a forgotten M-Pesa PIN yourself on *334# using your ID number and security questions, unlock a blocked PIN, and know when you need a Safaricom shop.',
+    category: 'Transfer',
+    calculator: 'ussd-codes',
+    hub: 'mpesa-how-tos',
+    draft: true,
+    publishedAt: '2026-07-03',
+    lastReviewedAt: '2026-07-03',
+    relatedSlugs: [],
+    featuredImage: null,
+    faqs: [
+      {
+        question: 'How do I reset my M-Pesa PIN if I have forgotten it?',
+        answer:
+          'Dial *334# on your registered Safaricom line, choose My Account, then M-PESA PIN Manager, then the forgot-PIN option. You enter your ID or passport number, answer your security questions and set a new four-digit PIN. If you never set security questions, you may need to call Safaricom on 100 or visit a shop with your ID.',
+      },
+      {
+        question: 'What happens if I enter my M-Pesa PIN wrong too many times?',
+        answer:
+          'Repeated wrong entries lock the PIN. You unlock it through the M-PESA PIN Manager on *334# using your ID number, or by calling Safaricom customer care. After too many failed reset attempts the account can be locked for a period, at which point a Safaricom shop visit with your original ID is the reliable route.',
+      },
+      {
+        question: 'Do I need security questions to reset my M-Pesa PIN?',
+        answer:
+          'They make the self-service reset instant. If you set three security questions in advance, you can reset on *334# without leaving your phone. Without them, Safaricom verifies you another way, which usually means a call to customer care or a shop visit with your ID.',
+      },
+      {
+        question: 'Can someone reset my M-Pesa PIN and steal my money?',
+        answer:
+          'The reset needs your ID number and your security-question answers, so keep both private. Safaricom staff never ask for your PIN, and no genuine message will ask you to share it. If anyone calls claiming to reset your PIN for you, hang up and dial *334# yourself.',
+      },
+      {
+        question: 'Where do I set my M-Pesa security questions?',
+        answer:
+          'Dial *334#, choose My Account, then M-PESA PIN Manager, then the option to set security questions. You pick three questions and answers. Doing this while you still remember your PIN is what makes a future reset quick.',
+      },
+    ],
+    content: `<p>To reset a forgotten M-Pesa PIN, dial *334# on your registered Safaricom line, choose My Account, then M-PESA PIN Manager, then the forgot-PIN option. You confirm your identity with your ID or passport number and your security questions, then set a new four-digit PIN. The whole reset takes a minute if your security questions are already set.</p>
+
+<p>A blocked or forgotten PIN always seems to happen at the till when you are trying to pay. The good news is that Safaricom built a do-it-yourself reset into the M-Pesa menu, so in most cases you never have to queue at a shop. What determines whether the reset is instant or slow is one thing you can only fix in advance, which is your security questions.</p>
+
+<h2>Reset a forgotten PIN on *334#</h2>
+
+<p>The self-service reset lives inside the same USSD menu you use for the rest of M-Pesa. Dial *334# from the line the M-Pesa account is registered on, choose My Account, then M-PESA PIN Manager, then the forgot-PIN option. You are asked for the national ID or passport number your line is registered under, and then to answer the security questions you set earlier. Get those right and you set a fresh four-digit PIN on the spot.</p>
+
+<p>Two details trip people up. The reset only works on the SIM that holds the account, so a borrowed phone with your SIM in it is fine but a different number is not. And the ID number has to match the one used at registration exactly, which is why a PIN reset can stall for anyone whose line is registered under a relative's details. If either check fails, the menu will not let you through, and that is the point where a call to Safaricom or a shop visit becomes the answer. If a transaction failure sent you looking for the PIN reset in the first place, the steps for <a href="/blog/how-to-reverse-mpesa-transaction">reversing a wrong M-Pesa payment</a> cover what to do about the money itself.</p>
+
+<h2>When the PIN is blocked, not just forgotten</h2>
+
+<p>A forgotten PIN and a blocked PIN are different problems with the same menu. Entering the wrong PIN several times locks it as a fraud precaution, and the M-PESA PIN Manager on *334# has a separate unlock option that uses your ID number to lift the block, usually with an SMS confirmation. That is the quick fix when you know the PIN but fat-fingered it.</p>
+
+<p>Where it gets slower is after repeated failed reset attempts. To stop anyone brute-forcing their way in, the account can be locked for a set period once you have used up your reset attempts, and no amount of redialling shortens that wait. At that stage the reliable route is Safaricom customer care on 100 from a Safaricom line, or 234 from another network, or a Safaricom shop with your original ID. Carrying the ID matters, because staff verify it against the registration before touching the account.</p>
+
+<h2>Security questions are the part you set in advance</h2>
+
+<p>The single thing that decides whether your next reset is painless is whether your security questions are already in place. Dial *334#, choose My Account, then M-PESA PIN Manager, then the option to set security questions, and pick three questions and answers you will remember. Do it now, while you still know your PIN, because you cannot set them from a locked account.</p>
+
+<p>Treat the answers like a second password. If they are guessable from your social media, they are not protecting you, and a reset is only as safe as the questions behind it. Safaricom's own <a href="https://www.safaricom.co.ke/main-mpesa/m-pesa-for-you/m-pesa-tips/secure-m-pesa" rel="nofollow">guidance on keeping an M-Pesa account secure</a> is worth reading alongside this, because a PIN reset is a fraud target in its own right.</p>
+
+<h2>Keeping the reset out of a fraudster's hands</h2>
+
+<p>PIN resets are a favourite of M-Pesa scammers precisely because they are the way into an account. The pattern is a call or message claiming to be from Safaricom, asking you to share your PIN, an ID number or a security-question answer so they can help you unlock or reset. No genuine Safaricom process ever asks you to read out your PIN, and the Central Bank of Kenya's <a href="https://www.centralbank.go.ke/consumer-protection/" rel="nofollow">consumer-protection guidance for mobile-money users</a> makes the same point about never sharing credentials on an inbound call.</p>
+
+<p>The safe habit is to start every reset yourself by dialling *334#, never by following a link or a caller's instructions. If you did not initiate the contact, assume it is a scam and hang up. Your PIN and your security-question answers are the only things standing between a thief and your balance, so they are the two things you never give away.</p>
+
+<h2>After the reset</h2>
+
+<p>Once the new PIN is set, use it once on a small transaction to confirm it works, and choose something you will remember but a stranger could not guess, avoiding birthdays and repeated digits. If you want to brush up on the other self-service menus while you are in the USSD tree, the <a href="/ussd-codes">M-Pesa USSD codes reference</a> lists the shortcodes for statements, balance and PIN management in one place, and the wider <a href="/guides/mpesa-how-tos/">M-Pesa how-tos hub</a> gathers the related account fixes.</p>
+
+<p>Menu positions shift a little when Safaricom updates the USSD tree, so read the options on screen rather than memorising numbers. The path through My Account and the PIN Manager stays the same even when the numbering moves.</p>`,
+  },
+  // ── Post: Pochi la Biashara explained (H4 paybill-till spoke) ───────────────
+  {
+    id: 122,
+    title: 'Pochi la Biashara Explained: How It Works for Small Traders in Kenya',
+    slug: 'pochi-la-biashara-explained',
+    metaTitle: 'Pochi la Biashara Explained: How It Works, Limits and Charges',
+    metaDescription:
+      'What Pochi la Biashara is, how to register on *334#, its limits and charges, what it can and cannot do, and how it differs from a Buy Goods Till number.',
+    category: 'Transfer',
+    calculator: 'mpesa-calculator',
+    hub: 'paybill-till',
+    draft: true,
+    publishedAt: '2026-07-03',
+    lastReviewedAt: '2026-07-03',
+    relatedSlugs: [],
+    featuredImage: null,
+    faqs: [
+      {
+        question: 'What is Pochi la Biashara?',
+        answer:
+          'Pochi la Biashara is a free Safaricom service for small traders that lets customers pay into a wallet tied to your existing phone number, kept separate from your personal M-Pesa. It is aimed at the informal sector, such as market stalls, boda riders and kiosks, that receive payments on a phone number.',
+      },
+      {
+        question: 'How do I register for Pochi la Biashara?',
+        answer:
+          'Dial *334#, select Pochi la Biashara, choose to join, accept the terms and pick your business category. Registration is done in minutes on your own line with no separate business number to apply for.',
+      },
+      {
+        question: 'Is Pochi la Biashara free?',
+        answer:
+          'There is no monthly fee and no application cost. Money paid in follows the standard M-Pesa send-money tariff, so small amounts are cheap or free and larger ones carry the usual banded fee. Confirm the current figure on the prompt, as Safaricom revises the tariff periodically.',
+      },
+      {
+        question: 'What is the difference between Pochi la Biashara and a Till number?',
+        answer:
+          'Pochi uses your existing phone number and is built for informal traders who receive payments personally, while a Buy Goods Till gives your business its own number and a more formal identity that settles to a bank account. Pochi is quicker to start; a Till suits a registered business that wants separation and a professional payment brand.',
+      },
+      {
+        question: 'Can I pay bills and buy goods from Pochi la Biashara?',
+        answer:
+          'Yes. Alongside receiving payments you can send to mobile numbers, pay Buy Goods Tills and Paybills, buy and sell airtime, and withdraw cash directly at an M-Pesa agent, so business float does not have to move to your personal wallet first.',
+      },
+    ],
+    content: `<p>Pochi la Biashara is a free Safaricom service that lets a small trader receive customer payments into a wallet linked to their existing phone number, kept apart from personal M-Pesa. You register on *334# in a couple of minutes, and it is aimed squarely at the informal sector: market stalls, boda riders, kiosks and anyone who takes payment on a mobile number rather than at a formal till.</p>
+
+<p>The problem Pochi solves is a familiar one. Traders who take payment on their personal M-Pesa number end up with business and household money tangled together, which makes it hard to see what the business actually earned and easy to spend the float by accident. Pochi separates the two without asking a market trader to register a company or apply for a business till.</p>
+
+<h2>What Pochi la Biashara actually is</h2>
+
+<p>Pochi la Biashara is a payment-collection wallet that sits alongside your normal M-Pesa on the same SIM. Customers send to your usual phone number, but the money lands in the Pochi wallet rather than your personal balance, so your takings are visible as a separate pot. Safaricom built it for the informal traders who make up a large share of Kenyan commerce and who were never going to go through a full business-till application to accept a KES 50 payment.</p>
+
+<p>Because it rides on your phone number, there is nothing for the customer to learn. They pay you exactly as they would send money to any person, which removes the friction of asking a customer to find a till number or enter a reference. For the trader, the gain is a clean line between business money and personal money on the same handset.</p>
+
+<h2>Registering and what it costs</h2>
+
+<p>Registration is deliberately simple. Dial *334#, choose Pochi la Biashara, select the option to join, accept the terms and pick your business category, and it is active within minutes. There is no separate number to apply for and no paperwork, which is the whole point of a product built for sole traders and hawkers.</p>
+
+<p>On cost, there is no monthly fee and no setup charge. Money coming in follows the standard M-Pesa send-money tariff, so payments up to KES 100 are free and larger amounts carry the usual banded fee that rises with the amount. The confirmation prompt shows the exact fee for each transaction, which is the figure to trust because Safaricom revises the tariff from time to time. If you want to compare the cost of a route before you transact, the <a href="/mpesa-calculator">M-Pesa fee calculator</a> mirrors the published bands.</p>
+
+<h2>What you can and cannot do with it</h2>
+
+<p>Pochi is more than a receive-only pocket. From the wallet you can send money to mobile numbers and other Pochi accounts, pay Buy Goods Tills and Paybills, buy and sell airtime, and withdraw cash directly at an M-Pesa agent without first moving the money to your personal wallet. That last point matters for a trader restocking during the day, because the business float stays in the business pot.</p>
+
+<p>The standard M-Pesa ceilings apply: up to KES 250,000 in a single transaction and KES 500,000 in a day, with the same maximum wallet balance as ordinary M-Pesa. A busy trader can bump into those on a good day, which is one of the signals that it may be time to move up to a formal till. Understanding those limits is the same exercise as knowing your ordinary <a href="/blog/mpesa-daily-and-transaction-limits">M-Pesa daily and transaction limits</a>, since Pochi inherits them.</p>
+
+<h2>Pochi versus a Buy Goods Till</h2>
+
+<p>The honest way to choose between Pochi and a Till is to look at where your business is. Pochi wins on speed and simplicity: no registration documents, no separate number, active in minutes, and perfect for a stall or a rider. A Buy Goods Till wins on formality: it gives the business its own number, a professional payment identity, settlement to a bank account and cleaner records for accounting or a loan application.</p>
+
+<p>Many traders start on Pochi and graduate to a Till as the business grows and the informal wallet starts to feel limiting. If you are weighing that step, the walk-through for <a href="/blog/how-to-apply-for-mpesa-till-number-kenya">applying for an M-Pesa Till number</a> sets out the documents and timelines, and for an online business the comparison of <a href="/blog/best-payment-gateways-kenyan-ecommerce">Kenyan payment gateways</a> covers the next tier again. The <a href="/guides/paybill-till/">Paybill, Till and business payments hub</a> ties the collection options together.</p>
+
+<h2>The tax and record-keeping angle</h2>
+
+<p>Keeping business takings in a separate Pochi pot is not only tidier, it is the start of being able to account for the business at all. Once money is separated you can see turnover, which is the number that matters for tax. Small businesses in Kenya can fall under Turnover Tax once sales pass the threshold set by the Kenya Revenue Authority, and the <a href="https://www.kra.go.ke/individual/filing-paying/types-of-taxes/turnover-tax" rel="nofollow">KRA guidance on Turnover Tax</a> is the place to check the current threshold and rate rather than guessing.</p>
+
+<p>Safaricom's own <a href="https://www.safaricom.co.ke/main-mpesa/for-your-business/pochi-la-biashara" rel="nofollow">Pochi la Biashara product page</a> confirms the same picture: a low-friction wallet for the informal sector, with the standard M-Pesa limits and tariff behind it. Treat any figure you read as indicative and confirm the fee on the prompt, since the tariff is reviewed periodically.</p>`,
+  },
+  // ── Post: Sending money to Kenya from the USA (H3 remittance spoke) ─────────
+  {
+    id: 123,
+    title: 'Sending Money to Kenya from the USA: How to Get the Most KES',
+    slug: 'sending-money-to-kenya-from-the-usa',
+    metaTitle: 'Sending Money to Kenya from the USA: Cheapest Way to Get the Most KES',
+    metaDescription:
+      'How to send money to Kenya from the USA and keep the most KES: fee plus exchange-rate markup, M-Pesa payout, small vs large transfers, and staying safe.',
+    category: 'Transfer',
+    calculator: 'remittance',
+    hub: 'remittance',
+    draft: true,
+    publishedAt: '2026-07-03',
+    lastReviewedAt: '2026-07-03',
+    relatedSlugs: [],
+    featuredImage: null,
+    faqs: [
+      {
+        question: 'What is the cheapest way to send money to Kenya from the USA?',
+        answer:
+          'The cheapest option is the one where the recipient receives the most KES once both the transfer fee and the exchange-rate markup are counted. That provider changes with the amount and the day, so compare the total KES delivered rather than the headline fee before each transfer.',
+      },
+      {
+        question: 'How long does a transfer from the USA to M-Pesa take?',
+        answer:
+          'Direct payout to M-Pesa is usually the fastest route and often lands within minutes on the faster service tiers. Cheaper economy tiers can take one to three business days, so you are trading a little speed for a lower cost.',
+      },
+      {
+        question: 'Is money sent from the USA to family in Kenya taxed?',
+        answer:
+          'A personal gift to family received in Kenya is not treated as taxable income in Kenya. Any reporting obligations sit on the US sending side, so check the US rules if the amounts are large or business-related rather than a personal gift.',
+      },
+      {
+        question: 'Should I send USD to a bank account or straight to M-Pesa?',
+        answer:
+          'Direct payout to M-Pesa is fastest and avoids a bank step, which suits everyday support payments. A bank payout can occasionally work out cheaper for large sums, so choose by amount and urgency rather than habit.',
+      },
+    ],
+    content: `<p>The cheapest way to send money to Kenya from the USA is the route that delivers the most Kenyan shillings once you count both the fee and the exchange-rate markup, and that winner changes with the amount, the provider and the day. Paying out direct to M-Pesa is normally the fastest option. The single habit that saves the most money is comparing the total KES the recipient receives, not the headline fee.</p>
+
+<p>US-to-Kenya is one of the busiest remittance corridors in the world, and the providers know it, which is why the marketing leads with zero-fee offers that are not always the cheapest once the rate is included. Getting this right is worth real money: on a few hundred dollars the gap between the best and worst provider can run into thousands of shillings for the person on the receiving end.</p>
+
+<h2>Fee plus markup is the number that matters</h2>
+
+<p>Every provider shows you a fee because it is the easy number to make look small. The cost that actually lands on the recipient is the fee plus the exchange-rate markup, which is the gap between the rate you are offered and the mid-market rate you can look up independently on any currency site. A transfer advertised with no fee can still be the dearest option once a wide markup is baked into the rate.</p>
+
+<p>Some providers, such as those that use the mid-market rate directly, charge a visible fee but almost no markup, so the all-in cost is low and predictable. Others advertise no fee and take their margin in the rate instead. Neither model is automatically better; the only way to know is to look at the KES delivered for a fixed dollar amount on the same day, which folds fee and markup into one comparable figure. The deeper breakdown in the piece on the <a href="/blog/worldremit-vs-remitly-vs-wise-hidden-costs-kenya">hidden costs of WorldRemit, Remitly and Wise</a> shows exactly how the markup hides.</p>
+
+<h2>Small transfers versus large ones</h2>
+
+<p>The best provider is not the same at every amount. On smaller support payments, the providers that build their cost into the rate and charge no upfront fee often deliver the most shillings, because a flat fee bites hardest on a small transfer. On larger amounts, a provider using the true mid-market rate with a modest fee tends to pull ahead, because the markup on a wide-rate provider grows with the amount while a fixed fee does not.</p>
+
+<p>That crossover is why a single favourite provider rarely stays cheapest across every transfer. A sensible approach is to check the comparison each time rather than defaulting to the app you used last month, especially when the amount is unusual. The <a href="/remittance">remittance comparison tool</a> lines providers up on the total KES delivered so you can see the crossover for your specific amount.</p>
+
+<h2>Why M-Pesa payout usually wins on speed</h2>
+
+<p>For most families the money is needed quickly, and direct payout to M-Pesa is the fastest route because it skips the bank-account step entirely. On the faster service tiers a transfer can land in the recipient's M-Pesa within minutes, ready to spend or withdraw at an agent. Cheaper economy tiers trade that speed for a lower cost and can take one to three business days, which is fine when the money is not urgent.</p>
+
+<p>A bank payout still has its place for large sums, where it can occasionally be cheaper and where the recipient wants the money in an account rather than a wallet. The choice comes down to amount and urgency. If you are weighing whether to move it on to a bank afterwards, the comparison of the <a href="/blog/rtgs-vs-mpesa-large-amounts">bank rails for large amounts in Kenya</a> covers the trade-offs once the money has arrived.</p>
+
+<h2>Tax, limits and staying safe</h2>
+
+<p>For the person receiving money in Kenya, a personal gift from family abroad is not treated as taxable income, so a monthly support payment does not create a Kenyan tax bill on the recipient. The reporting obligations that exist sit on the US side and with the provider, so if you are sending large or business-related amounts, check the US rules rather than assuming a personal gift and a business payment are treated the same.</p>
+
+<p>US remittance customers also have specific protections. The federal <a href="https://www.consumerfinance.gov/consumer-tools/sending-money/" rel="nofollow">Consumer Financial Protection Bureau's guidance on sending money abroad</a> sets out the disclosures a licensed provider must give you before and after a transfer, including the exchange rate, fees and the amount that will be received. On the Kenyan side, the Central Bank of Kenya tracks the corridor closely, and its <a href="https://www.centralbank.go.ke/diaspora-remittances/" rel="nofollow">diaspora remittance statistics</a> show just how large US inflows are. Use a licensed provider, confirm the recipient's name and number before sending, and the <a href="/send-money-to-kenya">send money to Kenya guide</a> and the wider <a href="/guides/remittance/">remittance hub</a> pull the corridor-specific detail together.</p>`,
+  },
+  // ── Post: Sending money from your bank to M-Pesa (H2 bank-transfers spoke) ──
+  {
+    id: 124,
+    title: 'How to Send Money from Your Bank to M-Pesa in Kenya',
+    slug: 'how-to-send-money-from-your-bank-to-mpesa',
+    metaTitle: 'How to Send Money from Your Bank to M-Pesa in Kenya',
+    metaDescription:
+      'Move money from your bank account to M-Pesa in Kenya: the bank app or USSD route, PesaLink to mobile, timelines, limits and what to do when a transfer stalls.',
+    category: 'Transfer',
+    calculator: 'mpesa-to-bank',
+    hub: 'bank-transfers',
+    draft: true,
+    publishedAt: '2026-07-03',
+    lastReviewedAt: '2026-07-03',
+    relatedSlugs: [],
+    featuredImage: null,
+    faqs: [
+      {
+        question: 'How do I send money from my bank account to M-Pesa?',
+        answer:
+          'Use your bank app or USSD and choose the option to send to M-Pesa or a mobile wallet, then enter your Safaricom number and the amount. You need to be registered for your bank\'s mobile or internet banking first. Each bank has its own menu and its own USSD code.',
+      },
+      {
+        question: 'How long does a bank to M-Pesa transfer take?',
+        answer:
+          'It is normally instant, arriving within seconds to a couple of minutes. Delays happen at month-end peaks or if the bank is running a maintenance window. If it has not arrived after a few minutes, check the number and the daily limit before assuming a fault.',
+      },
+      {
+        question: 'Is there a charge to move money from a bank to M-Pesa?',
+        answer:
+          'Yes, and it is set by your bank rather than by Safaricom, so it varies by bank and amount. Some banks make small transfers to mobile cheap or free and charge a flat or banded fee above that. Confirm your bank\'s current tariff in the app.',
+      },
+      {
+        question: 'Can I use PesaLink to send from my bank to M-Pesa?',
+        answer:
+          'PesaLink primarily moves money between bank accounts, and many banks now let you send to a mobile wallet from the same menu. The everyday bank-to-M-Pesa route is the send-to-mobile option in your bank app or USSD, which settles into your M-Pesa wallet.',
+      },
+    ],
+    content: `<p>To move money from your bank account to M-Pesa in Kenya, open your bank app or dial its USSD code, choose the option to send to M-Pesa or a mobile wallet, enter your Safaricom number and the amount, and confirm. You need to be registered for your bank's mobile or internet banking first. The transfer is normally instant, and the fee is set by your bank rather than by Safaricom.</p>
+
+<p>This is the reverse of the more familiar M-Pesa to bank move, and people reach for it constantly: topping up the wallet before paying a bill, funding a Buy Goods payment, or shifting salary from the bank into the money everyone actually spends from. The mechanics are simple once you know that the menu lives on the bank side, not the M-Pesa side.</p>
+
+<h2>The everyday route: your bank app or USSD</h2>
+
+<p>The standard way to fund M-Pesa from a bank is through the bank's own channels. In the bank app you look for a send-to-M-Pesa or send-to-mobile option, enter your Safaricom number, type the amount and confirm with your PIN. On USSD it is the same idea through a menu, which is useful when you have no data or a basic phone. The catch is that every bank builds this menu differently, so the exact path and the USSD code are specific to your bank and worth saving once you find them.</p>
+
+<p>Before any of this works you have to be registered for the bank's mobile or internet banking, which is a one-off setup at a branch or in the app. Once that link exists, moving money to your own M-Pesa becomes a routine, few-second action. Safaricom's own explainer on <a href="https://www.safaricom.co.ke/main-mpesa/m-pesa-services/do-more-with-m-pesa/m-pesa-and-your-bank" rel="nofollow">linking M-Pesa and your bank</a> confirms that the bank-to-wallet direction is initiated from the bank side rather than from the M-Pesa menu.</p>
+
+<h2>PesaLink and sending to a mobile</h2>
+
+<p>PesaLink is the instant rail that connects Kenyan banks, and it is best known for moving money account to account. Increasingly the same bank menus let you send to a mobile wallet as well, so the line between a classic bank transfer and a bank-to-M-Pesa top-up has blurred. For everyday amounts the send-to-mobile option in your bank app is all you need, and it settles into your M-Pesa wallet like any received payment.</p>
+
+<p>Where PesaLink matters is the ceiling. The operator has raised the per-transaction limit substantially, so large moves that once had to go by another rail can now travel instantly, and the way PesaLink is priced and capped is covered in the walk-through of <a href="/blog/rtgs-vs-mpesa-large-amounts">choosing a rail for large transfers</a>. For a small top-up you will not touch those limits, but it is useful to know the headroom is there. The <a href="/mpesa-to-bank">M-Pesa to bank guide</a> covers the same rails in the opposite direction, and the <a href="/bank-transfer">bank transfer calculator</a> lines them up on cost.</p>
+
+<h2>Timelines, limits and cost</h2>
+
+<p>A bank-to-M-Pesa transfer is normally instant, landing within seconds to a couple of minutes. The times it lags are predictable: month-end and payday peaks when volumes spike, and the occasional bank maintenance window. If the money has not arrived after a few minutes, that is the moment to check the details rather than to resend and risk paying twice.</p>
+
+<p>Two limits govern how much you can move. Your bank sets a daily transfer limit on the sending side, and M-Pesa applies its own wallet and per-transaction ceilings on the receiving side, so a large top-up can be capped by either. Knowing your <a href="/blog/mpesa-daily-and-transaction-limits">M-Pesa daily and transaction limits</a> explains why an otherwise valid transfer can bounce. On cost, the fee is the bank's, not Safaricom's, so it varies by bank and amount, and the only reliable figure is the one your bank app shows for that specific transfer.</p>
+
+<h2>When a transfer stalls</h2>
+
+<p>Most stalled transfers are not lost money. The usual causes are a wrong Safaricom number, a daily limit reached on either side, or a temporary delay at the bank, and the money is normally held and reversed rather than disappearing. The first checks are the number you entered and whether you have hit a limit, before you assume a fault.</p>
+
+<p>If it is genuinely stuck, the bank's transaction reference is what every support desk asks for first, so keep the confirmation. Because both a bank and Safaricom are involved, the Central Bank of Kenya's <a href="https://www.centralbank.go.ke/national-payments-system/" rel="nofollow">oversight of the national payments system</a> sets the framework these reversals run within, but in practice your bank is the party that traces and returns a failed send. The wider <a href="/guides/bank-transfers/">bank transfers hub</a> covers the related failed-transfer fixes and the choice of rail.</p>`,
+  },
 ]
