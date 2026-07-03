@@ -1298,7 +1298,7 @@ export const blogTransfer4C: BlogPost[] = [
     ],
     content: `<p>To check how much power you have left on a KPLC prepaid meter, press the display button on the meter to read the units remaining, and check your recent token purchases by dialling *977# on a Safaricom line or opening the Stima app. The meter shows the live units inside it; the phone channels show the tokens you have bought. Both matter, and they answer slightly different questions.</p>
 
-<p>Running out of electricity in the middle of the evening is avoidable if you know where to look before the meter starts beeping. There are two things people mix up: the units currently loaded on the meter, and the tokens you have bought recently. This guide covers how to read both, so you always know whether you need to top up now or whether a token you bought is simply waiting to be keyed in.</p>
+<p>Running out of electricity in the middle of the evening is avoidable if you know where to look before the meter starts beeping. There are two things people mix up: the units currently loaded on the meter, and the tokens you have bought recently. Reading both correctly is what tells you whether you need to top up now or whether a token you bought is simply waiting to be keyed in.</p>
 
 <h2>Reading the units left on your meter</h2>
 
@@ -1312,7 +1312,7 @@ export const blogTransfer4C: BlogPost[] = [
 
 <p>The meter tells you what is loaded now. To see what you have actually bought, Kenya Power runs a USSD service on <a href="https://www.kplc.co.ke/faq/prepaid-meters" rel="nofollow">*977#, which the utility documents for prepaid queries</a> and which currently works from a Safaricom line. Dial it, choose Prepaid Services, and select the Latest Token option. You then pick your meter from the list or type the meter number, and the system returns the last three tokens bought under that meter.</p>
 
-<p>This is the same channel you use when a token you paid for never arrives by SMS. It is worth stressing, because the instinct when no message comes through is to buy again, and that is the mistake to avoid. The purchase succeeds at the point of payment, so the token already exists even if the SMS failed. Pulling your last tokens with *977# gets you the code you already paid for without spending twice. Our guide to <a href="/blog/how-to-pay-kplc-nhif-nssf-via-mpesa">paying KPLC, SHA and NSSF by M-Pesa</a> covers the buying side, including the official Paybill and the meter number you enter as the account.</p>
+<p>This is the same channel you use when a token you paid for never arrives by SMS. It is worth stressing, because the instinct when no message comes through is to buy again, and that is the mistake to avoid. The purchase succeeds at the point of payment, so the token already exists even if the SMS failed. Pulling your last tokens with *977# gets you the code you already paid for without spending twice. <a href="/blog/how-to-pay-kplc-nhif-nssf-via-mpesa">Paying KPLC, SHA and NSSF by M-Pesa</a> uses the official Paybill, with the meter number entered as the account.</p>
 
 <h2>The Stima app and the SMS shortcut</h2>
 
