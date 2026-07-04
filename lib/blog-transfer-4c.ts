@@ -1264,7 +1264,7 @@ export const blogTransfer4C: BlogPost[] = [
     category: 'Transfer',
     calculator: 'ussd-codes',
     hub: 'kplc-tokens',
-    draft: true,
+    draft: false,
     publishedAt: '2026-07-02',
     lastReviewedAt: '2026-07-02',
     relatedSlugs: [],
