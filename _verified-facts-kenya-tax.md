@@ -82,8 +82,11 @@ Any post stating personal relief as 72,000/yr or 2,880 is WRONG.
   do not invent a "4/5/6% scheme" or a flat "KES 36,000 housing rate").
 
 ## 8. Other taxes (for the freelancer/business posts)
-- Turnover Tax (TOT): **3%** of gross turnover (NOT 1%). Threshold: turnover above
-  KES 1,000,000 and up to KES 25,000,000/yr. Filed/paid monthly by the 20th.
+- Turnover Tax (TOT): **1.5%** of gross sales (reduced from 3% eff. 1 Jul 2023;
+  NOT 1%, and NOT 3% any more). Threshold: turnover above KES 1,000,000 and up to
+  KES 25,000,000/yr. Filed/paid monthly by the 20th. Late filing KES 1,000/month;
+  late payment 5% + 1%/month interest. Can elect out to the annual regime in writing.
+  (Verified 2026-07-02 vs KRA TOT page.)
 - Significant Economic Presence (SEP) tax replaced Digital Service Tax (DST):
   introduced by TLAA 2024, effective 1 Jan 2025, ~3% effective on gross turnover
   (deemed taxable profit basis). Do NOT attribute to "Finance Act 2023 / Jan 2024".
@@ -136,3 +139,18 @@ Author byline: KTH (Kenya Transfer Hub) editorial entity. No invented person.
 - Units per token depend on the KPLC tariff + levies (fuel, forex, inflation, EPRA
   adjustments) in force at purchase, set/revised by EPRA, so units per shilling vary
   between buys. Rely on the SMS confirmation, not an online estimate.
+
+
+## Terminal dues / lump-sum taxation on leaving a job (verified 2026-07-02)
+
+Sources: KRA "Taxation of Lump Sum Payments" (kra.go.ke/news-center/blog/841); Finance Act 2025; retirement-benefit guidance (RBA/practitioner). Cross-checked against practitioner summaries.
+
+- **Service gratuity earned on/after 1 Jul 2025: 100% exempt from income tax** (Finance Act 2025). The portion earned BEFORE 1 Jul 2025 stays taxable via the spread-back method. Split a straddling contract by accrual period.
+- **Spread-back method (taxable gratuity/severance lump sums):** a lump sum paid in a year different from when earned is treated as income of the years it was earned in, spread back over up to the prior 5 years and taxed at those years' annual rates; anything older than 5 years is bundled into the 5th year.
+- **Notice pay (pay in lieu of notice):** taxed immediately, in the period following the termination date, at standard PAYE rates. No special exemption.
+- **Leave pay:** taxed in the year to which it relates (added to pay and taxed at normal rates), not treated as a one-off windfall.
+- **Severance pay (redundancy):** statutory minimum is not less than 15 days' pay per completed year of service (Employment Act). Not automatically exempt; taxable severance uses the same spread-back treatment.
+- **Pension / retirement lump sums:** since Dec 2024, withdrawals are EXEMPT where the member has reached the scheme retirement age, OR completed a minimum membership period of 20 years, OR is leaving on grounds of ill health. Other early withdrawals can be taxed on the taxable portion.
+- **Gratuity into a registered pension scheme:** a recipient may elect to channel gratuity into a registered scheme and get pension relief of up to KES 30,000/month (KES 360,000/yr) on the older taxable portion, if not already used on the same income. (Consistent with the pension deduction cap already in this file.)
+- **Employer duty:** employer must recover the correct tax on the taxable lump sum before releasing the balance. Verification method: other taxable pay for the year + taxable lump sum -> tax on revised annual total at annual rates -> less personal relief and PAYE already paid = tax due on the lump sum.
+- Used by paycalc6 draft spoke `how-terminal-dues-are-taxed-when-you-leave-a-job-in-kenya` (2026-07-02).

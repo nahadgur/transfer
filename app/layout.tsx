@@ -53,6 +53,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} bg-[#050505]`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@graph': [
+                {
+                  '@type': 'WebSite',
+                  '@id': 'https://transfer.co.ke/#website',
+                  url: 'https://transfer.co.ke',
+                  name: 'Transfer.co.ke',
+                  description:
+                    'Free calculators for Kenya money-transfer costs: M-Pesa charges, bank transfer fees, remittance costs, and paybill lookups.',
+                  inLanguage: 'en-KE',
+                },
+                {
+                  '@type': 'Organization',
+                  '@id': 'https://transfer.co.ke/#organization',
+                  name: 'Transfer.co.ke',
+                  url: 'https://transfer.co.ke',
+                  description:
+                    'Kenya transfer-fee calculators covering M-Pesa, bank transfers, remittances, and paybills.',
+                  areaServed: { '@type': 'Country', name: 'Kenya' },
+                },
+              ],
+            }),
+          }}
+        />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-T223C1ZSXV"
           strategy="afterInteractive"
