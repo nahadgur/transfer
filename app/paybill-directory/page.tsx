@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     'NSSF paybill',
     'paybill directory Kenya 2026',
   ],
-  alternates: { canonical: 'https://transfer.co.ke/paybill-directory' },
+  alternates: { canonical: 'https://www.transfer.co.ke/paybill-directory' },
   openGraph: {
     title: 'M-Pesa Paybill Directory Kenya 2026 | All Numbers in One Place',
     description:
@@ -40,12 +40,12 @@ export default function PaybillDirectoryPage() {
     name: 'M-Pesa Paybill Directory Kenya 2026',
     description:
       'Complete directory of M-Pesa Paybill and Till numbers for Kenyan banks, utilities, government agencies, hospitals and schools.',
-    url: 'https://transfer.co.ke/paybill-directory',
+    url: 'https://www.transfer.co.ke/paybill-directory',
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://transfer.co.ke' },
-        { '@type': 'ListItem', position: 2, name: 'Paybill Directory', item: 'https://transfer.co.ke/paybill-directory' },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.transfer.co.ke' },
+        { '@type': 'ListItem', position: 2, name: 'Paybill Directory', item: 'https://www.transfer.co.ke/paybill-directory' },
       ],
     },
   }

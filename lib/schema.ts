@@ -3,7 +3,7 @@
 // author/publisher across hubs and spokes; no invented person. Article +
 // BreadcrumbList + FAQPage are emitted on /guides/[slug] and /blog/[slug].
 
-export const SITE_URL = 'https://transfer.co.ke';
+export const SITE_URL = 'https://www.transfer.co.ke';
 export const SITE_NAME = "Kenya's Transfer Hub";
 
 const orgId = `${SITE_URL}/#organization`;

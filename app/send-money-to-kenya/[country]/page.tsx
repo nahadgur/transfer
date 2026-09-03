@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `cheapest ${corridor.country} Kenya transfer 2026`,
       `${corridor.currencyCode} to KES`,
     ],
-    alternates: { canonical: `https://transfer.co.ke/send-money-to-kenya/${corridor.slug}` },
+    alternates: { canonical: `https://www.transfer.co.ke/send-money-to-kenya/${corridor.slug}` },
     openGraph: { title, description },
   }
 }
@@ -58,14 +58,14 @@ export default function CountryRemittancePage({ params }: Props) {
     '@type': 'Article',
     headline: `Best Ways to Send Money from ${corridor.country} to Kenya 2026`,
     description: `Compare fees, exchange rates and delivery times for sending ${corridor.currencyCode} to Kenya. M-Pesa and bank account delivery options.`,
-    url: `https://transfer.co.ke/send-money-to-kenya/${corridor.slug}`,
+    url: `https://www.transfer.co.ke/send-money-to-kenya/${corridor.slug}`,
     author: { '@type': 'Organization', name: 'Transfer.co.ke' },
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://transfer.co.ke' },
-        { '@type': 'ListItem', position: 2, name: 'Send Money to Kenya', item: 'https://transfer.co.ke/send-money-to-kenya' },
-        { '@type': 'ListItem', position: 3, name: corridor.country, item: `https://transfer.co.ke/send-money-to-kenya/${corridor.slug}` },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.transfer.co.ke' },
+        { '@type': 'ListItem', position: 2, name: 'Send Money to Kenya', item: 'https://www.transfer.co.ke/send-money-to-kenya' },
+        { '@type': 'ListItem', position: 3, name: corridor.country, item: `https://www.transfer.co.ke/send-money-to-kenya/${corridor.slug}` },
       ],
     },
   }

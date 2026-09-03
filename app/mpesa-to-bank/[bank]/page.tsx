@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `send money ${bank.name} Kenya`,
       `${bank.paybill} paybill`,
     ],
-    alternates: { canonical: `https://transfer.co.ke/mpesa-to-bank/${bank.slug}` },
+    alternates: { canonical: `https://www.transfer.co.ke/mpesa-to-bank/${bank.slug}` },
     openGraph: {
       title,
       description,
@@ -54,7 +54,7 @@ export default function BankBridgePage({ params }: Props) {
     '@type': 'HowTo',
     name: `How to Transfer Money from M-Pesa to ${bank.name}`,
     description: `Step-by-step guide to move money between M-Pesa and ${bank.name} in Kenya.`,
-    url: `https://transfer.co.ke/mpesa-to-bank/${bank.slug}`,
+    url: `https://www.transfer.co.ke/mpesa-to-bank/${bank.slug}`,
     step: bank.mpesaToBank.steps.map((step, i) => ({
       '@type': 'HowToStep',
       position: i + 1,
@@ -63,9 +63,9 @@ export default function BankBridgePage({ params }: Props) {
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://transfer.co.ke' },
-        { '@type': 'ListItem', position: 2, name: 'M-Pesa to Bank', item: 'https://transfer.co.ke/mpesa-to-bank' },
-        { '@type': 'ListItem', position: 3, name: bank.name, item: `https://transfer.co.ke/mpesa-to-bank/${bank.slug}` },
+        { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.transfer.co.ke' },
+        { '@type': 'ListItem', position: 2, name: 'M-Pesa to Bank', item: 'https://www.transfer.co.ke/mpesa-to-bank' },
+        { '@type': 'ListItem', position: 3, name: bank.name, item: `https://www.transfer.co.ke/mpesa-to-bank/${bank.slug}` },
       ],
     },
   }

@@ -25,11 +25,13 @@ export const metadata: Metadata = {
     'M-Pesa fees', 'Kenya transfer', 'logbook transfer', 'stamp duty Kenya',
     'remittance Kenya', 'bank transfer fees', 'PAYE Kenya', 'NSSF Kenya', 'Kenya tax calculator',
   ],
-  metadataBase: new URL('https://transfer.co.ke'),
+  // www is the host the deploy serves; the apex redirects to it.
+  metadataBase: new URL('https://www.transfer.co.ke'),
+  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     locale: 'en_KE',
-    url: 'https://transfer.co.ke',
+    url: 'https://www.transfer.co.ke',
     siteName: 'Transfer Kenya',
     title: "Kenya's Transfer Hub | Calculate All Transfer Fees",
     description:
@@ -61,8 +63,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               '@graph': [
                 {
                   '@type': 'WebSite',
-                  '@id': 'https://transfer.co.ke/#website',
-                  url: 'https://transfer.co.ke',
+                  '@id': 'https://www.transfer.co.ke/#website',
+                  url: 'https://www.transfer.co.ke',
                   name: 'Transfer.co.ke',
                   description:
                     'Free calculators for Kenya money-transfer costs: M-Pesa charges, bank transfer fees, remittance costs, and paybill lookups.',
@@ -70,9 +72,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 },
                 {
                   '@type': 'Organization',
-                  '@id': 'https://transfer.co.ke/#organization',
+                  '@id': 'https://www.transfer.co.ke/#organization',
                   name: 'Transfer.co.ke',
-                  url: 'https://transfer.co.ke',
+                  url: 'https://www.transfer.co.ke',
                   description:
                     'Kenya transfer-fee calculators covering M-Pesa, bank transfers, remittances, and paybills.',
                   areaServed: { '@type': 'Country', name: 'Kenya' },

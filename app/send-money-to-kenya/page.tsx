@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'USA to Kenya M-Pesa',
     'Dubai to Kenya money transfer',
   ],
-  alternates: { canonical: 'https://transfer.co.ke/send-money-to-kenya' },
+  alternates: { canonical: 'https://www.transfer.co.ke/send-money-to-kenya' },
   openGraph: {
     title: 'Best Ways to Send Money to Kenya 2026 | Compare All Corridors',
     description:

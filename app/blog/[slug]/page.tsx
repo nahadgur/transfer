@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: post.metaTitle,
       description: post.metaDescription,
       type: 'article',
-      url: `https://transfer.co.ke/blog/${post.slug}`,
+      url: `https://www.transfer.co.ke/blog/${post.slug}`,
     },
   }
 }

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'send money M-Pesa to bank account',
     'Kenya bank transfer guide 2026',
   ],
-  alternates: { canonical: 'https://transfer.co.ke/mpesa-to-bank' },
+  alternates: { canonical: 'https://www.transfer.co.ke/mpesa-to-bank' },
   openGraph: {
     title: 'M-Pesa ↔ Bank Transfer Guide Kenya | All Major Banks',
     description:

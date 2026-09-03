@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     '*334#',
     '*247#',
   ],
-  alternates: { canonical: 'https://transfer.co.ke/ussd-codes' },
+  alternates: { canonical: 'https://www.transfer.co.ke/ussd-codes' },
   openGraph: {
     title: 'Kenya USSD Codes 2026 | All Banks, M-Pesa & Government',
     description:
