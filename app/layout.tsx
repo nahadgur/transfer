@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_KE',
     url: 'https://www.transfer.co.ke',
-    siteName: 'Transfer Kenya',
+    siteName: 'Transfer.co.ke',
     title: "Kenya's Transfer Hub | Calculate All Transfer Fees",
     description:
       'Calculate M-Pesa fees, bank transfers, remittance costs, vehicle logbook transfers, property stamp duty, and more.',
