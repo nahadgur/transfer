@@ -51,7 +51,7 @@ export default function PaybillDirectoryPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#050505] py-8 px-4">
+    <div className="min-h-screen bg-[#f1efe9] py-8 px-4">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
