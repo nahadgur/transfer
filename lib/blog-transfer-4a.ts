@@ -84,13 +84,9 @@ export const blogTransfer4A: BlogPost[] = [
 
 <h2>Lipa na M-Pesa: Paybill Charges</h2>
 
-<p>This is where M-Pesa gives Kenyans significant value: <b>Paybill transactions are free of charge</b> to the sender in virtually all cases. When you pay your electricity bill (KPLC Paybill 888880), deposit money into your bank account (e.g., Equity Paybill 247247), or pay school fees, you pay <b>KES 0</b> in M-Pesa transaction fees.</p>
+<p>Paybill pricing depends on the business and the tariff configured for its Paybill account. Some organisations absorb the fee, while other payment arrangements can charge the customer. Do not assume that every Paybill payment or bank deposit is free.</p>
 
-<p>The business receiving the payment may pay a merchant fee to Safaricom, but this is not passed on to you as the sender. This makes Paybill the most cost-effective way to move money between M-Pesa and bank accounts, pay utility bills, or make government payments.</p>
-
-<h3>Paybill vs Send Money: The Smart Arbitrage</h3>
-
-<p>Many Kenyans lose money by using "Send Money" when they should be using Paybill. If you are topping up a family member's bank account at Equity, KCB, or Co-op, use Paybill — not Send Money. The fee difference on a KES 10,000 transfer is KES 100 (send money fee) vs KES 0 (Paybill). Do that twice a month and you have saved KES 2,400 per year.</p>
+<p>Before confirming a payment, check the cost displayed by M-Pesa and, for bank transfers, check any charges shown by the receiving institution. See <a href="/mpesa-calculator/">our M-Pesa fee calculator</a> for indicative send-money costs; that tool does not quote live Paybill tariffs.</p>
 
 <h2>Lipa na M-Pesa: Buy Goods (Till Numbers) Charges</h2>
 
@@ -142,14 +138,14 @@ export const blogTransfer4A: BlogPost[] = [
 
 <h2>5 Ways to Reduce Your M-Pesa Fees</h2>
 
-<h3>1. Use Paybill for Bank Deposits</h3>
-<p>Never use Send Money to deposit money into a family member's bank account. Every major bank has a Paybill number. The transfer is free, instant, and goes directly into the bank account.</p>
+<h3>1. Compare Bank Deposit Charges</h3>
+<p>Check the relevant bank's Paybill instructions and the fee displayed before confirming. Fees and account details vary by institution; avoid assuming a transfer will be free.</p>
 
 <h3>2. Consolidate Transactions</h3>
 <p>For amounts above KES 20,000, the fee is flat at KES 108. Instead of sending KES 10,000 twice (2 × KES 90 = KES 180), send KES 20,000 once (KES 108) and save KES 72.</p>
 
 <h3>3. Pay Bills Directly via Paybill</h3>
-<p>Use Paybill to pay KPLC, water bills, NHIF, NSSF, and school fees. Never send money to a person who will then pay the bill on your behalf — you pay twice (once to send, once is wasted on their withdrawal).</p>
+<p>Use the biller's published payment details and check the total charge before confirming. The cost may depend on the Paybill arrangement and the receiving institution.</p>
 
 <h3>4. Repay Fuliza Immediately</h3>
 <p>Fuliza daily fees add up fast. Set a reminder to repay within 24 hours whenever you use it. If Fuliza is a regular habit, consider applying for a proper emergency loan product with more transparent terms.</p>
