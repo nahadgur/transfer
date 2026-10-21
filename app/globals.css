@@ -194,3 +194,11 @@ main .text-zinc-700{color:#334439!important}
 .editorial-footer h4{color:#15271c!important}
 .editorial-footer p{color:#657368!important}
 @media(prefers-reduced-motion:reduce){.lux-site *,main *{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* Accessible foregrounds on intentionally dark action surfaces */
+main a.bg-black,main button.bg-black,main .bg-black .text-white,
+main a.bg-zinc-900,main button.bg-zinc-900,
+main a.bg-\[\#17271f\],main button.bg-\[\#17271f\],
+main .bg-\[\#17271f\] .text-white{color:#fff!important}
+main .bg-\[\#ccff00\] .text-white,main button.bg-\[\#ccff00\]{color:#18251c!important}
+main .bg-white\/5 .text-white,main .bg-white\/10 .text-white{color:#17271e!important}
