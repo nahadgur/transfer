@@ -5,16 +5,16 @@ import Link from 'next/link'
 import { Globe, ArrowLeft, Trophy, Clock, Star, TrendingUp, AlertCircle } from 'lucide-react'
 
 // ── Exchange rates (update weekly) ────────────────────────────────────────
-// Last updated: April 2026
+// Reference exchange rates, not live quotes. Verified for USD/GBP/EUR on 21 October 2026.
 const RATES: Record<string, number> = {
-  USD: 129.50,
-  GBP: 166.30,
-  EUR: 143.10,
+  USD: 129.92,
+  GBP: 173.76,
+  EUR: 145.82,
   CAD: 95.20,
   AED: 35.25,
 }
 
-const RATE_UPDATED = 'April 2026'
+const RATE_UPDATED = '21 October 2026 (USD, GBP, EUR only; CAD/AED illustrative)'
 
 // ── Provider data ─────────────────────────────────────────────────────────
 type Provider = {
@@ -173,11 +173,11 @@ export default function RemittancePage() {
           </div>
           <h1 className="text-3xl md:text-4xl font-space font-bold text-white mb-2">Remittance Comparison Engine</h1>
           <p className="text-zinc-400 text-sm">
-            See exactly how much KES your recipient gets — ranked by who delivers the most
+            Illustrative comparison only. Provider fees, availability and exchange-rate margins are assumptions, not live quotes.
           </p>
           <p className="text-xs text-zinc-600 mt-1 flex items-center justify-center gap-1">
             <TrendingUp className="w-3 h-3" />
-            Rates updated {RATE_UPDATED} · Mid-market: 1 {currency} = {midRate.toFixed(2)} KES
+            Reference rates: {RATE_UPDATED} · Indicative: 1 {currency} = {midRate.toFixed(2)} KES
           </p>
         </div>
 
@@ -246,9 +246,9 @@ export default function RemittancePage() {
             <Trophy className="w-5 h-5 text-white" />
           </div>
           <div className="min-w-0">
-            <p className="text-xs text-[#ccff00] font-semibold uppercase tracking-wider mb-0.5">Winner this week</p>
+            <p className="text-xs text-[#ccff00] font-semibold uppercase tracking-wider mb-0.5">Lowest cost under the sample assumptions</p>
             <p className="text-white font-bold text-lg leading-tight">
-              {winner.name} delivers the most KES — {fmtKES(winner.result.received)}
+              {winner.name} has the highest simulated KES payout — {fmtKES(winner.result.received)}
             </p>
             {second && savingVsWinner > 0 && (
               <p className="text-zinc-400 text-sm mt-1">
@@ -291,7 +291,7 @@ export default function RemittancePage() {
                         <div className="flex items-center gap-2">
                           <h3 className="text-white font-bold">{p.name}</h3>
                           {isWinner && (
-                            <span className="text-xs bg-[#ccff00]/20 text-[#ccff00] border border-[#ccff00]/30 px-2 py-0.5 rounded-full">Best value</span>
+                            <span className="text-xs bg-[#ccff00]/20 text-[#ccff00] border border-[#ccff00]/30 px-2 py-0.5 rounded-full">Illustrative leader</span>
                           )}
                         </div>
                         <div className="flex items-center gap-1 mt-0.5">
