@@ -547,10 +547,10 @@ export const blogTransfer4B: BlogPost[] = [
   // ── Post 4: Pay KPLC/NHIF/NSSF via M-Pesa ──────────────────────────────
   {
     id: 107,
-    title: 'How to Pay KPLC, NHIF and NSSF via M-Pesa in 2026 (All Paybill Numbers)',
+    title: 'How to Pay KPLC, SHA and NSSF via M-Pesa in 2026 (All Paybill Numbers)',
     slug: 'how-to-pay-kplc-nhif-nssf-via-mpesa',
-    metaTitle: 'Pay KPLC, NHIF & NSSF via M-Pesa 2026 | Complete Paybill Guide',
-    metaDescription: 'Step-by-step guide to paying KPLC electricity, NHIF health insurance, NSSF pension, water bills and more via M-Pesa in 2026. All paybill numbers, account formats and troubleshooting tips.',
+    metaTitle: 'Pay KPLC, SHA & NSSF via M-Pesa 2026 | Complete Paybill Guide',
+    metaDescription: 'Step-by-step guide to paying KPLC electricity, SHA health insurance, NSSF pension, water bills and more via M-Pesa in 2026. All paybill numbers, account formats and troubleshooting tips.',
     category: 'Transfer',
     calculator: 'mpesa-calculator',
     relatedSlugs: [
@@ -629,39 +629,10 @@ export const blogTransfer4B: BlogPost[] = [
 <li><b>Token received but meter rejects it:</b> Ensure you enter all 20 digits in the correct order. Some meters require you to clear first by pressing the red button</li>
 </ul>
 
-<h2>2. NHIF — National Hospital Insurance Fund (Now SHA)</h2>
-
-<p>Note: NHIF has been transitioning to the Social Health Authority (SHA) since October 2024. The payment process remains via M-Pesa Paybill during the transition period.</p>
-
-<table>
-<thead><tr><th>Detail</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td>Paybill Number</td><td><b>200222</b></td></tr>
-<tr><td>Account Number (Employee)</td><td>Your <b>National ID number</b> or <b>NHIF member number</b></td></tr>
-<tr><td>Account Number (Self-Employed)</td><td>Your <b>NHIF member number</b></td></tr>
-<tr><td>Monthly Contribution</td><td>KES 500 (flat rate for voluntary members) or SHIF rate for employed</td></tr>
-<tr><td>Fee</td><td>Free</td></tr>
-</tbody>
-</table>
-
-<h3>Step-by-Step: Pay NHIF/SHA via M-Pesa</h3>
-<ol>
-<li>Dial *334# → Lipa na M-Pesa → Pay Bill</li>
-<li>Business Number: <b>200222</b></li>
-<li>Account Number: Enter your <b>National ID number</b> (e.g., <b>12345678</b>)</li>
-<li>Amount: KES 500 (self-employed/voluntary) or your applicable SHIF amount</li>
-<li>Enter PIN and confirm</li>
-<li>You receive an SMS confirmation — keep this for your records</li>
-</ol>
-
-<h3>Important NHIF/SHA Payment Notes</h3>
-<ul>
-<li>For <b>employed Kenyans</b>, NHIF/SHIF is deducted from salary by your employer — you typically do not need to pay separately unless you are topping up for dependents</li>
-<li>For <b>self-employed Kenyans</b>, pay KES 500 monthly by the end of each month to maintain active coverage</li>
-<li>If your NHIF/SHA card shows "inactive" despite recent payment, allow 24–48 hours for the system to update, or call NHIF on <b>0800 720 601</b></li>
-<li>Payments made after the deadline (last day of the month) count for the following month</li>
-</ul>
-
+<h2>2. SHA/SHIF — the current health insurance system</h2>
+<p>Kenya replaced NHIF with the Social Health Authority system in October 2024. Do not follow outdated NHIF instructions, including the old flat KES 500 voluntary contribution. Your amount and payment reference must come from the current SHA assessment.</p>
+<p>To avoid misallocating a statutory contribution, log into the <a href="https://sha.go.ke/" rel="nofollow">official SHA website</a> and follow the payment instructions shown for your account. Employers should use the <a href="https://employers.sha.go.ke/" rel="nofollow">SHA employer portal</a> and the reference generated for their payroll remittance. Review the biller and account reference on the M-Pesa confirmation screen before approving.</p>
+<p>SHIF contributions generally use 2.75% of gross income for salaried employees, with a statutory minimum for relevant households; the contribution assessed for an individual may differ. Seek the applicable amount from SHA itself.</p>
 <h2>3. NSSF — National Social Security Fund</h2>
 
 <table>
@@ -670,7 +641,7 @@ export const blogTransfer4B: BlogPost[] = [
 <tr><td>Paybill Number</td><td><b>333300</b></td></tr>
 <tr><td>Account Number (Employee)</td><td>Your <b>NSSF member number</b> (from your NSSF card or registration letter)</td></tr>
 <tr><td>Account Number (Self-Employed)</td><td>Your <b>NSSF member number</b></td></tr>
-<tr><td>Monthly Contribution (Tier I)</td><td>KES 400 (employee) + KES 400 (employer if applicable)</td></tr>
+<tr><td>Monthly Contribution (Tier I)</td><td>6% of pensionable earnings per side, capped at KES 6,480 per side monthly from February 2026</td></tr>
 <tr><td>Fee</td><td>Free</td></tr>
 </tbody>
 </table>
@@ -746,7 +717,7 @@ export const blogTransfer4B: BlogPost[] = [
 <tbody>
 <tr><td>KPLC Prepaid Token</td><td>888880</td><td>Meter number</td><td>Token sent via SMS</td></tr>
 <tr><td>KPLC Postpaid Bill</td><td>888880</td><td>Account number (from bill)</td><td>Different from meter number</td></tr>
-<tr><td>NHIF / SHA</td><td>200222</td><td>National ID or member number</td><td>Pay by month end</td></tr>
+<tr><td>SHA / SHIF</td><td>Check official SHA portal</td><td>Use SHA-issued payment reference</td><td>Confirm on SHA portal</td></tr>
 <tr><td>NSSF</td><td>333300</td><td>NSSF member number</td><td>Remit by 9th of month</td></tr>
 <tr><td>Nairobi Water (NCWSC)</td><td>444400</td><td>Water account number</td><td>From your bill</td></tr>
 <tr><td>KRA Tax</td><td>572572</td><td>PRN from iTax</td><td>Generate PRN first</td></tr>
@@ -762,7 +733,7 @@ export const blogTransfer4B: BlogPost[] = [
 <p>This usually means you have entered the account number in the wrong format. Double-check the exact format required — some services require leading zeros, some do not. For KPLC, the meter number must be exactly as printed on your meter.</p>
 
 <h3>Payment Successful but Service Not Updated</h3>
-<p>Allow 30 minutes to 2 hours for most services to update after a payment. KPLC prepaid tokens should arrive within 15 minutes. NHIF and NSSF may take 24–48 hours to reflect. Always keep your M-Pesa confirmation SMS as proof.</p>
+<p>Allow 30 minutes to 2 hours for most services to update after a payment. KPLC prepaid tokens should arrive within 15 minutes. SHA and NSSF processing times vary; check the relevant official portal. Always keep your M-Pesa confirmation SMS as proof.</p>
 
 <h3>Sent Payment to Wrong Paybill</h3>
 <p>Call Safaricom on 100 immediately with your transaction code. Safaricom will contact the receiving business to initiate a refund. Keep the M-Pesa confirmation SMS and note the exact amount, time, and wrong paybill number used.</p>
