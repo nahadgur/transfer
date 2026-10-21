@@ -18,7 +18,7 @@ const MPESA_SEND_FEES = [
   { min: 15001, max: 20000,  registered: 105, unregistered: 163 },
   { min: 20001, max: 35000,  registered: 108, unregistered: 180 },
   { min: 35001, max: 50000,  registered: 108, unregistered: 197 },
-  { min: 50001, max: 150000, registered: 108, unregistered: 222 },
+  { min: 50001, max: 250000, registered: 108, unregistered: 222 },
 ]
 
 const MPESA_WITHDRAW_FEES = [
@@ -35,7 +35,7 @@ const MPESA_WITHDRAW_FEES = [
   { min: 15001, max: 20000,  fee: 105 },
   { min: 20001, max: 35000,  fee: 108 },
   { min: 35001, max: 50000,  fee: 111 },
-  { min: 50001, max: 150000, fee: 111 },
+  { min: 50001, max: 250000, fee: 111 },
 ]
 
 const fmt = (n: number) =>
@@ -61,13 +61,13 @@ export default function MpesaCalculator() {
   const sendFeeReg   = getSendFee(amount, true)
   const sendFeeUnreg = getSendFee(amount, false)
   const withdrawFee  = getWithdrawFee(amount)
-  const paybillFee   = 0
-  const overLimit    = amount > 150000
+  const paybillFee: number | null = null // Paybill costs depend on the receiving business tariff; do not assume free
+  const overLimit    = amount > 250000
 
   const results = [
     { id: 'send',     label: 'Send to M-Pesa',      sublabel: 'Registered recipient', icon: Send,      fee: sendFeeReg,  color: 'lime', note: 'Recipient must have M-Pesa' },
     { id: 'withdraw', label: 'Withdraw at Agent',    sublabel: 'Cash out at agent',    icon: Wallet,    fee: withdrawFee, color: 'amber',   note: 'Collect cash from M-Pesa agent' },
-    { id: 'paybill',  label: 'Paybill / Bank / Till',sublabel: 'Bill or bank deposit', icon: Building2, fee: paybillFee,  color: 'blue',    note: 'Banks, utilities, government — always free' },
+    { id: 'paybill',  label: 'Paybill / Bank / Till',sublabel: 'Bill or bank deposit', icon: Building2, fee: paybillFee,  color: 'blue',    note: 'Paybill charges depend on the receiving business and tariff' },
   ]
 
   const validFees = results.map(r => r.fee).filter((f): f is number => f !== null)
@@ -100,20 +100,20 @@ export default function MpesaCalculator() {
           <div className="flex items-center gap-3 mb-4">
             <span className="text-zinc-500 font-semibold text-lg shrink-0">KES</span>
             <input
-              type="number" min={1} max={150000}
+              type="number" min={1} max={250000}
               value={rawInput}
               onChange={e => handleInput(e.target.value)}
               className="flex-1 bg-white/10 border border-white/20  px-4 py-3 text-white text-2xl font-bold focus:outline-none focus:border-[#ccff00] transition-colors"
             />
           </div>
           <input
-            type="range" min={100} max={150000} step={100}
-            value={Math.min(amount, 150000)}
+            type="range" min={100} max={250000} step={100}
+            value={Math.min(amount, 250000)}
             onChange={e => { const n = Number(e.target.value); setAmount(n); setRawInput(String(n)) }}
             className="w-full accent-[#ccff00] mb-1"
           />
           <div className="flex justify-between text-xs text-zinc-600 mb-4">
-            <span>KES 100</span><span>KES 150,000</span>
+            <span>KES 100</span><span>KES 250,000</span>
           </div>
           <div className="flex flex-wrap gap-2">
             {QUICK.map(q => (
@@ -128,7 +128,7 @@ export default function MpesaCalculator() {
         {overLimit && (
           <div className="mb-6 bg-red-500/10 border border-red-500/30  p-4 text-sm text-red-400 flex gap-2">
             <Info className="w-4 h-4 shrink-0 mt-0.5" />
-            M-Pesa maximum is KES 150,000 per transaction. Use RTGS or EFT via your bank for larger amounts.
+            M-Pesa maximum is KES 250,000 per transaction. Use RTGS or EFT via your bank for larger amounts.
           </div>
         )}
 
