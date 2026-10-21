@@ -195,7 +195,7 @@ export default function MpesaCalculator() {
                 <Info className="w-4 h-4 text-blue-400 shrink-0 mt-0.5" />
                 <span className="text-zinc-400">
                   <span className="text-blue-400 font-semibold">Bank deposit tip: </span>
-                  If the recipient has a bank account, use Paybill instead of Send Money — it&apos;s free. Save {fmt(sendFeeReg)} on this transaction.
+                  If the recipient has a bank account, check the bank&apos;s Paybill charges before paying. The price may differ from an M-Pesa wallet transfer.
                 </span>
               </div>
             )}
