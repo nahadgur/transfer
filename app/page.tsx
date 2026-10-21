@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowUpRight, ArrowRight, ArrowDownLeft, MoveUpRight, Wallet, Landmark, Globe2, ReceiptText, CarFront, House, Ship, PiggyBank, ShieldCheck, Search, BookOpen, MoveRight } from 'lucide-react'
+import { ArrowUpRight, ArrowRight, ArrowDownLeft, Wallet, Landmark, Globe2, ReceiptText, CarFront, House, Ship, PiggyBank, ShieldCheck, BookOpen } from 'lucide-react'
 import { livePosts } from '@/lib/all-blog-posts'
 
 const tools = [
@@ -29,7 +29,7 @@ export default function HomePage() {
          <div className="lux-graphic-bottom"><span>MOVE WITH CLARITY</span><span>254°</span></div>
        </div>
      </div>
-     <div className="lux-ticker"><div className="lux-wrap"><span>KNOW THE COST</span><span>—</span><span>COMPARE THE OPTIONS</span><span>—</span><span>MAKE YOUR MOVE</span><MoveRight size={18}/></div></div>
+     <div className="lux-ticker"><div className="lux-wrap"><span>KNOW THE COST</span><span>—</span><span>COMPARE THE OPTIONS</span><span>—</span><span>MAKE YOUR MOVE</span><ArrowRight size={18}/></div></div>
    </section>
    <section className="lux-workspace lux-wrap">
      <div className="lux-heading-row"><div><p className="lux-overline">THE ESSENTIALS / 01—08</p><h2>What are you<br/><em>moving today?</em></h2></div><p>Select a tool. Find the details. Make a better-informed decision.</p></div>
