@@ -51,8 +51,8 @@ export default function ImportDutyPage() {
   const importDuty = cifValue * importDutyRate
   const exciseDuty = (cifValue + importDuty) * exciseDutyRate
   const vat = (cifValue + importDuty + exciseDuty) * 0.16
-  const idf = cifValue * 0.02 // KRA published general IDF reference; verify applicable legal rate
-  const rdl = cifValue * 0.015 // KRA published general RDL reference; verify applicable legal rate
+  const idf = cifValue * 0.025 // Standard IDF reference (2.5%), subject to exemptions
+  const rdl = cifValue * 0.02 // Standard RDL reference (2%), subject to exemptions
   
   // Additional fees
   const kebs = 10000 // Standards fee
