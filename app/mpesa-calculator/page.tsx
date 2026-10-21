@@ -80,7 +80,7 @@ export default function MpesaCalculator() {
   }
 
   return (
-    <div className="min-h-screen bg-[#050505] py-8 px-4">
+    <div className="min-h-screen bg-[#f1efe9] py-8 px-4">
       <div className="max-w-4xl mx-auto">
         <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#ccff00] transition-colors mb-8 text-sm">
           <ArrowLeft className="w-4 h-4" /> Back to all tools
@@ -90,7 +90,7 @@ export default function MpesaCalculator() {
           <div className="w-16 h-16 bg-[#ccff00]/10 flex items-center justify-center mx-auto mb-4">
             <Smartphone className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-space font-bold text-white mb-2">M-Pesa Fee Calculator</h1>
+          <h1 className="text-3xl md:text-4xl font-space font-bold text-[#17271e] mb-2">M-Pesa Fee Calculator</h1>
           <p className="text-zinc-400 text-sm">Enter an amount — compare all three methods side by side</p>
         </div>
 
