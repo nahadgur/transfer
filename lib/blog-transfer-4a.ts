@@ -80,7 +80,7 @@ export const blogTransfer4A: BlogPost[] = [
 </tbody>
 </table>
 
-<p><b>Practical tip:</b> If you regularly withdraw large amounts, consider using your bank account linked to M-Pesa — transferring to your bank via Paybill (free) and then using your bank's ATM or debit card often costs less than a direct M-Pesa agent withdrawal.</p>
+<p><b>Practical tip:</b> If you regularly withdraw large amounts, consider using your bank account linked to M-Pesa — transferring to your bank using the bank's published Paybill tariff and then using your bank's ATM or debit card often costs less than a direct M-Pesa agent withdrawal.</p>
 
 <h2>Lipa na M-Pesa: Paybill Charges</h2>
 
@@ -171,7 +171,7 @@ export const blogTransfer4A: BlogPost[] = [
 <p>No — dialling *334*0# to check your M-Pesa balance is free.</p>
 
 <h3>What is the cheapest way to send KES 50,000 via M-Pesa?</h3>
-<p>If the recipient has a bank account, use Paybill — it is free. If sending directly to M-Pesa, the fee is KES 108 for KES 50,000, which is the flat maximum fee for registered user transfers.</p>`,
+<p>If the recipient has a bank account, compare the bank's Paybill tariff before sending. If sending directly to M-Pesa, the fee is KES 108 for KES 50,000, which is the flat maximum fee for registered user transfers.</p>`,
   },
 
   // ── Post 2: M-Pesa vs Airtel Money ──────────────────────────────────────
@@ -241,7 +241,7 @@ export const blogTransfer4A: BlogPost[] = [
 
 <h2>Bill Payment (Paybill) Comparison</h2>
 
-<p>Both M-Pesa (Paybill) and Airtel Money (Pay Bill) offer bill payments. In both cases, standard utility and government bill payments are <b>free to the sender</b>. However, M-Pesa's Paybill ecosystem is vastly larger — virtually every Kenyan organisation that accepts mobile money has an M-Pesa Paybill number. Airtel Money bill payment coverage is more limited.</p>
+<p>Both M-Pesa (Paybill) and Airtel Money (Pay Bill) offer bill payments. In both cases, utility and government bill payment fees depend on the Paybill arrangement. However, M-Pesa's Paybill ecosystem is vastly larger — virtually every Kenyan organisation that accepts mobile money has an M-Pesa Paybill number. Airtel Money bill payment coverage is more limited.</p>
 
 <p>If you need to pay school fees, hospital bills, county government charges, or SACCO contributions, M-Pesa is almost always the only option available — Airtel Money's merchant network simply does not match up.</p>
 
@@ -488,7 +488,7 @@ export const blogTransfer4A: BlogPost[] = [
 <h2>The Decision Framework: Which to Use?</h2>
 
 <ul>
-<li><b>Under KES 500,000, any time:</b> M-Pesa (Paybill if to a bank is free; Send Money if to a wallet)</li>
+<li><b>Under KES 500,000, any time:</b> M-Pesa (check bank Paybill costs; Send Money if to a wallet)</li>
 <li><b>KES 500,000–1,000,000, 24/7 required:</b> Pesalink (via your bank's internet banking or app)</li>
 <li><b>KES 500,000–1,000,000, business hours:</b> EFT (cheapest option, 1–3 day settlement) or Pesalink (instant)</li>
 <li><b>KES 1,000,000+, same day required:</b> RTGS (only practical option)</li>
