@@ -559,11 +559,11 @@ export const blogTransfer4B: BlogPost[] = [
       'mpesa-vs-airtel-money-which-is-cheaper',
     ],
     featuredImage: null,
-    content: `<p>Paying government bills via M-Pesa Paybill is one of the most practical financial habits a Kenyan can develop — it is free, instant, available 24/7, and eliminates queues at payment offices. Yet a surprising number of Kenyans still pay KPLC, NHIF, and NSSF in person or via agents who charge extra fees. This guide covers every essential government and utility payment via M-Pesa, with the correct paybill numbers, account number formats, step-by-step instructions, and troubleshooting tips.</p>
+    content: `<p>Paying government bills via M-Pesa Paybill is one of the most practical financial habits a Kenyan can develop — it is available electronically, often promptly and around the clock, and eliminates queues at payment offices. Yet a surprising number of Kenyans still pay KPLC, NHIF, and NSSF in person or via agents who charge extra fees. This guide covers every essential government and utility payment via M-Pesa, with the correct paybill numbers, account number formats, step-by-step instructions, and troubleshooting tips.</p>
 
 <h2>The Golden Rule: M-Pesa Paybill Is Free</h2>
 
-<p>Before diving into individual services, the most important fact to know is that <b>all M-Pesa Paybill payments are free to the sender</b>. You pay zero in M-Pesa transaction fees when using Paybill — whether you are paying KES 200 for electricity tokens or KES 5,000 in NSSF contributions. The business or organisation receiving the payment bears the merchant processing cost.</p>
+<p>Before diving into individual services, the most important fact to know is that <b>Paybill fees depend on the biller and its tariff</b>. Do not assume a Paybill payment is free. Check any charge displayed before confirming, and verify the account reference against the biller's current official payment instructions.</p>
 
 <p>This means there is absolutely no financial reason to use an M-Pesa agent, a third-party payment service, or a physical payment office for any of the services listed in this guide — you are almost certainly paying extra fees unnecessarily if you do.</p>
 
