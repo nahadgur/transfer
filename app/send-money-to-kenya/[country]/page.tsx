@@ -189,7 +189,7 @@ export default function CountryRemittancePage({ params }: Props) {
 
         {/* Disclaimer */}
         <p className="text-xs text-zinc-600 mb-8 text-center">
-          Rates and fees are indicative and updated weekly. Always check the provider&apos;s app for the live rate before sending.
+          Displayed rates and fees are illustrative reference information, not live quotes or guaranteed to be updated weekly. Always compare the provider&apos;s current total charge and recipient amount before sending.
         </p>
 
         {/* How to send */}
