@@ -40,7 +40,7 @@ export default function PensionTransferPage() {
 
   return (
     <div className="min-h-screen bg-[#050505] py-8 px-4">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto"><div role="alert" className="mb-6 border border-amber-400/50 bg-amber-500/10 p-4 text-amber-100 text-sm">Important: Projected pension returns and transfer charges shown here are illustrative, not guaranteed. Pension schemes set their own fees and conditions. Confirm tax treatment, vesting and transfer restrictions with your scheme administrator and the Retirement Benefits Authority before transferring.</div>
         {/* Back button */}
         <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#ccff00] transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />
