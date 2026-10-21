@@ -144,7 +144,7 @@ export default function GuideHubPage({ params }: Props) {
       {spokes.length > 0 && (
         <section className="px-4 py-10">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-2xl font-space font-bold text-white mb-2">In-depth on {guide.shortTitle.toLowerCase()}</h2>
+            <h2 className="text-2xl font-space font-bold text-[#17271e] mb-2">In-depth on {guide.shortTitle.toLowerCase()}</h2>
             <p className="text-zinc-500 text-sm mb-6">Guides in this series.</p>
             <div className="grid md:grid-cols-2 gap-5">
               {spokes.map((spoke) => (
