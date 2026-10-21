@@ -50,7 +50,7 @@ export default function PropertyTransferPage() {
 
   return (
     <div className="min-h-screen bg-[#050505] py-8 px-4">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto"><div role="alert" className="mb-6 border border-amber-400/50 bg-amber-500/10 p-4 text-amber-100 text-sm">Important: Stamp duty classification and the legal, valuation, registration and consent charges depend on the land, parties and transaction. Non-stamp-duty amounts below are illustrative assumptions, not current official fee quotes. Confirm them with the Lands registry and your advocate before paying.</div>
         {/* Back button */}
         <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#ccff00] transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />
