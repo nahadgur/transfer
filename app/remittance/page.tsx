@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
-import { Globe, ArrowLeft, Trophy, Clock, Star, TrendingUp, AlertCircle } from 'lucide-react'
+import { Globe, ArrowLeft, Trophy, Clock, TrendingUp, AlertCircle } from 'lucide-react'
 
 // ── Exchange rates (update weekly) ────────────────────────────────────────
 // Reference exchange rates, not live quotes. Verified for USD/GBP/EUR on 21 October 2026.
@@ -14,7 +14,7 @@ const RATES: Record<string, number> = {
   AED: 35.25,
 }
 
-const RATE_UPDATED = '21 October 2026 (USD, GBP, EUR only; CAD/AED illustrative)'
+const RATE_UPDATED = '21 October 2026 (reference values; confirm with CBK; CAD/AED illustrative)'
 
 // ── Provider data ─────────────────────────────────────────────────────────
 type Provider = {
@@ -25,9 +25,7 @@ type Provider = {
   percentFee: number         // percentage of amount (0–5)
   fxMargin: number           // % below mid-market rate (0–5)
   speed: string
-  delivery: string[]
-  rating: number
-  promoNote?: string
+  delivery: string[]  promoNote?: string
 }
 
 const PROVIDERS: Provider[] = [
@@ -40,8 +38,6 @@ const PROVIDERS: Provider[] = [
     fxMargin: 0.9,
     speed: 'Instant',
     delivery: ['M-Pesa', 'Bank'],
-    rating: 4.9,
-    promoNote: 'Zero fees — earns only on exchange rate',
   },
   {
     name: 'Wise',
@@ -52,8 +48,6 @@ const PROVIDERS: Provider[] = [
     fxMargin: 0,
     speed: '1–24 hrs',
     delivery: ['Bank', 'M-Pesa'],
-    rating: 4.8,
-    promoNote: 'Mid-market rate — no FX markup',
   },
   {
     name: 'Remitly',
@@ -64,8 +58,6 @@ const PROVIDERS: Provider[] = [
     fxMargin: 1.5,
     speed: 'Minutes',
     delivery: ['M-Pesa', 'Bank'],
-    rating: 4.6,
-    promoNote: 'First transfer often discounted',
   },
   {
     name: 'WorldRemit',
@@ -76,7 +68,6 @@ const PROVIDERS: Provider[] = [
     fxMargin: 1.8,
     speed: 'Minutes',
     delivery: ['M-Pesa', 'Bank', 'Cash'],
-    rating: 4.4,
   },
   {
     name: 'M-Pesa Global',
@@ -87,7 +78,6 @@ const PROVIDERS: Provider[] = [
     fxMargin: 3.5,
     speed: 'Instant',
     delivery: ['M-Pesa'],
-    rating: 4.1,
   },
   {
     name: 'Western Union',
@@ -98,7 +88,6 @@ const PROVIDERS: Provider[] = [
     fxMargin: 4.0,
     speed: 'Minutes',
     delivery: ['Cash', 'M-Pesa', 'Bank'],
-    rating: 3.5,
   },
 ]
 
@@ -255,9 +244,6 @@ export default function RemittancePage() {
                 {savingVsWinner.toLocaleString('en-KE', { maximumFractionDigits: 0 })} KES more than {second.name} on {currency} {amount}
               </p>
             )}
-            {winner.promoNote && (
-              <p className="text-[#ccff00]/70 text-xs mt-1.5">{winner.promoNote}</p>
-            )}
           </div>
         </div>
 
@@ -293,12 +279,6 @@ export default function RemittancePage() {
                           {isWinner && (
                             <span className="text-xs bg-[#ccff00]/20 text-[#ccff00] border border-[#ccff00]/30 px-2 py-0.5 rounded-full">Illustrative leader</span>
                           )}
-                        </div>
-                        <div className="flex items-center gap-1 mt-0.5">
-                          {[1,2,3,4,5].map(s => (
-                            <Star key={s} className={`w-3 h-3 ${s <= Math.round(p.rating) ? 'text-yellow-400 fill-yellow-400' : 'text-zinc-600'}`} />
-                          ))}
-                          <span className="text-xs text-zinc-500 ml-1">{p.rating}</span>
                         </div>
                       </div>
 
@@ -359,7 +339,7 @@ export default function RemittancePage() {
           <p className="text-xs text-zinc-400 leading-relaxed">
             <span className="text-amber-400 font-semibold">Indicative rates only. </span>
             Actual amounts vary with live exchange rates and provider-specific conditions. Always check the provider&apos;s app for the exact amount before sending.
-            Rates and fees last updated <strong className="text-zinc-300">{RATE_UPDATED}</strong>.
+            Reference FX date: <strong className="text-zinc-300">{RATE_UPDATED}</strong>. Provider fee percentages and FX margins are illustrative assumptions, not checked live prices.
           </p>
         </div>
 
