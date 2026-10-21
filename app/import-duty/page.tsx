@@ -43,6 +43,7 @@ export default function ImportDutyPage() {
   // Age restriction check (max 8 years for imports)
   const isOverAge = vehicleAge > 8
 
+  // WARNING: Historical illustrative rates, not verified current customs tariffs. Do not use as a payable quote. 
   // Calculate duties
   const importDutyRate = isElectric ? 0 : selectedCategory.importDuty
   const exciseDutyRate = isElectric ? 0 : selectedCategory.exciseDuty * selectedEngine.factor
@@ -64,7 +65,7 @@ export default function ImportDutyPage() {
 
   return (
     <div className="min-h-screen bg-[#050505] py-8 px-4">
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-5xl mx-auto"><div role="alert" className="mb-6 border border-amber-500/60 bg-amber-500/10 p-4 text-amber-200 text-sm">Important: This calculator uses illustrative tax assumptions and fixed example fees, not a verified 2026 KRA assessment. Do not rely on its total to purchase or clear a vehicle. Confirm the correct HS classification, CRSP, IDF, RDL, excise, VAT and fees with KRA or a licensed clearing agent.</div>
         {/* Back button */}
         <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#ccff00] transition-colors mb-8">
           <ArrowLeft className="w-4 h-4" />
@@ -77,7 +78,7 @@ export default function ImportDutyPage() {
             <Ship className="w-8 h-8 text-white" />
           </div>
           <h1 className="text-3xl md:text-4xl font-space font-bold text-white mb-2">Import Duty Calculator</h1>
-          <p className="text-zinc-400">Calculate taxes and duties for importing vehicles to Kenya</p>
+          <p className="text-zinc-400">Illustrative vehicle import cost scenarios only. Not a customs quotation: KRA classification, CRSP, fuel type and current law determine actual charges.</p>
         </div>
 
         {isOverAge && (
