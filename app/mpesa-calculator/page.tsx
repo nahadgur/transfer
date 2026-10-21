@@ -35,7 +35,7 @@ const MPESA_WITHDRAW_FEES = [
   { min: 15001, max: 20000,  fee: 105 },
   { min: 20001, max: 35000,  fee: 108 },
   { min: 35001, max: 50000,  fee: 111 },
-  { min: 50001, max: 250000, fee: 111 },
+  { min: 50001, max: 150000, fee: 111 },
 ]
 
 const fmt = (n: number) =>
@@ -60,7 +60,7 @@ export default function MpesaCalculator() {
 
   const sendFeeReg   = getSendFee(amount, true)
   const sendFeeUnreg = getSendFee(amount, false)
-  const withdrawFee  = getWithdrawFee(amount)
+  const withdrawFee  = amount > 150000 ? null : getWithdrawFee(amount)
   const paybillFee: number | null = null // Paybill costs depend on the receiving business tariff; do not assume free
   const overLimit    = amount > 250000
 
