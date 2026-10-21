@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Space_Grotesk } from 'next/font/google'
+import { Inter, Space_Grotesk, Playfair_Display } from 'next/font/google'
 import Link from 'next/link'
 import Script from 'next/script'
 import './globals.css'
@@ -13,6 +13,8 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
   variable: '--font-space',
 })
+
+const editorialSerif = Playfair_Display({ subsets: ['latin'], variable: '--font-editorial' })
 
 export const metadata: Metadata = {
   title: {
@@ -52,7 +54,7 @@ const navLinks = [
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} bg-[#050505]`}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable} ${editorialSerif.variable} bg-[#faf9f5]`}>
       <head>
         <link rel="icon" href="/favicon.ico" />
         <script
@@ -97,11 +99,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </Script>
       </head>
       <body
-        className="min-h-screen bg-[#050505] text-white font-sans antialiased selection:bg-[#ccff00] selection:text-black"
+        className="min-h-screen bg-[#faf9f5] text-[#171714] font-sans antialiased selection:bg-[#ccff00] selection:text-black"
         suppressHydrationWarning
       >
         {/* ── Navigation ── */}
-        <nav className="sticky top-0 z-50 bg-[#050505]/90 backdrop-blur-md border-b border-white/10">
+        <nav className="sticky top-0 z-50 bg-[#faf9f5]/95 backdrop-blur-md border-b border-black/10 editorial-nav">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex items-center justify-between h-16">
               {/* Logo */}
@@ -109,8 +111,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="w-9 h-9 bg-[#ccff00] flex items-center justify-center transform rotate-3">
                   <span className="text-black font-space font-black text-base -rotate-3">T</span>
                 </div>
-                <span className="font-space font-bold text-lg text-white tracking-tight hidden sm:block">
-                  TRANSFER<span className="text-zinc-500">.CO.KE</span>
+                <span className="font-editorial font-bold text-xl text-[#171714] tracking-tight hidden sm:block">
+                  TRANSFER<span className="text-zinc-600">.co.ke</span>
                 </span>
               </Link>
 
@@ -120,7 +122,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`text-sm font-medium text-zinc-400 hover:text-white transition-colors${link.hideMobile ? ' hidden sm:block' : ''}`}
+                    className={`text-sm font-medium text-[#343431] hover:text-black transition-colors${link.hideMobile ? ' hidden sm:block' : ''}`}
                   >
                     {link.label}
                   </Link>
@@ -134,7 +136,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main>{children}</main>
 
         {/* ── Footer ── */}
-        <footer className="border-t border-white/10 bg-[#050505] pt-16 pb-10 px-4 mt-20">
+        <footer className="border-t border-black/10 bg-[#f1f0e9] pt-16 pb-10 px-4 mt-20 editorial-footer">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-4 gap-10 mb-12">
               {/* Brand */}
@@ -143,18 +145,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <div className="w-8 h-8 bg-[#ccff00] flex items-center justify-center">
                     <span className="text-black font-space font-black text-sm">T</span>
                   </div>
-                  <span className="font-space font-bold text-lg text-white tracking-tight">
-                    TRANSFER<span className="text-zinc-500">.CO.KE</span>
+                  <span className="font-space font-bold text-lg text-[#191916] tracking-tight">
+                    TRANSFER<span className="text-zinc-600">.CO.KE</span>
                   </span>
                 </div>
-                <p className="text-zinc-500 text-sm leading-relaxed">
+                <p className="text-zinc-600 text-sm leading-relaxed">
                   Kenya&apos;s comprehensive transfer calculator hub.
                 </p>
               </div>
 
               {/* Money Transfers */}
               <div>
-                <h4 className="font-space font-bold text-white mb-5 tracking-widest uppercase text-xs">
+                <h4 className="font-space font-bold text-[#191916] mb-5 tracking-widest uppercase text-xs">
                   Money Transfers
                 </h4>
                 <ul className="space-y-3 text-sm">
@@ -167,7 +169,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     ['/paybill-directory',   'Paybill Directory'],
                   ].map(([href, label]) => (
                     <li key={href}>
-                      <Link href={href} className="text-zinc-400 hover:text-[#ccff00] transition-colors">
+                      <Link href={href} className="text-zinc-700 hover:text-[#647a00] transition-colors">
                         {label}
                       </Link>
                     </li>
@@ -177,7 +179,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               {/* Asset Transfers */}
               <div>
-                <h4 className="font-space font-bold text-white mb-5 tracking-widest uppercase text-xs">
+                <h4 className="font-space font-bold text-[#191916] mb-5 tracking-widest uppercase text-xs">
                   Asset Transfers
                 </h4>
                 <ul className="space-y-3 text-sm">
@@ -187,7 +189,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     ['/import-duty',       'Import Duty'],
                   ].map(([href, label]) => (
                     <li key={href}>
-                      <Link href={href} className="text-zinc-400 hover:text-[#ccff00] transition-colors">
+                      <Link href={href} className="text-zinc-700 hover:text-[#647a00] transition-colors">
                         {label}
                       </Link>
                     </li>
@@ -197,7 +199,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               {/* Resources */}
               <div>
-                <h4 className="font-space font-bold text-white mb-5 tracking-widest uppercase text-xs">
+                <h4 className="font-space font-bold text-[#191916] mb-5 tracking-widest uppercase text-xs">
                   Resources
                 </h4>
                 <ul className="space-y-3 text-sm">
@@ -210,7 +212,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     ['/kplc-transfer',    'KPLC Transfer'],
                   ].map(([href, label]) => (
                     <li key={href}>
-                      <Link href={href} className="text-zinc-400 hover:text-[#ccff00] transition-colors">
+                      <Link href={href} className="text-zinc-700 hover:text-[#647a00] transition-colors">
                         {label}
                       </Link>
                     </li>
@@ -220,7 +222,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
 
             {/* Bottom bar */}
-            <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
+            <div className="border-t border-black/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
               <p className="text-zinc-600 text-sm font-space">
                 © {new Date().getFullYear()} TRANSFER.CO.KE · KENYA&apos;S TRANSFER CALCULATOR HUB
               </p>
