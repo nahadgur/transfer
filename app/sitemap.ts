@@ -34,11 +34,12 @@ const BANK_ROUTES = ['equity', 'kcb', 'coop', 'ncba', 'absa', 'dtb', 'family-ban
 )
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date()
+  // Avoid telling crawlers that every unchanged URL was modified on each request.
+  const fallbackDate = new Date('2026-06-23T00:00:00Z')
 
   const fixed = [...TOOL_ROUTES, ...COUNTRY_ROUTES, ...BANK_ROUTES, '/blog', '/guides'].map((path) => ({
     url: `${SITE_URL}${path}`,
-    lastModified: now,
+    lastModified: fallbackDate,
     changeFrequency: 'monthly' as const,
     priority: path === '/' ? 1.0 : 0.8,
   }))
@@ -52,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const blogRoutes = livePosts.map((p) => ({
     url: `${SITE_URL}/blog/${p.slug}`,
-    lastModified: p.lastReviewedAt ? new Date(p.lastReviewedAt) : now,
+    lastModified: p.lastReviewedAt ? new Date(p.lastReviewedAt) : p.publishedAt ? new Date(p.publishedAt) : fallbackDate,
     changeFrequency: 'monthly' as const,
     priority: 0.7,
   }))
