@@ -25,7 +25,8 @@ type Provider = {
   percentFee: number         // percentage of amount (0–5)
   fxMargin: number           // % below mid-market rate (0–5)
   speed: string
-  delivery: string[]  promoNote?: string
+  delivery: string[]
+  promoNote?: string
 }
 
 const PROVIDERS: Provider[] = [
