@@ -149,7 +149,7 @@ export default function RemittancePage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#050505] py-8 px-4">
+    <div className="min-h-screen bg-[#f1efe9] py-8 px-4">
       <div className="max-w-4xl mx-auto">
 
         <Link href="/" className="inline-flex items-center gap-2 text-zinc-400 hover:text-[#ccff00] transition-colors mb-8 text-sm">
@@ -161,7 +161,7 @@ export default function RemittancePage() {
           <div className="w-16 h-16 flex items-center justify-center mx-auto mb-4">
             <Globe className="w-8 h-8 text-white" />
           </div>
-          <h1 className="text-3xl md:text-4xl font-space font-bold text-white mb-2">Remittance Comparison Engine</h1>
+          <h1 className="text-3xl md:text-4xl font-space font-bold text-[#17271e] mb-2">Remittance Comparison Engine</h1>
           <p className="text-zinc-400 text-sm">
             Illustrative comparison only. Provider fees, availability and exchange-rate margins are assumptions, not live quotes.
           </p>
