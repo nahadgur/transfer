@@ -163,3 +163,34 @@ input[type="number"] { -moz-appearance: textfield; }
 .lux-article-arrow{margin-top:auto;text-align:right}
 @media(max-width:1050px){.lux-hero-inside{grid-template-columns:1fr;min-height:0}.lux-graphic{min-height:390px}.lux-tools{grid-template-columns:repeat(2,1fr)}.lux-spotlight-grid{gap:50px}.lux-split{gap:50px}}
 @media(max-width:680px){.lux-hero-inside{padding-top:55px;padding-bottom:50px;gap:40px}.lux-intro h1{font-size:clamp(53px,12vw,74px)}.lux-intro-bottom{display:block}.lux-intro-bottom p{margin-bottom:24px}.lux-graphic{min-height:370px}.lux-graphic-coin{width:190px;height:190px}.lux-graphic-coin span{font-size:52px}.lux-ticker .lux-wrap{gap:12px;font-size:8px}.lux-ticker .lux-wrap span:nth-child(n+4){display:none}.lux-workspace{padding-top:65px;padding-bottom:75px}.lux-heading-row{display:block}.lux-heading-row h2{font-size:49px}.lux-heading-row>p{margin-top:20px}.lux-tool{min-height:235px;padding:17px}.lux-tool h3{font-size:23px}.lux-spotlight{padding:70px 0}.lux-spotlight-grid,.lux-split{grid-template-columns:1fr}.lux-calculator-display{box-shadow:12px 15px 0 #314438}.lux-split{padding-top:78px;padding-bottom:80px}.lux-insights{padding:70px 0}.lux-articles{grid-template-columns:1fr}.lux-article{min-height:270px}}
+
+/* Sitewide premium editorial skin: preserves existing routes and calculator logic.
+   Overrides earlier Tailwind dark utility combinations inside the site content. */
+body:has(.lux-site),body{background:#f1efe9}
+main>div:not(.lux-site),main>section{--premium-ink:#19271f}
+main .bg-\[\#050505\],main .bg-\[\#0a0a0a\]{background-color:#f1efe9!important}
+main .bg-white\/5,main .bg-white\/\[0\.02\],main .bg-white\/\[0\.04\],main .bg-white\/10,main .bg-white\/\[0\.05\]{background-color:#ffffff!important}
+main .text-white{color:#17271e!important}
+main .text-zinc-300,main .text-zinc-400,main .text-zinc-500,main .text-zinc-600{color:#566157!important}
+main .border-white\/10,main .border-white\/20,main .border-white\/5{border-color:#cfd6ca!important}
+main .bg-\[\#ccff00\]{background-color:#c8fa65!important}
+main .text-\[\#ccff00\]{color:#52752f!important}
+main .border-\[\#ccff00\]\/20,main .border-\[\#ccff00\]\/30{border-color:#adc969!important}
+main input,main select,main textarea{color:#18251c!important}
+main input:not([type=checkbox]):not([type=range]),main select,main textarea{background:#fff!important;border-color:#cbd2c5!important}
+main h1,main h2{letter-spacing:-.045em}
+main h1{font-family:var(--font-editorial),Georgia,serif!important}
+main h2{font-family:var(--font-editorial),Georgia,serif}
+main .bg-gradient-to-r,main .bg-gradient-to-b{background-image:none}
+main .tool-card,main article,main section>div.border{border-radius:3px}
+main .text-red-400,main .text-amber-400{color:#9b552d!important}
+main .bg-red-500\/10,main .bg-amber-500\/10{background-color:#f8eddf!important}
+main .text-zinc-700{color:#334439!important}
+.editorial-nav{background:#f1efe9!important;border-bottom:1px solid #cbd1c6!important}
+.editorial-nav>div{max-width:1440px}
+.editorial-nav a:hover{color:#587739!important}
+.editorial-footer{background:#e2e6db!important;color:#15271c!important}
+.editorial-footer a{color:#374b3b!important}
+.editorial-footer h4{color:#15271c!important}
+.editorial-footer p{color:#657368!important}
+@media(prefers-reduced-motion:reduce){.lux-site *,main *{animation-duration:.01ms!important;transition-duration:.01ms!important}}
