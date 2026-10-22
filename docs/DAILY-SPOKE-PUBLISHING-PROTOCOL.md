@@ -1,0 +1,20 @@
+# Transfer.co.ke daily spoke publishing protocol
+
+**Queue:** docs/CONTENT-QUEUE-100.csv; 100 rows, 3 slots a day beginning 2026-10-23 (final day has one). **Timezone:** Europe/London. Publication is into Next.js TypeScript article modules, NOT WordPress.
+
+## On every run
+1. Read the latest queue from **main**, the live post registry in lib/all-blog-posts.ts, the relevant hub definition in lib/guides.ts, the matching tool page, and all live or draft posts related to the three assigned rows. Never rely on remembered queue positions.
+2. Select up to three oldest `queued` rows scheduled for today or an earlier date. If one is already live, mark it published with actual URL and commit, do not duplicate. Ensure title, slug, search intent and main facts do not cannibalise an existing page; if a proposed title overlaps, give it a genuinely distinct query angle, recording any title change in the queue. If an independently useful angle cannot be found, mark row `needs_review`, explain why, and do not invent filler.
+3. Research each draft using currently applicable **primary** sources. For financial figures, tariffs, law, fee bands, rules, deadlines and provider availability, always cite the official provider, Kenya Revenue Authority, Safaricom, Kenya Power, CBK, SHA, NSSF, NTSA, RBA, Lands registry or other relevant original issuer as appropriate, with dates. If no dependable rate is available, explain that a live quote is required instead of guessing. No fabricated quotes, testimonials, ratings, user counts or faux-live comparison tables.
+4. Write substantial, useful Kenya-English content designed around distinct user intent (prefer 700–1200 meaningful words where justified, not mechanically padded). Include a clear answer within the first paragraph, original practical explanation, real steps, meaningful FAQs only, an accurate SEO title and description, reviewed and published dates, relevant FAQ structured data only for actual visible FAQs, and a clear editorial note on changing rates where applicable.
+5. **Spoke linking:** Set `hub` exactly to the queued hub slug. Include a natural HTML link to `/guides/<hub>/`, a natural link to its actual tool pillar, and 1–2 relevant live same-hub related articles where they exist. Never link to a draft, retired URL or an irrelevant calculator. Add inbound links from its hub or a genuinely relevant existing spoke only when useful. Keep site URL format, existing navigation, slugs and all prior article URLs intact. Do not create doorway or thin pages.
+6. Add article as a `BlogPost` to the appropriate transfer blog module or a new correctly imported transfer module; `draft:false` ONLY after facts and content quality are checked. Update queue row status to `published` with actual canonical article URL and SHA. GitHub pushes go to `main` (the user requests direct-to-main deployment).
+7. Validate TypeScript/Next.js build through Vercel production deployment and inspect status. Where feasible verify HTTP 200 for canonical article, hub, new links, sitemap inclusion and responsive rendering. If failing, fix before marking queue row published. If tools don't permit verifying this, report exactly which validation couldn't be completed and set status `needs_review` rather than claiming success.
+8. Report published titles, hub assignments, URLs, source checks, commit and deployment outcome. If any rows were blocked, report them explicitly rather than silently skipping. Never claim all three published unless three actual live URLs are verified.
+
+## Editorial guardrails
+- The 100-topic queue is an editorial plan, not authority to publish unverified financial instructions.
+- Protect SEO signals by maintaining canonical URLs and preventing duplication.
+- Existing 28 retired/draft records are excluded by default; don't flip them live as a shortcut.
+- This 100-spoke campaign stops when all 100 rows have either been published or explicitly escalated. The recurring scheduler may be paused after exhaustion.
+- Queue statuses: `queued`, `drafting`, `needs_review`, `published`, `skipped_duplicate`.
