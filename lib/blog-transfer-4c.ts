@@ -17,6 +17,7 @@ export const blogTransfer4C: BlogPost[] = [
     ],
     featuredImage: null,
     content: `<h2>M-Pesa Till Number Kenya: Application and Costs</h2><p><strong>Reviewed 22 October 2026.</strong> Merchant till applications require identity and business eligibility checks through Safaricom. Prepare ownership documents, verify onboarding channels and confirm merchant tariffs and settlement terms. Buy Goods tills and Paybill accounts have different purposes; do not assume all transfers are free.</p><h2>What to check before proceeding</h2><ol><li>Confirm eligibility and the exact transaction or product type.</li><li>Review current rates, fees and account references on the relevant official platform.</li><li>Check receiving details and any settlement or processing restrictions.</li><li>Keep the transaction or application reference securely.</li></ol><p>Official starting point: <a href="https://www.safaricom.co.ke/" rel="nofollow noopener">https://www.safaricom.co.ke/</a>. This guide is not a live fee quote or personalised legal assessment.</p>`,
+    lastReviewedAt: '2026-10-22'
   },
 
   // ── Post 2: Payment Gateways ─────────────────────────────────────────────
@@ -35,6 +36,7 @@ export const blogTransfer4C: BlogPost[] = [
     ],
     featuredImage: null,
     content: `<h2>Kenya Payment Gateways: Pesapal, Flutterwave and DPO</h2><p><strong>Reviewed 22 October 2026.</strong> Compare onboarding eligibility, M-Pesa and card acceptance, payout settlement, foreign-currency handling, chargeback rules and full merchant fee schedules. Do not declare a universal cheapest gateway using undated fee tables. Request written current offers for matched transactions.</p><h2>What to check before proceeding</h2><ol><li>Confirm eligibility and the exact transaction or product type.</li><li>Review current rates, fees and account references on the relevant official platform.</li><li>Check receiving details and any settlement or processing restrictions.</li><li>Keep the transaction or application reference securely.</li></ol><p>Official starting point: <a href="https://www.centralbank.go.ke/" rel="nofollow noopener">https://www.centralbank.go.ke/</a>. This guide is not a live fee quote or personalised legal assessment.</p>`,
+    lastReviewedAt: '2026-10-22'
   },
 
   // ── Post 3: Accept International Payments ─────────────────────────────────
@@ -53,6 +55,7 @@ export const blogTransfer4C: BlogPost[] = [
     ],
     featuredImage: null,
     content: `<h2>Receiving International Payments in Kenya</h2><p><strong>Reviewed 22 October 2026.</strong> A Kenyan business may have eligible options for overseas bank transfers, payment gateways or other provider accounts, but currency settlement, regulatory checks, FX margins and fees differ. Verify that each provider supports your business, client origin, expected amount and KES payout before sending invoices.</p><h2>What to check before proceeding</h2><ol><li>Confirm eligibility and the exact transaction or product type.</li><li>Review current rates, fees and account references on the relevant official platform.</li><li>Check receiving details and any settlement or processing restrictions.</li><li>Keep the transaction or application reference securely.</li></ol><p>Official starting point: <a href="https://www.centralbank.go.ke/" rel="nofollow noopener">https://www.centralbank.go.ke/</a>. This guide is not a live fee quote or personalised legal assessment.</p>`,
+    lastReviewedAt: '2026-10-22'
   },
 
   // ── Post 4 (H5 mpesa-how-tos spoke, written 2026-06-13): Full M-Pesa statement ──
