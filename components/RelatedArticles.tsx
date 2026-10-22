@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { blogPosts } from '@/lib/blog-data'
+import { livePosts } from '@/lib/all-blog-posts'
 import { ArrowRight, BookOpen } from 'lucide-react'
 
 interface RelatedArticlesProps {
@@ -9,7 +9,7 @@ interface RelatedArticlesProps {
 
 export default function RelatedArticles({ currentSlug, relatedSlugs }: RelatedArticlesProps) {
   const relatedPosts = relatedSlugs
-    .map(slug => blogPosts.find(post => post.slug === slug))
+    .map(slug => livePosts.find(post => post.slug === slug && post.slug !== currentSlug))
     .filter(Boolean)
     .slice(0, 4)
 
