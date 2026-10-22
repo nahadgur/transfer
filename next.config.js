@@ -19,6 +19,8 @@ const nextConfig = {
     // into the live spoke or tool page that owns its head term). Off-niche and
     // wrong-country removals with no target are 410'd in middleware.ts instead.
     const consolidated = [
+      ['a-kenyan-employers-guide-to-nssf-and-housing-levy-obligations', '/blog/hiring-your-first-employee-in-kenya-and-setting-up-kra-nssf-and-shif'],
+      ['freelancer-taxes-in-kenya-and-how-to-use-net-to-gross-calculations-for-global-clients', '/blog/freelancing-vs-employment-in-kenya-and-which-pays-less-tax'],
       ['how-the-new-nssf-rates-affect-kenyan-workers', '/blog/the-complete-guide-to-nssf-contributions-in-kenya'],
       ['hidden-m-pesa-charges-and-whether-small-transactions-are-costing-you-more-than-you-think', '/blog/mpesa-charges-complete-fee-guide'],
       ['m-pesa-to-airtel-money-and-how-interoperability-affects-your-transfer-costs', '/blog/mpesa-vs-airtel-money-which-is-cheaper'],
