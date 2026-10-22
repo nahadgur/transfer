@@ -7,7 +7,7 @@ export const blogTransfer4C: BlogPost[] = [
     title: 'M-Pesa Till Number Kenya: Application and Costs',
     slug: 'how-to-apply-for-mpesa-till-number-kenya',
     metaTitle: 'M-Pesa Till Number Kenya: Application and Costs',
-    metaDescription: 'Merchant till applications require identity and business eligibility checks through Safaricom. Prepare ownership documents, verify onbo',
+    metaDescription: 'How to apply for an M-Pesa merchant till in Kenya, verify business eligibility and check current Safaricom settlement and fees.',
     category: 'Transfer',
     calculator: 'mpesa-calculator',
     relatedSlugs: [
@@ -25,7 +25,7 @@ export const blogTransfer4C: BlogPost[] = [
     title: 'Kenya Payment Gateways: Pesapal, Flutterwave and DPO',
     slug: 'best-payment-gateways-kenyan-ecommerce',
     metaTitle: 'Kenya Payment Gateways: Pesapal, Flutterwave and DPO',
-    metaDescription: 'Compare onboarding eligibility, M-Pesa and card acceptance, payout settlement, foreign-currency handling, chargeback rules and full mer's best payment gateways for e-commerce in 2026 — Pesapal, Flutterwave, DPO Pay, iPay Africa, Kopokopo and Stripe. Fees, integration effort, M-Pesa support and verdict for Kenyan businesses.',
+    metaDescription: 'Compare Kenyan merchant gateways by eligibility, payment rails, settlement, security and current quoted charges.',
     category: 'Transfer',
     calculator: 'remittance',
     relatedSlugs: [
@@ -43,7 +43,7 @@ export const blogTransfer4C: BlogPost[] = [
     title: 'Receiving International Payments in Kenya',
     slug: 'accept-international-payments-kenya',
     metaTitle: 'Receiving International Payments in Kenya',
-    metaDescription: 'A Kenyan business may have eligible options for overseas bank transfers, payment gateways or other provider accounts, but currency sett',
+    metaDescription: 'Learn how Kenyan businesses can receive eligible international customer payments and check foreign exchange and settlement costs.',
     category: 'Transfer',
     calculator: 'remittance',
     relatedSlugs: [
@@ -61,8 +61,7 @@ export const blogTransfer4C: BlogPost[] = [
     title: 'How to Get a Full M-Pesa Statement',
     slug: 'how-to-get-full-mpesa-statement',
     metaTitle: 'How to Get a Full M-Pesa Statement',
-    metaDescription:
-      'Get your full M-Pesa statement free via *334# or the M-PESA app. Steps for requesting up to two years of records, opening the PDF password and fixing delays.',
+    metaDescription: 'How to obtain your own M-Pesa transaction statement safely and reconcile payment references.',
     category: 'Transfer',
     calculator: 'ussd-codes',
     relatedSlugs: [],
@@ -571,7 +570,7 @@ export const blogTransfer4C: BlogPost[] = [
     title: 'M-Pesa Transaction Limits and Account Rules',
     slug: 'mpesa-daily-and-transaction-limits',
     metaTitle: 'M-Pesa Transaction Limits and Account Rules',
-    metaDescription: 'Safaricom has published a KSh 250,000 ordinary single-transaction limit and KSh 500,000 daily value limit. These are distinct from wall',
+    metaDescription: 'M-Pesa transaction limits explained, including ordinary single and daily transfer ceilings and account restrictions.',
     category: 'Transfer',
     calculator: 'mpesa-calculator',
     hub: 'mpesa-charges',
@@ -591,8 +590,7 @@ export const blogTransfer4C: BlogPost[] = [
     title: 'How to Check KPLC Token Balance and Usage',
     slug: 'how-to-check-kplc-token-balance',
     metaTitle: 'How to Check KPLC Token Balance and Usage',
-    metaDescription:
-      'Check your KPLC prepaid token balance and units left: read the meter display, use *977#, the Stima app or an SMS to 95551, and see your last tokens bought.',
+    metaDescription: 'How to check Kenya Power prepaid token balances and meter usage, with correct official prepaid and postpaid payment numbers.',
     category: 'Transfer',
     calculator: 'ussd-codes',
     hub: 'kplc-tokens',
