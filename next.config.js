@@ -19,6 +19,7 @@ const nextConfig = {
     // into the live spoke or tool page that owns its head term). Off-niche and
     // wrong-country removals with no target are 410'd in middleware.ts instead.
     const consolidated = [
+      ['how-the-new-nssf-rates-affect-kenyan-workers', '/blog/the-complete-guide-to-nssf-contributions-in-kenya'],
       ['hidden-m-pesa-charges-and-whether-small-transactions-are-costing-you-more-than-you-think', '/blog/mpesa-charges-complete-fee-guide'],
       ['m-pesa-to-airtel-money-and-how-interoperability-affects-your-transfer-costs', '/blog/mpesa-vs-airtel-money-which-is-cheaper'],
       ['pesalink-vs-rtgs-and-which-is-better-for-sending-kes-500000-in-kenya', '/blog/rtgs-vs-mpesa-large-amounts'],
