@@ -3,10 +3,10 @@ import type { BlogPost } from './blog-data'
 export const blogTransfer4A: BlogPost[] = [
   {
     id: 101,
-    title: 'M-Pesa Charges 2026: Complete Fee Guide for Sending, Withdrawing and Paying Bills',
+    title: 'M-Pesa Fees in Kenya: Sending, Withdrawals and Paybill Costs',
     slug: 'mpesa-charges-complete-fee-guide',
-    metaTitle: 'M-Pesa Charges 2026: All Fees for Sending, Withdrawing & Paybill',
-    metaDescription: 'The complete M-Pesa fee guide for 2026. Every charge for sending money, withdrawing cash, Paybill, Buy Goods, Fuliza and M-Shwari — with full fee tables and money-saving tips.',
+    metaTitle: 'M-Pesa Charges Kenya: Send, Withdraw & Paybill Guide',
+    metaDescription: 'Understand M-Pesa sending and withdrawal charges, Paybill fees and limits. Learn how to verify the actual tariff before confirming a transaction.',
     category: 'Transfer',
     calculator: 'mpesa-calculator',
     relatedSlugs: [
@@ -15,164 +15,15 @@ export const blogTransfer4A: BlogPost[] = [
       'how-to-pay-kplc-nhif-nssf-via-mpesa',
     ],
     featuredImage: null,
-    content: `<p>Safaricom revises M-Pesa charges periodically, and staying on top of the current fee structure can save you hundreds of shillings every month — especially if you send money frequently, run a business, or manage multiple bill payments. This guide covers every M-Pesa charge currently in effect for 2026, complete with full fee tables, real examples, and practical tips to reduce what you pay.</p>
-
-<h2>How M-Pesa Fees Work</h2>
-
-<p>M-Pesa fees are <b>tiered by transaction amount</b> — the larger the amount, the higher the absolute fee, though the percentage cost generally falls as amounts increase. There are four main transaction types to understand:</p>
-
-<ul>
-<li><b>Send Money</b> — transferring funds to another M-Pesa user (registered) or to a non-M-Pesa number (unregistered)</li>
-<li><b>Withdraw</b> — cashing out from an M-Pesa agent or ATM</li>
-<li><b>Lipa na M-Pesa (Paybill)</b> — paying bills such as utilities, banks, and government services</li>
-<li><b>Lipa na M-Pesa (Buy Goods)</b> — paying at retail till numbers</li>
-</ul>
-
-<p>Understanding which transaction type you are using — and whether there is a cheaper alternative — is the first step to reducing your M-Pesa costs.</p>
-
-<h2>Send Money Charges 2026</h2>
-
-<p>Sending money to a <b>registered M-Pesa user</b> (someone who has an M-Pesa account on Safaricom) is always cheaper than sending to an <b>unregistered</b> recipient. Unregistered recipients receive an SMS voucher they can redeem at an agent, which involves more manual processing — hence the higher fee.</p>
-
-<table>
-<thead><tr><th>Amount (KES)</th><th>Registered User Fee</th><th>Unregistered User Fee</th></tr></thead>
-<tbody>
-<tr><td>1 – 100</td><td>Free</td><td>Free</td></tr>
-<tr><td>101 – 500</td><td>KES 7</td><td>KES 18</td></tr>
-<tr><td>501 – 1,000</td><td>KES 13</td><td>KES 22</td></tr>
-<tr><td>1,001 – 1,500</td><td>KES 23</td><td>KES 35</td></tr>
-<tr><td>1,501 – 2,500</td><td>KES 33</td><td>KES 55</td></tr>
-<tr><td>2,501 – 3,500</td><td>KES 53</td><td>KES 77</td></tr>
-<tr><td>3,501 – 5,000</td><td>KES 57</td><td>KES 88</td></tr>
-<tr><td>5,001 – 7,500</td><td>KES 78</td><td>KES 105</td></tr>
-<tr><td>7,501 – 10,000</td><td>KES 90</td><td>KES 115</td></tr>
-<tr><td>10,001 – 15,000</td><td>KES 100</td><td>KES 145</td></tr>
-<tr><td>15,001 – 20,000</td><td>KES 105</td><td>KES 163</td></tr>
-<tr><td>20,001 – 35,000</td><td>KES 108</td><td>KES 180</td></tr>
-<tr><td>35,001 – 50,000</td><td>KES 108</td><td>KES 197</td></tr>
-<tr><td>50,001 – 250,000</td><td>KES 108</td><td>KES 222</td></tr>
-</tbody>
-</table>
-
-<p><b>Key insight:</b> For amounts above KES 20,000, the registered user fee is flat at KES 108 regardless of amount. Sending KES 200,000 costs the same fee as sending KES 20,001, so if you are going to pay KES 108 either way, consider sending in one larger transaction rather than multiple smaller ones. The top fee band tracks the maximum single transaction set by the Central Bank of Kenya and Safaricom, so confirm the current limit before relying on it.</p>
-
-<h2>Withdrawal (Cash Out) Charges 2026</h2>
-
-<p>Withdrawing cash from an M-Pesa agent or Safaricom ATM incurs a withdrawal fee. These are separate from send money fees and apply whenever you convert your M-Pesa balance to physical cash.</p>
-
-<table>
-<thead><tr><th>Amount (KES)</th><th>Withdrawal Fee</th></tr></thead>
-<tbody>
-<tr><td>1 – 100</td><td>Free</td></tr>
-<tr><td>101 – 500</td><td>KES 11</td></tr>
-<tr><td>501 – 1,000</td><td>KES 22</td></tr>
-<tr><td>1,001 – 1,500</td><td>KES 33</td></tr>
-<tr><td>1,501 – 2,500</td><td>KES 33</td></tr>
-<tr><td>2,501 – 3,500</td><td>KES 35</td></tr>
-<tr><td>3,501 – 5,000</td><td>KES 55</td></tr>
-<tr><td>5,001 – 7,500</td><td>KES 77</td></tr>
-<tr><td>7,501 – 10,000</td><td>KES 88</td></tr>
-<tr><td>10,001 – 15,000</td><td>KES 99</td></tr>
-<tr><td>15,001 – 20,000</td><td>KES 105</td></tr>
-<tr><td>20,001 – 35,000</td><td>KES 108</td></tr>
-<tr><td>35,001 – 50,000</td><td>KES 111</td></tr>
-<tr><td>50,001 – 250,000</td><td>KES 111</td></tr>
-</tbody>
-</table>
-
-<p><b>Practical tip:</b> If you regularly withdraw large amounts, consider using your bank account linked to M-Pesa — transferring to your bank using the bank's published Paybill tariff and then using your bank's ATM or debit card often costs less than a direct M-Pesa agent withdrawal.</p>
-
-<h2>Lipa na M-Pesa: Paybill Charges</h2>
-
-<p>Paybill pricing depends on the business and the tariff configured for its Paybill account. Some organisations absorb the fee, while other payment arrangements can charge the customer. Do not assume that every Paybill payment or bank deposit is free.</p>
-
-<p>Before confirming a payment, check the cost displayed by M-Pesa and, for bank transfers, check any charges shown by the receiving institution. See <a href="/mpesa-calculator/">our M-Pesa fee calculator</a> for indicative send-money costs; that tool does not quote live Paybill tariffs.</p>
-
-<h2>Lipa na M-Pesa: Buy Goods (Till Numbers) Charges</h2>
-
-<p>Payments made at shops, restaurants, and businesses via a till number are also <b>free to the buyer</b>. You pay no fee when scanning a till number at a supermarket, fuel station, or any merchant using M-Pesa. The merchant bears a small processing cost on their end.</p>
-
-<p>This makes Buy Goods one of the most financially sensible payment methods in Kenya — unlike card payments which may incur charges depending on the card type.</p>
-
-<h2>Fuliza M-Pesa Charges (Overdraft)</h2>
-
-<p>Fuliza is M-Pesa's overdraft facility. It lets you complete a transaction when your M-Pesa balance is short. However, it comes at a cost that many users underestimate.</p>
-
-<p>Fuliza has two charges rather than one. Safaricom levies a one-off access fee when you draw on the overdraft, then a daily maintenance fee for every day the borrowed amount stays outstanding, with the daily fee rising in bands as the balance grows. A government excise duty applies on top of these fees. Because the maintenance fee accrues daily, a balance carried for several days can cost far more than the convenience was worth, so Fuliza is a short-term bridge rather than a loan product. Repay it the same day or the next day whenever possible.</p>
-
-<p>The exact access fee, the daily maintenance fee bands and the excise component change from time to time, so we do not restate a fixed schedule here. For the current figures and a worked example see our <a href="/blog/how-much-fuliza-costs-in-kenya/" style="color:#f59e0b">guide to how much Fuliza costs in Kenya</a>, and confirm the live tariff with Safaricom before you rely on it.</p>
-
-<h2>M-Shwari Charges</h2>
-
-<p>M-Shwari, operated by NCBA Bank and accessible via *456#, has its own fee structure:</p>
-
-<ul>
-<li><b>Saving (locking funds):</b> Free</li>
-<li><b>Withdrawing savings to M-Pesa:</b> Free</li>
-<li><b>Loan fee:</b> 7.5% one-time facilitation fee on the loan amount (charged upfront)</li>
-<li><b>Loan term:</b> 30 days — if not repaid, a 7.5% rollover fee applies</li>
-</ul>
-
-<p>A KES 5,000 M-Shwari loan costs KES 375 for 30 days. If you roll it over, you pay another KES 375. Unlike Fuliza, the fee is fixed — not daily — making it more predictable for planned short-term borrowing.</p>
-
-<h2>M-Pesa Global (International Transfers) Charges</h2>
-
-<p>Sending money internationally via M-Pesa Global is significantly more expensive than domestic transfers. Fees vary by destination country and amount, but generally range from 1–4% of the transaction value. For international remittances, dedicated services like Wise, Sendwave, or WorldRemit typically offer better rates than M-Pesa Global for most corridors.</p>
-
-<h2>M-Pesa Daily and Transaction Limits</h2>
-
-<table>
-<thead><tr><th>Limit Type</th><th>Amount (KES)</th></tr></thead>
-<tbody>
-<tr><td>Maximum single transaction</td><td>KES 250,000</td></tr>
-<tr><td>Maximum daily send limit</td><td>KES 500,000</td></tr>
-<tr><td>Maximum M-Pesa wallet balance</td><td>KES 500,000</td></tr>
-<tr><td>Minimum Send Money amount</td><td>KES 1</td></tr>
-<tr><td>Minimum Withdraw amount</td><td>KES 50</td></tr>
-</tbody>
-</table>
-
-<p>These limits are set by the Central Bank of Kenya and Safaricom and are revised from time to time, so confirm the current limit on the Safaricom M-Pesa terms page or by dialling *334# before relying on it for a large transfer.</p>
-
-<p>Note: Limits for <b>M-Pesa Business</b> and <b>M-Pesa Global</b> accounts differ. Business accounts can have higher daily limits approved by Safaricom.</p>
-
-<h2>5 Ways to Reduce Your M-Pesa Fees</h2>
-
-<h3>1. Compare Bank Deposit Charges</h3>
-<p>Check the relevant bank's Paybill instructions and the fee displayed before confirming. Fees and account details vary by institution; avoid assuming a transfer will be free.</p>
-
-<h3>2. Consolidate Transactions</h3>
-<p>For amounts above KES 20,000, the fee is flat at KES 108. Instead of sending KES 10,000 twice (2 × KES 90 = KES 180), send KES 20,000 once (KES 108) and save KES 72.</p>
-
-<h3>3. Pay Bills Directly via Paybill</h3>
-<p>Use the biller's published payment details and check the total charge before confirming. The cost may depend on the Paybill arrangement and the receiving institution.</p>
-
-<h3>4. Repay Fuliza Immediately</h3>
-<p>Fuliza daily fees add up fast. Set a reminder to repay within 24 hours whenever you use it. If Fuliza is a regular habit, consider applying for a proper emergency loan product with more transparent terms.</p>
-
-<h3>5. Withdraw in One Large Amount</h3>
-<p>Three withdrawals of KES 3,000 cost 3 × KES 35 = KES 105. One withdrawal of KES 9,000 costs KES 88. Plan withdrawals to minimise the number of transactions.</p>
-
-<h2>Are M-Pesa Fees Going Up in 2026?</h2>
-
-<p>Safaricom has maintained broadly the same fee structure since the 2022 tariff revision. While the Communications Authority of Kenya (CA) continues to review mobile money fees, no official reduction has been announced for 2026. The current structure has been in place since late 2022 and remains the applicable tariff at the time of publication.</p>
-
-<p>For the most current official fee schedule, always check the <b>Safaricom M-Pesa terms and conditions</b> page or dial *334# and navigate to "My Account → Transaction Costs."</p>
-
-<h2>Related Tools on transfer.co.ke</h2><ul><li><a href="/mpesa-calculator" style="color:#f59e0b">M-Pesa Fee Calculator</a></li><li><a href="/paybill-directory" style="color:#f59e0b">Paybill Directory</a></li><li><a href="/ussd-codes" style="color:#f59e0b">M-Pesa USSD Codes</a></li></ul><h2>Frequently Asked Questions</h2>
-
-<h3>Is it free to receive money on M-Pesa?</h3>
-<p>Yes — M-Pesa does not charge the recipient any fee. Only the sender pays the transaction fee.</p>
-
-<h3>Why did my Paybill payment fail but the money left my M-Pesa?</h3>
-<p>If a Paybill payment fails after funds are deducted, the money is typically reversed automatically within 24 hours. If not, call Safaricom on 0722 000 100 with your M-Pesa transaction ID.</p>
-
-<h3>Does M-Pesa charge for checking balance?</h3>
-<p>No — dialling *334*0# to check your M-Pesa balance is free.</p>
-
-<h3>What is the cheapest way to send KES 50,000 via M-Pesa?</h3>
-<p>If the recipient has a bank account, compare the bank's Paybill tariff before sending. If sending directly to M-Pesa, the fee is KES 108 for KES 50,000, which is the flat maximum fee for registered user transfers.</p>`,
-  },
+    content: `<p><strong>Reviewed October 2026.</strong> There is no single fee for all M-Pesa transactions. Sending to another wallet, withdrawing at an agent and paying a business use different tariff schedules. This guide explains how to verify the amount you will actually pay, without confusing retail tariffs with business or third-party Paybill charges.</p>
+<h2>Sending money to another M-Pesa user</h2><p>Safaricom generally calculates a transaction charge according to the amount and recipient type. Before approving a payment, review the displayed cost in the M-Pesa app or USSD flow. Rates and product eligibility may change. Use the <a href="/mpesa-calculator/">M-Pesa reference fee calculator</a> as a starting point, not a binding quote.</p>
+<h2>Withdrawing from an M-Pesa agent</h2><p>Agent cash withdrawals use a separate tariff and may have a different applicable amount range. Always check the amount available to withdraw, the charge shown on the confirmation screen and your account limits. Safaricom explains the withdrawal channels on its <a href="https://www.safaricom.co.ke/main-m-pesa/m-pesa-services/transactions/deposit-at-agent" rel="nofollow noopener" target="_blank">official M-Pesa transactions page</a>.</p>
+<h2>Paybill and Buy Goods transactions</h2><p>A Paybill payment is not automatically free. The customer's charge depends on the relevant business tariff and payment arrangement; businesses can bear charges in other arrangements. A bank deposit may also have bank-specific costs. Check the receiving organisation's current payment instructions and any charges shown before confirming. Do not use unverified Paybill numbers received through unsolicited messages.</p>
+<h2>How much money can you send?</h2><p>M-Pesa has published a maximum single-transaction value of KSh 250,000 and a daily transaction value limit of KSh 500,000 for ordinary accounts, subject to product and account restrictions. Confirm the active limits with Safaricom before moving large amounts. A transaction limit is not the same as the amount remaining available in your wallet.</p>
+<h2>Fuliza and borrowing costs</h2><p>Fuliza is a separate overdraft product and its access and maintenance fees cannot be inferred from ordinary send-money charges. Review the specific offer and terms in your Safaricom interface before borrowing. Interest, excise duty and maintenance fees can affect the total cost.</p>
+<h2>How to compare payment options</h2><ol><li>Identify the exact transaction type and recipient.</li><li>Enter the amount using the relevant official app or USSD menu.</li><li>Read the fee shown before entering your PIN.</li><li>For bank payments, check the receiving bank's fee as well.</li><li>Keep the confirmation message and transaction reference.</li></ol>
+<h2>Frequently asked questions</h2><h3>Are all M-Pesa Paybill payments free?</h3><p>No. The tariff depends on the receiving business's configuration, and some charges may be passed to the customer.</p><h3>Do fees stay constant all year?</h3><p>Not necessarily. Refer to Safaricom's currently published tariff and the charge presented at checkout.</p><h3>What is the largest single ordinary M-Pesa transfer?</h3><p>Safaricom has published KSh 250,000, subject to the conditions applicable to your account.</p><p><em>Last reviewed: 22 October 2026. For exact charges use the M-Pesa confirmation screen and Safaricom's current terms.</em></p>`,
+    },
 
   // ── Post 2: M-Pesa vs Airtel Money ──────────────────────────────────────
   {
