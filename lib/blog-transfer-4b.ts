@@ -547,10 +547,10 @@ export const blogTransfer4B: BlogPost[] = [
   // ── Post 4: Pay KPLC/NHIF/NSSF via M-Pesa ──────────────────────────────
   {
     id: 107,
-    title: 'How to Pay KPLC, SHA and NSSF via M-Pesa in 2026 (All Paybill Numbers)',
+    title: 'How to Pay KPLC, KRA, SHA and NSSF by M-Pesa (Verified Guide)',
     slug: 'how-to-pay-kplc-nhif-nssf-via-mpesa',
-    metaTitle: 'Pay KPLC, SHA & NSSF via M-Pesa 2026 | Complete Paybill Guide',
-    metaDescription: 'Step-by-step guide to paying KPLC electricity, SHA health insurance, NSSF pension, water bills and more via M-Pesa in 2026. All paybill numbers, account formats and troubleshooting tips.',
+    metaTitle: 'KPLC, KRA, SHA & NSSF M-Pesa Payment Guide 2026',
+    metaDescription: 'Verified KPLC prepaid 888880 and postpaid 888888 references, KRA 222222 PRN instructions and official SHA/NSSF payment guidance.',
     category: 'Transfer',
     calculator: 'mpesa-calculator',
     relatedSlugs: [
@@ -559,197 +559,13 @@ export const blogTransfer4B: BlogPost[] = [
       'mpesa-vs-airtel-money-which-is-cheaper',
     ],
     featuredImage: null,
-    content: `<p>Paying government bills via M-Pesa Paybill is one of the most practical financial habits a Kenyan can develop — it is available electronically, often promptly and around the clock, and eliminates queues at payment offices. Yet a surprising number of Kenyans still pay KPLC, NHIF, and NSSF in person or via agents who charge extra fees. This guide covers every essential government and utility payment via M-Pesa, with the correct paybill numbers, account number formats, step-by-step instructions, and troubleshooting tips.</p>
-
-<h2>The Golden Rule: M-Pesa Paybill Is Free</h2>
-
-<p>Before diving into individual services, the most important fact to know is that <b>Paybill fees depend on the biller and its tariff</b>. Do not assume a Paybill payment is free. Check any charge displayed before confirming, and verify the account reference against the biller's current official payment instructions.</p>
-
-<p>This means there is absolutely no financial reason to use an M-Pesa agent, a third-party payment service, or a physical payment office for any of the services listed in this guide — you are almost certainly paying extra fees unnecessarily if you do.</p>
-
-<h2>How to Pay via M-Pesa Paybill: General Steps</h2>
-
-<ol>
-<li>Dial <b>*334#</b> on your Safaricom line</li>
-<li>Select <b>"Lipa na M-Pesa"</b></li>
-<li>Select <b>"Pay Bill"</b></li>
-<li>Enter the <b>Business Number</b> (Paybill) for the service</li>
-<li>Enter the <b>Account Number</b> (this varies per service — see below)</li>
-<li>Enter the <b>Amount</b></li>
-<li>Enter your <b>M-Pesa PIN</b></li>
-<li>Press <b>OK</b> to confirm</li>
-<li>You will receive a confirmation SMS — save it as proof of payment</li>
-</ol>
-
-<p>You can also pay via the <b>M-Pesa Super App</b>: tap "Pay" → "Paybill" → enter business number, account number, and amount.</p>
-
-<h2>1. KPLC — Kenya Power (Electricity)</h2>
-
-<h3>Prepaid Electricity Tokens (Buy Tokens)</h3>
-
-<table>
-<thead><tr><th>Detail</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td>Paybill Number</td><td><b>888880</b></td></tr>
-<tr><td>Account Number</td><td>Your <b>prepaid meter number</b> (on the meter or your token receipt — typically 11 digits)</td></tr>
-<tr><td>Minimum Amount</td><td>KES 100</td></tr>
-<tr><td>Fee</td><td>Free</td></tr>
-<tr><td>Token delivery</td><td>Sent via SMS to your registered phone number within minutes</td></tr>
-</tbody>
-</table>
-
-<h3>Step-by-Step: Buy KPLC Prepaid Tokens</h3>
-<ol>
-<li>Dial *334# → Lipa na M-Pesa → Pay Bill</li>
-<li>Business Number: <b>888880</b></li>
-<li>Account Number: Enter your meter number (e.g., <b>12345678901</b>)</li>
-<li>Enter amount (minimum KES 100)</li>
-<li>Enter PIN and confirm</li>
-<li>Within 5–10 minutes, you receive an SMS with a 20-digit token number</li>
-<li>Enter the token on your meter keypad to load the units</li>
-</ol>
-
-<h3>Postpaid Electricity (Monthly Bill)</h3>
-
-<table>
-<thead><tr><th>Detail</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td>Paybill Number</td><td><b>888880</b></td></tr>
-<tr><td>Account Number</td><td>Your <b>postpaid account number</b> (on your KPLC bill — typically starts with a letter, e.g., <b>0101234567</b>)</td></tr>
-<tr><td>Fee</td><td>Free</td></tr>
-</tbody>
-</table>
-
-<p><b>Common mistake:</b> Many people confuse their meter number with their account number. Prepaid meters use the meter number. Postpaid accounts use the account number from your paper bill. Using the wrong number will either fail or credit the wrong account.</p>
-
-<h3>KPLC Troubleshooting</h3>
-<ul>
-<li><b>Token not received after 30 minutes:</b> Call KPLC on 97771 with your M-Pesa transaction code</li>
-<li><b>"Invalid meter number" error:</b> Double-check your meter number — it is printed on the meter face and on previous token receipts</li>
-<li><b>Token received but meter rejects it:</b> Ensure you enter all 20 digits in the correct order. Some meters require you to clear first by pressing the red button</li>
-</ul>
-
-<h2>2. SHA/SHIF — the current health insurance system</h2>
-<p>Kenya replaced NHIF with the Social Health Authority system in October 2024. Do not follow outdated NHIF instructions, including the old flat KES 500 voluntary contribution. Your amount and payment reference must come from the current SHA assessment.</p>
-<p>To avoid misallocating a statutory contribution, log into the <a href="https://sha.go.ke/" rel="nofollow">official SHA website</a> and follow the payment instructions shown for your account. Employers should use the <a href="https://employers.sha.go.ke/" rel="nofollow">SHA employer portal</a> and the reference generated for their payroll remittance. Review the biller and account reference on the M-Pesa confirmation screen before approving.</p>
-<p>SHIF contributions generally use 2.75% of gross income for salaried employees, with a statutory minimum for relevant households; the contribution assessed for an individual may differ. Seek the applicable amount from SHA itself.</p>
-<h2>3. NSSF — National Social Security Fund</h2>
-
-<table>
-<thead><tr><th>Detail</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td>Paybill Number</td><td><b>333300</b></td></tr>
-<tr><td>Account Number (Employee)</td><td>Your <b>NSSF member number</b> (from your NSSF card or registration letter)</td></tr>
-<tr><td>Account Number (Self-Employed)</td><td>Your <b>NSSF member number</b></td></tr>
-<tr><td>Monthly Contribution (Tier I)</td><td>6% of pensionable earnings per side, capped at KES 6,480 per side monthly from February 2026</td></tr>
-<tr><td>Fee</td><td>Free</td></tr>
-</tbody>
-</table>
-
-<h3>Step-by-Step: Pay NSSF via M-Pesa</h3>
-<ol>
-<li>Dial *334# → Lipa na M-Pesa → Pay Bill</li>
-<li>Business Number: <b>333300</b></li>
-<li>Account Number: Your <b>NSSF member number</b> (e.g., <b>1234567</b>)</li>
-<li>Amount: Your applicable contribution (minimum KES 400 for Tier I)</li>
-<li>Enter PIN and confirm</li>
-<li>Save the M-Pesa confirmation SMS as proof of contribution</li>
-</ol>
-
-<h3>Finding Your NSSF Member Number</h3>
-<ul>
-<li>On your physical NSSF membership card</li>
-<li>Via USSD: Dial *303# and follow the prompts to retrieve your member details</li>
-<li>On the NSSF online portal at nssf.or.ke</li>
-<li>From your employer's payroll department</li>
-</ul>
-
-<h2>4. Nairobi City Water (NCWSC)</h2>
-
-<table>
-<thead><tr><th>Detail</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td>Paybill Number</td><td><b>444400</b></td></tr>
-<tr><td>Account Number</td><td>Your <b>water account number</b> (on your bill)</td></tr>
-<tr><td>Fee</td><td>Free</td></tr>
-</tbody>
-</table>
-
-<h2>5. KRA — Tax Payments</h2>
-
-<table>
-<thead><tr><th>Detail</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td>Paybill Number</td><td><b>572572</b></td></tr>
-<tr><td>Account Number</td><td>Your <b>Payment Registration Number (PRN)</b> — generated on iTax (itax.kra.go.ke)</td></tr>
-<tr><td>Fee</td><td>Free</td></tr>
-<tr><td>Note</td><td>You must generate a PRN on iTax first before paying</td></tr>
-</tbody>
-</table>
-
-<h3>How to Pay KRA Tax via M-Pesa</h3>
-<ol>
-<li>Log into <b>itax.kra.go.ke</b> with your KRA PIN and password</li>
-<li>File your return or generate a tax payment slip</li>
-<li>Note the <b>Payment Registration Number (PRN)</b> displayed</li>
-<li>Dial *334# → Lipa na M-Pesa → Pay Bill</li>
-<li>Business Number: <b>572572</b></li>
-<li>Account Number: Your <b>PRN number</b></li>
-<li>Amount: The exact tax amount due</li>
-<li>Confirm and save the receipt</li>
-</ol>
-
-<h2>6. HELB — Student Loan Repayment</h2>
-
-<table>
-<thead><tr><th>Detail</th><th>Value</th></tr></thead>
-<tbody>
-<tr><td>Paybill Number</td><td><b>200400</b></td></tr>
-<tr><td>Account Number</td><td>Your <b>National ID number</b></td></tr>
-<tr><td>Fee</td><td>Free</td></tr>
-</tbody>
-</table>
-
-<h2>Complete Quick-Reference Table: All Government Paybills</h2>
-
-<table>
-<thead><tr><th>Service</th><th>Paybill</th><th>Account Number</th><th>Notes</th></tr></thead>
-<tbody>
-<tr><td>KPLC Prepaid Token</td><td>888880</td><td>Meter number</td><td>Token sent via SMS</td></tr>
-<tr><td>KPLC Postpaid Bill</td><td>888880</td><td>Account number (from bill)</td><td>Different from meter number</td></tr>
-<tr><td>SHA / SHIF</td><td>Check official SHA portal</td><td>Use SHA-issued payment reference</td><td>Confirm on SHA portal</td></tr>
-<tr><td>NSSF</td><td>333300</td><td>NSSF member number</td><td>Remit by 9th of month</td></tr>
-<tr><td>Nairobi Water (NCWSC)</td><td>444400</td><td>Water account number</td><td>From your bill</td></tr>
-<tr><td>KRA Tax</td><td>572572</td><td>PRN from iTax</td><td>Generate PRN first</td></tr>
-<tr><td>HELB Loan</td><td>200400</td><td>National ID number</td><td>Deducted from salary by employers</td></tr>
-<tr><td>eCitizen Services</td><td>206206</td><td>Payment code from eCitizen</td><td>Passports, IDs, etc.</td></tr>
-<tr><td>NTSA (Vehicle/Licence)</td><td>108</td><td>ID number</td><td>For driving licence renewal etc.</td></tr>
-</tbody>
-</table>
-
-<h2>General Paybill Troubleshooting</h2>
-
-<h3>"Invalid Account Number" Error</h3>
-<p>This usually means you have entered the account number in the wrong format. Double-check the exact format required — some services require leading zeros, some do not. For KPLC, the meter number must be exactly as printed on your meter.</p>
-
-<h3>Payment Successful but Service Not Updated</h3>
-<p>Allow 30 minutes to 2 hours for most services to update after a payment. KPLC prepaid tokens should arrive within 15 minutes. SHA and NSSF processing times vary; check the relevant official portal. Always keep your M-Pesa confirmation SMS as proof.</p>
-
-<h3>Sent Payment to Wrong Paybill</h3>
-<p>Call Safaricom on 100 immediately with your transaction code. Safaricom will contact the receiving business to initiate a refund. Keep the M-Pesa confirmation SMS and note the exact amount, time, and wrong paybill number used.</p>
-
-<h2>Related Tools on transfer.co.ke</h2><ul><li><a href="/paybill-directory" style="color:#f59e0b">Paybill Directory</a></li><li><a href="/ussd-codes" style="color:#f59e0b">M-Pesa USSD Codes</a></li><li><a href="/mpesa-calculator" style="color:#f59e0b">M-Pesa Fee Calculator</a></li></ul><h2>Frequently Asked Questions</h2>
-
-<h3>Can I pay KPLC for a meter that is not registered to my name?</h3>
-<p>Yes — you can buy tokens for any meter number regardless of registration. Simply enter the meter number as the account number. This is common for tenants paying landlords' electricity meters.</p>
-
-<h3>How do I know my NSSF member number?</h3>
-<p>Dial *303# for the NSSF self-service USSD, visit nssf.or.ke, or ask your employer's HR department. If you have never registered, visit any NSSF office with your national ID to get a member number.</p>
-
-<h3>What time can I pay KPLC via M-Pesa?</h3>
-<p>M-Pesa Paybill works 24/7, including weekends and public holidays. KPLC token delivery is also 24/7 — tokens are issued automatically by the system, not manually processed.</p>
-
-<h3>Is it safe to pay KRA tax via M-Pesa?</h3>
-<p>Yes — using the official Paybill 572572 with a valid PRN from iTax is the official and secure method. Keep your confirmation SMS and update your iTax record accordingly.</p>`,
+    content: `<p><strong>Checked 22 October 2026.</strong> Paying KPLC, tax and statutory contributions using M-Pesa requires the right business number and, just as importantly, the correct payment reference. Older online lists often mix up prepaid and postpaid electricity numbers or give obsolete NHIF payment instructions. Use this guide alongside the biller's official instructions.</p>
+<h2>Kenya Power (KPLC): prepaid versus postpaid</h2><p>Kenya Power lists <strong>888880 for prepaid token purchases</strong> and <strong>888888 for postpaid bill payments</strong> through Safaricom. Prepaid uses your meter number; postpaid uses the account reference appearing on your electricity bill. These are different services. Check the current list on <a href="https://www.kplc.co.ke/new-list-of-vendors" target="_blank" rel="nofollow noopener">Kenya Power's approved vendors page</a>.</p>
+<table><thead><tr><th>Service</th><th>Safaricom Paybill</th><th>Reference</th></tr></thead><tbody><tr><td>Kenya Power prepaid tokens</td><td>888880</td><td>Meter number</td></tr><tr><td>Kenya Power postpaid bills</td><td>888888</td><td>Account number from bill</td></tr></tbody></table>
+<h2>KRA tax payments</h2><p>For government tax payments, do not reuse arbitrary KRA Paybill numbers found in older blogs. KRA's official individual income tax guidance identifies the unified government Paybill <strong>222222</strong>, with the <strong>Payment Registration Number (PRN)</strong> from the payment slip as the account reference. Generate the slip in the official iTax process before making payment. <a href="https://www.kra.go.ke/individual/filing-paying/types-of-taxes/individual-income-tax" rel="nofollow noopener">Source: Kenya Revenue Authority</a>.</p>
+<h2>SHA/SHIF health contributions</h2><p>Kenya transitioned from NHIF to the Social Health Authority (SHA) in October 2024. Do not enter the old NHIF reference or assume an outdated flat voluntary amount. Use the official <a href="https://sha.go.ke/" rel="nofollow noopener">SHA account</a> to determine your current assessed contribution and payment details. Employers should follow the <a href="https://employers.sha.go.ke/" rel="nofollow noopener">SHA employer portal</a>.</p>
+<h2>NSSF pension contributions</h2><p>NSSF pension obligations vary by employee pay and the scheme's current implementation phase. From February 2026 the ordinary employee maximum is KSh 6,480 monthly for pensionable income at or above the upper earnings limit. The employer pays a matching contribution. To make payments, follow the current <a href="https://www.nssf.or.ke/" rel="nofollow noopener">official NSSF payment portal</a> and use the generated reference; do not blindly use a saved business number.</p>
+<h2>How to make a Paybill payment safely</h2><ol><li>Open M-Pesa's Pay Bill menu or the provider's payment flow.</li><li>Verify the business number on the official biller site or invoice.</li><li>Enter the exact account or PRN reference, not a guessed phone number.</li><li>Check the account name and any charge shown before confirming.</li><li>Save the receipt or transaction ID; allow the receiving organisation time to reconcile.</li></ol>
+<h2>Are Paybill payments always free?</h2><p>No. Charges vary with the business arrangement, payment channel and provider. Check the total before entering your PIN. Read our <a href="/blog/mpesa-charges-complete-fee-guide/">M-Pesa tariff explainer</a>.</p><p><em>Last reviewed 22 October 2026. Payment numbers can change: verify directly with the receiving body before sending.</em></p>`,
   },
 ]
