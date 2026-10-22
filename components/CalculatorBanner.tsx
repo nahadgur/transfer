@@ -4,14 +4,14 @@ import {
 } from 'lucide-react'
 
 const calculators: Record<string, { title: string; description: string; href: string; icon: React.ElementType }> = {
-  'mpesa-calculator':   { title: 'M-Pesa Fee Calculator',         description: 'Calculate your M-Pesa send money, withdraw, and Paybill fees instantly', href: '/mpesa-calculator',   icon: Smartphone },
-  'bank-transfer':      { title: 'Bank Transfer Calculator',       description: 'Compare Pesalink, RTGS, and EFT fees across all Kenyan banks',            href: '/bank-transfer',      icon: Building2 },
+  'mpesa-calculator':   { title: 'M-Pesa Fee Calculator',         description: 'Check M-Pesa reference charges; confirm the final fee with Safaricom', href: '/mpesa-calculator',   icon: Smartphone },
+  'bank-transfer':      { title: 'Bank Transfer Calculator',       description: 'Understand PesaLink, RTGS and EFT; fees vary by bank',            href: '/bank-transfer',      icon: Building2 },
   'remittance':         { title: 'Remittance Calculator',          description: 'Compare Wise, WorldRemit, Remitly & M-Pesa Global rates',                 href: '/remittance',         icon: Globe },
-  'vehicle-transfer':   { title: 'Vehicle Transfer Calculator',    description: 'Calculate NTSA fees, stamp duty, and total logbook transfer costs',        href: '/vehicle-transfer',   icon: Car },
+  'vehicle-transfer':   { title: 'Vehicle Transfer Calculator',    description: 'Check the NTSA vehicle ownership transfer process and official charges',        href: '/vehicle-transfer',   icon: Car },
   'property-transfer':  { title: 'Property Transfer Calculator',   description: 'Calculate stamp duty, legal fees, and conveyancing costs',                 href: '/property-transfer',  icon: Home },
-  'import-duty':        { title: 'Import Duty Calculator',         description: 'Calculate taxes and duties for importing vehicles to Kenya',               href: '/import-duty',        icon: Ship },
+  'import-duty':        { title: 'Import Duty Calculator',         description: 'Explore illustrative import costs; confirm duties with KRA',               href: '/import-duty',        icon: Ship },
   'kplc-transfer':      { title: 'KPLC Meter Transfer',            description: 'Process and costs to transfer electricity meter ownership',                href: '/kplc-transfer',      icon: Zap },
-  'pension-transfer':   { title: 'Pension Transfer Calculator',    description: 'Calculate NSSF contributions and pension transfer costs',                  href: '/pension-transfer',   icon: PiggyBank },
+  'pension-transfer':   { title: 'Pension Transfer Calculator',    description: 'Understand pension transfer options and illustrative costs',                  href: '/pension-transfer',   icon: PiggyBank },
   'mobile-portability': { title: 'Mobile Portability Guide',       description: 'Keep your number when switching networks',                                  href: '/mobile-portability', icon: Phone },
 }
 
