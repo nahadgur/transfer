@@ -33,15 +33,17 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = blogPosts.find((p) => p.slug === params.slug)
   
-  if (!post) {
+  if (!post || post.draft) {
     return {
       title: 'Article Not Found',
+      robots: { index: false, follow: false },
     }
   }
 
   return {
     title: post.metaTitle,
     description: post.metaDescription,
+    alternates: { canonical: `https://www.transfer.co.ke/blog/${post.slug}` },
     openGraph: {
       title: post.metaTitle,
       description: post.metaDescription,
