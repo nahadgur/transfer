@@ -17,6 +17,7 @@ export const blogTransfer4B: BlogPost[] = [
     ],
     featuredImage: null,
     content: `<h2>How to request an M-Pesa reversal</h2><p>If you send money to the wrong M-Pesa recipient, act quickly. Safaricom offers reversal and support channels, but success depends on the transaction and the recipient's account status. A request is not a guarantee that money will be recovered.</p><h2>Steps to take immediately</h2><ol><li>Keep the original M-Pesa confirmation message and transaction code.</li><li>Use the reversal action in the M-Pesa app or the Safaricom channel currently offered for the transaction.</li><li>Follow any official instructions and monitor the status.</li><li>Contact Safaricom support using the provider's verified contact options if the reversal is unresolved.</li><li>Avoid sharing a PIN or one-time code with anyone claiming to assist.</li></ol><h2>What if the recipient has withdrawn the funds?</h2><p>Recovery may become more difficult. Document the time, amount, recipient and Safaricom reference. Do not attempt to access another person's wallet. If you suspect fraud, report it to the appropriate official authorities.</p><p>Official information: <a href="https://www.safaricom.co.ke/" rel="nofollow noopener">Safaricom</a>. Last reviewed 22 October 2026.</p>`,
+    lastReviewedAt: '2026-10-22'
   },
 
   // ── Post 2: PayPal to M-Pesa ─────────────────────────────────────────────
@@ -35,6 +36,7 @@ export const blogTransfer4B: BlogPost[] = [
     ],
     featuredImage: null,
     content: `<h2>Moving PayPal money into Kenya</h2><p>PayPal and mobile-wallet withdrawal options can depend on the account's country, verified identity, partner availability and supported payment route. Do not assume every Kenyan PayPal user has a direct M-Pesa withdrawal button.</p><h2>Before sending</h2><ol><li>Log into your verified PayPal account and check eligible withdrawal methods.</li><li>Confirm whether the listed provider supports your Kenyan mobile-wallet or bank account.</li><li>Compare the actual withdrawal fee and exchange rate before approving.</li><li>Check the recipient details and account name carefully.</li><li>Keep the withdrawal reference and receipt.</li></ol><h2>When a direct option is unavailable</h2><p>Use only supported providers shown in official PayPal or partner materials. Avoid unofficial individuals offering wallet swaps or requesting account credentials. Eligibility, minimums and hold periods can change.</p><p>Official source: <a href="https://www.paypal.com/ke/home" rel="nofollow noopener">PayPal Kenya</a>. Last reviewed 22 October 2026.</p>`,
+    lastReviewedAt: '2026-10-22'
   },
 
   // ── Post 3: Crypto/Binance to M-Pesa ─────────────────────────────────────
@@ -53,6 +55,7 @@ export const blogTransfer4B: BlogPost[] = [
     ],
     featuredImage: null,
     content: `<h2>Converting crypto to Kenyan shillings</h2><p>A digital-asset balance is not the same as an available M-Pesa transfer. Selling crypto may involve a licensed or otherwise legally permitted intermediary, identity verification, exchange spread and payout restrictions. Availability changes by exchange and jurisdiction.</p><h2>Check before transacting</h2><ol><li>Confirm the applicable Kenyan digital-asset regulations and whether the provider can lawfully serve your account.</li><li>Inspect supported assets, withdrawal methods and trading fees directly on the provider's current interface.</li><li>Consider custody, fraud, counterparty and volatility risks.</li><li>Verify the correct recipient identity and whether local bank or wallet payments are actually supported.</li><li>Keep transaction records for tax reporting and dispute evidence.</li></ol><p>Do not send assets to strangers or promise a particular P2P service is available. Consult <a href="https://www.centralbank.go.ke/" rel="nofollow noopener">CBK</a> and <a href="https://www.cma.or.ke/" rel="nofollow noopener">CMA</a> for the current regulatory framework. Last reviewed 22 October 2026.</p>`,
+    lastReviewedAt: '2026-10-22'
   },
 
   // ── Post 4: Pay KPLC/NHIF/NSSF via M-Pesa ──────────────────────────────
@@ -78,5 +81,6 @@ export const blogTransfer4B: BlogPost[] = [
 <h2>NSSF pension contributions</h2><p>NSSF pension obligations vary by employee pay and the scheme's current implementation phase. From February 2026 the ordinary employee maximum is KSh 6,480 monthly for pensionable income at or above the upper earnings limit. The employer pays a matching contribution. To make payments, follow the current <a href="https://www.nssf.or.ke/" rel="nofollow noopener">official NSSF payment portal</a> and use the generated reference; do not blindly use a saved business number.</p>
 <h2>How to make a Paybill payment safely</h2><ol><li>Open M-Pesa's Pay Bill menu or the provider's payment flow.</li><li>Verify the business number on the official biller site or invoice.</li><li>Enter the exact account or PRN reference, not a guessed phone number.</li><li>Check the account name and any charge shown before confirming.</li><li>Save the receipt or transaction ID; allow the receiving organisation time to reconcile.</li></ol>
 <h2>Are Paybill payments always free?</h2><p>No. Charges vary with the business arrangement, payment channel and provider. Check the total before entering your PIN. Read our <a href="/blog/mpesa-charges-complete-fee-guide/">M-Pesa tariff explainer</a>.</p><p><em>Last reviewed 22 October 2026. Payment numbers can change: verify directly with the receiving body before sending.</em></p>`,
+    lastReviewedAt: '2026-10-22'
   },
 ]
