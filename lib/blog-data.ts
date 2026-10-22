@@ -611,7 +611,7 @@ export const blogPosts: BlogPost[] = [
     calculator: "transfer-calculator",
     relatedSlugs: [],
     featuredImage: null,
-    hub: ""
+    hub: "",
     lastReviewedAt: "2026-10-22"
   },
   {
@@ -625,7 +625,7 @@ export const blogPosts: BlogPost[] = [
     calculator: "transfer-calculator",
     relatedSlugs: [],
     featuredImage: "https://files.autoblogging.ai/images/moving-houses-and-how-to-transfer-your-kplc-meter-the-right-way(w8i6)_4.jpeg",
-    hub: "kplc-tokens"
+    hub: "kplc-tokens",
     lastReviewedAt: "2026-10-22"
   },
   {
@@ -639,7 +639,7 @@ export const blogPosts: BlogPost[] = [
     calculator: "transfer-calculator",
     relatedSlugs: [],
     featuredImage: "https://files.autoblogging.ai/images/why-kplc-tokens-buy-fewer-units-than-you-expect(b9m6)_4.jpeg",
-    hub: "kplc-tokens"
+    hub: "kplc-tokens",
     lastReviewedAt: "2026-10-22"
   },
   {
@@ -666,7 +666,7 @@ export const blogPosts: BlogPost[] = [
     calculator: "transfer-calculator",
     relatedSlugs: [],
     featuredImage: "https://files.autoblogging.ai/images/prepaid-vs-postpaid-kplc-and-which-option-saves-more-money(wr8n)_4.jpeg",
-    hub: "kplc-tokens"
+    hub: "kplc-tokens",
     lastReviewedAt: "2026-10-22"
   },
   {
@@ -758,7 +758,7 @@ export const blogPosts: BlogPost[] = [
     calculator: "transfer-calculator",
     relatedSlugs: [],
     featuredImage: null,
-    hub: "mpesa-how-tos"
+    hub: "mpesa-how-tos",
     lastReviewedAt: "2026-10-22"
   },
   {
