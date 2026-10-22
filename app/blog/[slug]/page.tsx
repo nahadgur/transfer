@@ -77,55 +77,8 @@ function processContent(content: string, currentSlug: string): string {
     '<img$1 class="rounded-lg my-6 mx-auto max-w-full h-auto shadow-md" loading="lazy">'
   )
   
-  // Define keyword to article mappings for natural interlinking
-  const linkMappings = [
-    { keywords: ['PAYE tax', 'PAYE calculation', 'calculate PAYE'], slug: 'how-to-calculate-your-paye-tax-in-kenya', title: 'How to Calculate PAYE Tax in Kenya' },
-    { keywords: ['NSSF contribution', 'NSSF rate', 'NSSF 2026'], slug: 'the-complete-guide-to-nssf-contributions-in-kenya', title: 'Complete Guide to NSSF Contributions' },
-    { keywords: ['SHIF', 'NHIF replacement', 'health insurance deduction'], slug: 'understanding-shif-deductions-in-kenya-and-what-replaced-nhif', title: 'Understanding SHIF Deductions' },
-    { keywords: ['housing levy', 'affordable housing'], slug: 'everything-you-need-to-know-about-kenyas-housing-levy', title: "Kenya's Housing Levy Guide" },
-    { keywords: ['net salary', 'calculate net pay', 'take-home pay'], slug: 'how-kenyan-employees-can-calculate-their-net-salary', title: 'How to Calculate Net Salary' },
-    { keywords: ['gross salary', 'gross to net'], slug: 'working-backwards-from-net-to-gross-salary-in-kenya', title: 'Net to Gross Salary Calculator' },
-    { keywords: ['reduce PAYE', 'tax savings', 'legal tax reduction'], slug: 'legal-ways-kenyan-employees-can-reduce-their-paye', title: '7 Ways to Reduce PAYE' },
-    { keywords: ['insurance relief'], slug: 'how-insurance-relief-works-for-kenyan-taxpayers', title: 'Insurance Relief Guide' },
-    { keywords: ['mortgage relief', 'mortgage interest'], slug: 'claiming-mortgage-interest-relief-on-your-kenyan-tax-return', title: 'Mortgage Interest Relief' },
-    { keywords: ['pension contribution', 'maximize pension'], slug: 'why-kenyan-employees-should-max-out-their-pension-contributions', title: 'Pension Contributions Guide' },
-    { keywords: ['disability tax', 'PWD tax benefit'], slug: 'tax-benefits-for-persons-with-disability-in-kenya', title: 'Tax Benefits for PWDs' },
-    { keywords: ['KES 50,000 salary', '50000 salary'], slug: 'what-a-kes-50000-salary-actually-looks-like-after-tax-in-kenya', title: 'KES 50,000 Salary Breakdown' },
-    { keywords: ['KES 100,000 salary', '100000 salary'], slug: 'take-home-pay-on-a-kes-100000-salary-in-kenya', title: 'KES 100,000 Salary Breakdown' },
-    { keywords: ['KES 150,000 salary', '150000 salary'], slug: 'how-much-tax-do-you-pay-on-kes-150000-in-kenya', title: 'KES 150,000 Tax Guide' },
-    { keywords: ['KES 200,000 salary', '200000 salary'], slug: 'the-real-cost-of-earning-kes-200000-in-kenya', title: 'KES 200,000 Salary Analysis' },
-    { keywords: ['high earner tax', 'top tax bracket'], slug: 'paye-rates-for-high-earners-in-kenya-explained', title: 'PAYE for High Earners' },
-    { keywords: ['bonus tax', '13th month'], slug: 'how-kenyan-employers-tax-your-bonus-and-13th-month-pay', title: 'Bonus Taxation Guide' },
-    { keywords: ['freelance tax', 'freelancing vs employment'], slug: 'freelancing-vs-employment-in-kenya-and-which-pays-less-tax', title: 'Freelancing vs Employment Tax' },
-    { keywords: ['HELB deduction', 'HELB repayment'], slug: 'how-helb-loan-repayments-are-deducted-from-kenyan-salaries', title: 'HELB Deductions Guide' },
-    { keywords: ['change jobs tax', 'job change PAYE'], slug: 'what-happens-to-your-paye-when-you-change-jobs-in-kenya', title: 'PAYE When Changing Jobs' },
-    { keywords: ['wrong PAYE', 'incorrect deduction'], slug: 'what-to-do-if-your-kenyan-employer-is-deducting-wrong-paye', title: 'Fixing Wrong PAYE Deductions' },
-    { keywords: ['married filing', 'couples tax'], slug: 'how-kenyan-couples-can-file-taxes-together-or-separately', title: 'Tax Filing for Couples' },
-    { keywords: ['cost of hiring', 'employer cost'], slug: 'the-true-cost-of-hiring-an-employee-in-kenya', title: 'Cost of Hiring in Kenya' },
-    { keywords: ['employer NSSF', 'employer obligations'], slug: 'a-kenyan-employers-guide-to-nssf-and-housing-levy-obligations', title: 'Employer NSSF Guide' },
-    { keywords: ['iTax', 'PAYE returns', 'filing returns'], slug: 'filing-paye-returns-on-itax-in-kenya-without-getting-penalised', title: 'iTax Filing Guide' },
-    { keywords: ['benefits in kind', 'taxable benefits'], slug: 'taxable-benefits-in-kind-that-kenyan-employers-must-declare', title: 'Taxable Benefits Guide' },
-    { keywords: ['Finance Bill 2025', '2025 tax changes'], slug: 'what-the-kenya-finance-bill-2025-means-for-your-salary', title: 'Finance Bill 2025 Impact' },
-    { keywords: ['KRA deadline', 'tax deadline'], slug: 'key-kra-tax-deadlines-every-kenyan-should-know', title: 'KRA Tax Deadlines 2026' },
-    { keywords: ['new NSSF', 'NSSF changes'], slug: 'how-the-new-nssf-rates-affect-kenyan-workers', title: 'New NSSF Rates Impact' },
-    { keywords: ['Nairobi salary', 'living in Nairobi'], slug: 'what-salary-do-you-need-to-live-comfortably-in-nairobi', title: 'Nairobi Cost of Living' },
-  ]
-
-  // Add internal links (but not to the current article)
-  linkMappings.forEach(mapping => {
-    if (mapping.slug === currentSlug) return // Don't link to self
-    
-    mapping.keywords.forEach(keyword => {
-      // Only replace first occurrence of each keyword to avoid over-linking
-      const regex = new RegExp(`(?<!<[^>]*)\\b(${keyword})\\b(?![^<]*>)`, 'i')
-      if (regex.test(processedContent)) {
-        processedContent = processedContent.replace(
-          regex,
-          `<a href="/blog/${mapping.slug}" class="text-[#ccff00] hover:text-[#b3e600] underline">$1</a>`
-        )
-      }
-    })
-  })
+  // Keep editorially authored links only. Automatic HTML regex linking previously
+  // inserted links into draft/redirected URLs and could modify attributes.
 
   return processedContent
 }
@@ -140,7 +93,7 @@ export default function BlogPostPage({ params }: Props) {
 
   const processedContent = processContent(post.content, post.slug)
   const hub = post.hub ? GUIDES_BY_SLUG[post.hub] : undefined
-  const reviewed = post.lastReviewedAt || post.publishedAt || '2026'
+  const reviewed = post.lastReviewedAt || post.publishedAt || '2026-06-23'
   const url = `${SITE_URL}/blog/${post.slug}`
   const plain = post.content.replace(/<[^>]+>/g, ' ')
   const readMins = Math.max(3, Math.round(plain.split(/\s+/).filter(Boolean).length / 200))
