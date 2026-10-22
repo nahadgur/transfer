@@ -23,6 +23,7 @@ export const blogTransfer4A: BlogPost[] = [
 <h2>Fuliza and borrowing costs</h2><p>Fuliza is a separate overdraft product and its access and maintenance fees cannot be inferred from ordinary send-money charges. Review the specific offer and terms in your Safaricom interface before borrowing. Interest, excise duty and maintenance fees can affect the total cost.</p>
 <h2>How to compare payment options</h2><ol><li>Identify the exact transaction type and recipient.</li><li>Enter the amount using the relevant official app or USSD menu.</li><li>Read the fee shown before entering your PIN.</li><li>For bank payments, check the receiving bank's fee as well.</li><li>Keep the confirmation message and transaction reference.</li></ol>
 <h2>Frequently asked questions</h2><h3>Are all M-Pesa Paybill payments free?</h3><p>No. The tariff depends on the receiving business's configuration, and some charges may be passed to the customer.</p><h3>Do fees stay constant all year?</h3><p>Not necessarily. Refer to Safaricom's currently published tariff and the charge presented at checkout.</p><h3>What is the largest single ordinary M-Pesa transfer?</h3><p>Safaricom has published KSh 250,000, subject to the conditions applicable to your account.</p><p><em>Last reviewed: 22 October 2026. For exact charges use the M-Pesa confirmation screen and Safaricom's current terms.</em></p>`,
+    lastReviewedAt: '2026-10-22',
     },
 
   // ── Post 2: M-Pesa vs Airtel Money ──────────────────────────────────────
