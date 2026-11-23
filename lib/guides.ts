@@ -1,5 +1,5 @@
 // lib/guides.ts
-// The ten pillar hubs for Kenya's Transfer Hub (see docs/SILO-PLAN.md section 1).
+// The ten pillar hubs for Kenya's Transfer Hub.
 // Each hub aligns to its tool/calculator pillar and renders a child-spoke grid
 // from the blog posts whose `hub` equals the hub slug. Live spokes are pulled
 // at render time from the blog aggregator; `plannedSpokeTitles` is the editorial
