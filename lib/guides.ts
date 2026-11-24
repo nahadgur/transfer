@@ -347,13 +347,13 @@ export const GUIDES: GuideData[] = [
     metaDescription:
       'M-Pesa USSD codes, checking your balance and statement, PIN reset, Hakikisha, number portability and what to do when M-Pesa is not working.',
     heroDirectAnswer:
-      'Most M-Pesa tasks can be done by USSD as well as in the app, which matters when you have no data or a basic phone. The main code opens the menu for balance, statement, PIN and transfers, Hakikisha shows the recipient name before you confirm, and number portability lets you keep your number across networks. When M-Pesa is not working, the cause is usually a network event or a limit rather than your account.',
+      'Most M-Pesa tasks can be done by USSD as well as in the app, which matters when you have no data or a basic phone. The main code opens the menu for balance, statement, PIN and transfers, Hakikisha shows the recipient name before you confirm, and number portability lets you keep your number across networks. If you are unsure whether a payment went through, check your confirmation SMS and recent transaction history before considering another payment.',
     keyPoints: [
       'The M-Pesa USSD menu works on any phone with a Safaricom line and needs no data connection.',
       'Hakikisha displays the registered recipient name before you confirm a send, which is your last chance to catch a wrong number.',
       'You can request a mini statement and reset your PIN through official M-Pesa channels without visiting a shop.',
       'Number portability lets you keep your mobile number when changing network, governed by the Communications Authority of Kenya.',
-      'When M-Pesa fails, check for a known outage and your own daily limit before assuming an account problem.',
+      'Missing or delayed entries do not prove a payment failed. Do not send again until you have confirmed what happened to the first payment.',
     ],
     sections: [
       {
@@ -373,8 +373,8 @@ export const GUIDES: GuideData[] = [
       {
         heading: 'When M-Pesa is not working',
         paragraphs: [
-          'Most "M-Pesa is down" moments are either a temporary network event affecting many users or a personal limit you have hit, not a fault with your account. Checking whether others are affected, and whether you have exceeded a daily limit, resolves the majority of cases before you contact support.',
-          'If a transaction is genuinely stuck, the transaction message and the time are what support needs. The status tool is the quick way to tell a system-wide event from a one-off, so you know whether to wait or to report.',
+          'If you are unsure whether a payment went through, check your M-Pesa confirmation SMS and recent transaction history. Missing or delayed entries do not prove it failed.',
+          'A general service notice cannot confirm a particular payment. If you are still unsure, do not send again until you have confirmed the first payment’s status through Safaricom’s official support. Keep your transaction reference handy. For an international transfer, check with the sending provider first.',
         ],
       },
     ],
@@ -390,7 +390,7 @@ export const GUIDES: GuideData[] = [
     ],
     toolPillars: [
       { href: '/ussd-codes', label: 'USSD Codes' },
-      { href: '/mpesa-status', label: 'Is M-Pesa Down?' },
+      { href: '/mpesa-status', label: 'Check an M-PESA transaction and get support' },
       { href: '/mobile-portability', label: 'Mobile Portability' },
     ],
     adjacentHubSlugs: ['mpesa-charges', 'paybill-till'],
@@ -408,7 +408,7 @@ export const GUIDES: GuideData[] = [
       {
         question: 'M-Pesa is not working, what should I check first?',
         answer:
-          'Check whether there is a wider outage affecting other users and whether you have hit a daily limit. Those explain most failures. If a transaction is genuinely stuck, report it to Safaricom with the transaction message and time.',
+          'If you already attempted a payment, check the confirmation SMS and recent transaction history first. If you are still unsure, do not send again until Safaricom’s official support confirms the status. For an international transfer, start with the sending provider.',
       },
     ],
     publishedAt: REVIEWED,

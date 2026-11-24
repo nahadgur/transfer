@@ -233,10 +233,10 @@ export default function UssdCodesPage() {
             </div>
           </Link>
           <Link href="/mpesa-status" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">
-            <span className="text-xl shrink-0">📡</span>
+            <span className="text-xl shrink-0">ℹ️</span>
             <div>
-              <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-Pesa Status</p>
-              <p className="text-zinc-500 text-xs mt-0.5">Is M-Pesa down right now?</p>
+              <p className="font-semibold text-white text-sm group-hover:text-amber-400 transition-colors">M-PESA help</p>
+              <p className="text-zinc-500 text-xs mt-0.5">Check a payment and get official support</p>
             </div>
           </Link>
           <Link href="/mpesa-to-bank" className="flex items-start gap-3 bg-white/5 border border-white/10 hover:border-amber-400/30  p-4 transition-all group">

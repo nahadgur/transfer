@@ -47,7 +47,7 @@ const navLinks = [
   { href: '/mpesa-to-bank',       label: 'M-Pesa ↔ Bank',  hideMobile: true },
   { href: '/paybill-directory',   label: 'Paybills' },
   { href: '/ussd-codes',          label: 'USSD Codes',     hideMobile: true },
-  { href: '/mpesa-status',        label: 'M-Pesa Status',  hideMobile: true },
+  { href: '/mpesa-status',        label: 'M-PESA Help',    hideMobile: true },
   { href: '/guides',              label: 'Guides' },
   { href: '/blog',                label: 'Blog' },
 ]
@@ -206,7 +206,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   {[
                     ['/guides',           'Transfer Guides'],
                     ['/ussd-codes',       'USSD Codes Kenya'],
-                    ['/mpesa-status',     'Is M-Pesa Down?'],
+                    ['/mpesa-status',     'Check an M-PESA transaction and get support'],
                     ['/blog',             'Blog'],
                     ['/pension-transfer', 'Pension Transfer'],
                     ['/kplc-transfer',    'KPLC Transfer'],
